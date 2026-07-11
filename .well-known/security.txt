@@ -1,0 +1,4 @@
+# Security Contact Information for Binding Wire Making Machine
+Contact: mailto:bindingwiremachinery@gmail.com
+Expires: 2028-01-01T00:00:00.000Z
+Preferred-Languages: en
