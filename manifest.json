@@ -1,0 +1,18 @@
+{
+  "short_name": "Binding Wire Machine",
+  "name": "Binding Wire Machine",
+  "description": "Premium industrial machinery, wire drawing lines, and binding wire solutions from Rajkot.",
+  "icons": [
+    {
+      "src": "https://i.postimg.cc/TYfnJvm5/Gemini-Generated-Image-1ib41u1ib41u1ib.jpg",
+      "type": "image/jpeg",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#0f172a",
+  "theme_color": "#e11d48",
+  "display": "standalone",
+  "orientation": "portrait"
+}
