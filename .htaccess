@@ -1,25 +1,20 @@
-# ----------------------------------------------------------------------
-# 1. Enforce HTTPS Protocol & Canonical Domain Routing
-# ----------------------------------------------------------------------
+# Enforce HTTPS Protocol & Canonical Domain Routing
 RewriteEngine On
 RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-# ----------------------------------------------------------------------
-# 2. Leverage Browser Caching (Boosts Lighthouse Performance Score)
-# ----------------------------------------------------------------------
+# HTML5 History Routing: Redirect all virtual sub-paths back to index.html safely
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.html [QSA,L]
+
+# Leverage Browser Caching (Boosts Lighthouse Performance Score)
 <IfModule mod_expires.c>
     ExpiresActive On
     ExpiresDefault "access plus 1 month"
-    
-    # HTML documents (Keep fresh for routing logic adjustments)
     ExpiresByType text/html "access plus 1 day"
-    
-    # Data assets and manifests
     ExpiresByType application/json "access plus 1 week"
     ExpiresByType application/manifest+json "access plus 1 week"
-    
-    # Media and Image configurations
     ExpiresByType image/jpeg "access plus 1 year"
     ExpiresByType image/png "access plus 1 year"
     ExpiresByType image/webp "access plus 1 year"
@@ -27,9 +22,7 @@ RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
     ExpiresByType image/x-icon "access plus 1 year"
 </IfModule>
 
-# ----------------------------------------------------------------------
-# 3. Enable GZIP Compression (Reduces Asset Loading Time / TBT)
-# ----------------------------------------------------------------------
+# Enable GZIP Compression
 <IfModule mod_deflate.c>
     AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/json
 </IfModule>
