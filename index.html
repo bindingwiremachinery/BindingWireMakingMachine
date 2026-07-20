@@ -1029,18 +1029,28 @@
         }
 
         function renderRoute(pageId, param = null) {
+            // Hide all sections safely
             document.querySelectorAll('.page-section').forEach(el => {
                 el.classList.remove('active');
             });
                         
-            let targetId = pageId;
-            if (pageId === 'product' && param) {
+            // Force lowercase transformation to guarantee case-insensitive matches for 'about', 'products', etc.
+            let targetId = pageId ? pageId.toLowerCase() : 'home';
+            
+            if (targetId === 'product' && param) {
                 targetId = 'product-detail';
                 renderProductDetail(param);
-            } else if (!document.getElementById(pageId)) {
-                targetId = 'home';
+            } else if (!document.getElementById(targetId)) {
+                // Look for uppercase fallback if section ID was written as id="About" or id="Products"
+                const uppercaseFallback = pageId.charAt(0).toUpperCase() + pageId.slice(1);
+                if (document.getElementById(uppercaseFallback)) {
+                    targetId = uppercaseFallback;
+                } else {
+                    targetId = 'home'; // Safe fallback to home if section doesn't exist
+                }
             }
 
+            // Activate the targeted section panel smoothly
             const targetSection = document.getElementById(targetId);
             if(targetSection) {
                 targetSection.classList.add('active');
