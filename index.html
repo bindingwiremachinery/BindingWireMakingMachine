@@ -8,6 +8,12 @@
     <meta name="author" content="Binding Wire Making Machine">
     <title>Premium Industrial Machinery | Binding Wire Making Machine | Rajkot</title>
 
+    <!-- Preconnect / DNS Prefetch Optimization for Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://unpkg.com">
+    <link rel="preconnect" href="https://images.unsplash.com">
+    
     <!-- Open Graph / SEO -->
     <meta property="og:title" content="Premium Industrial Machinery | Binding Wire Making Machine">
     <meta property="og:description" content="Global exporter of high-speed Nail Making, Wire Drawing, and Binding Wire Machinery from Rajkot, Gujarat.">
@@ -15,10 +21,8 @@
     <meta property="og:url" content="https://www.bindingwiremachinery.com/">
     
     <!-- Fonts & Icons -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
-    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web" defer></script>
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -35,11 +39,11 @@
                             50: '#f8fafc',
                             100: '#f1f5f9',
                             800: '#1e293b',
-                            900: '#0f172a', // Deep corporate blue/slate
+                            900: '#0f172a',
                             950: '#020617',
                         },
                         brand: {
-                            DEFAULT: '#e11d48', // Premium industrial red/rose
+                            DEFAULT: '#e11d48',
                             dark: '#be123c',
                         }
                     },
@@ -64,28 +68,17 @@
 
     <!-- Custom Styles -->
     <style>
-        /* Base optimizations */
         body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
-        
-        /* Hide sections by default for SPA routing */
         .page-section { display: none; opacity: 0; transition: opacity 0.3s ease; }
         .page-section.active { display: block; opacity: 1; animation: fadeIn 0.4s ease-out; }
-        
-        /* Premium Gradients & Overlays */
         .hero-overlay { background: linear-gradient(to right, rgba(15, 23, 42, 0.9) 0%, rgba(15, 23, 42, 0.6) 100%); }
         .card-hover { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
         .card-hover:hover { transform: translateY(-5px); box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); }
-        
-        /* Custom Scrollbar */
         ::-webkit-scrollbar { width: 10px; }
         ::-webkit-scrollbar-track { background: #f1f5f9; }
         ::-webkit-scrollbar-thumb { background: #94a3b8; border-radius: 5px; }
         ::-webkit-scrollbar-thumb:hover { background: #64748b; }
-        
-        /* Form Focus */
         .input-field:focus { outline: none; border-color: #e11d48; box-shadow: 0 0 0 3px rgba(225, 29, 72, 0.1); }
-        
-        /* Floating Buttons */
         .float-btn { position: fixed; bottom: 20px; z-index: 50; border-radius: 50px; display: flex; align-items: center; justify-content: center; width: 55px; height: 55px; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.3); transition: transform 0.3s ease; }
         .float-btn:hover { transform: scale(1.1); }
         .whatsapp-btn { right: 20px; background-color: #25D366; color: white; }
@@ -95,38 +88,157 @@
             .whatsapp-btn { right: 15px; }
             .call-btn { right: 70px; }
         }
-
-        /* Toast Message */
         #toast { position: fixed; bottom: -100px; left: 50%; transform: translateX(-50%); background: #10b981; color: white; padding: 12px 24px; border-radius: 8px; font-weight: 500; z-index: 1000; transition: bottom 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55); box-shadow: 0 10px 25px rgba(0,0,0,0.2); }
         #toast.show { bottom: 30px; }
     </style>
 
-    <!-- Structured Data (SEO) -->
+    <!-- ADVANCED TECHNICAL SCHEMA (Logo, Products, Popular Products Deployment) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "ManufacturingBusiness",
-      "name": "Binding Wire Making Machine",
-      "image": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1200&q=80",
-      "@id": "",
-      "url": "https://www.bindingwiremachinery.com",
-      "telephone": "+91 99788 22099",
-      "email": "bindingwiremachinery@gmail.com",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Aji Industrial Area",
-        "addressLocality": "Rajkot",
-        "addressRegion": "Gujarat",
-        "postalCode": "360003",
-        "addressCountry": "IN"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 22.2858,
-        "longitude": 70.7997
-      },
-      "areaServed": "Worldwide",
-      "description": "Premium manufacturer and exporter of Nail Making Machines, Wire Drawing Machines, and Binding Wire Machinery."
+      "@graph": [
+        {
+          "@type": "ManufacturingBusiness",
+          "@id": "https://www.bindingwiremachinery.com/#organization",
+          "name": "Binding Wire Machine",
+          "legalName": "Binding Wire Machine",
+          "url": "https://www.bindingwiremachinery.com",
+          "logo": "https://i.postimg.cc/TYfnJvm5/Gemini-Generated-Image-1ib41u1ib41u1ib.jpg",
+          "image": "https://i.postimg.cc/TYfnJvm5/Gemini-Generated-Image-1ib41u1ib41u1ib.jpg",
+          "telephone": "+91 99788 22099",
+          "email": "bindingwiremachinery@gmail.com",
+          "priceRange": "INR",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Aji Industrial Area",
+            "addressLocality": "Rajkot",
+            "addressRegion": "Gujarat",
+            "postalCode": "360003",
+            "addressCountry": "IN"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 22.2858,
+            "longitude": 70.7997
+          },
+          "areaServed": "Worldwide",
+          "description": "Premium manufacturer and exporter of Nail Making Machines, Wire Drawing Machines, and Binding Wire Machinery."
+        },
+        {
+          "@type": "Product",
+          "@id": "https://www.bindingwiremachinery.com/#product-in1",
+          "name": "IN1+ Nail Making Machine",
+          "image": "https://images.unsplash.com/photo-1530124566582-a618bc2615dc?auto=format&fit=crop&w=800&q=80",
+          "description": "High-speed automatic nail making machine designed for producing small, high-precision nails up to 1 inch.",
+          "brand": {
+            "@type": "Brand",
+            "name": "Binding Wire Machine"
+          },
+          "offers": {
+            "@type": "Offer",
+            "url": "https://www.bindingwiremachinery.com/#product/in1",
+            "priceCurrency": "INR",
+            "price": "Contact for Price",
+            "availability": "https://schema.org/InStock",
+            "itemCondition": "https://schema.org/NewCondition"
+          }
+        },
+        {
+          "@type": "Product",
+          "@id": "https://www.bindingwiremachinery.com/#product-in3",
+          "name": "IN3 Nail Making Machine",
+          "image": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80",
+          "description": "The industry-standard machine for versatile nail production up to 3 inches. Features robust heavy-duty casting.",
+          "brand": {
+            "@type": "Brand",
+            "name": "Binding Wire Machine"
+          },
+          "offers": {
+            "@type": "Offer",
+            "url": "https://www.bindingwiremachinery.com/#product/in3",
+            "priceCurrency": "INR",
+            "price": "Contact for Price",
+            "availability": "https://schema.org/InStock",
+            "itemCondition": "https://schema.org/NewCondition"
+          }
+        },
+        {
+          "@type": "Product",
+          "@id": "https://www.bindingwiremachinery.com/#product-in4",
+          "name": "IN4 Nail Making Machine",
+          "image": "https://images.unsplash.com/photo-1563804828131-0d3a5ce3da77?auto=format&fit=crop&w=800&q=80",
+          "description": "Heavy-duty nail making machine engineered for standard 4-inch construction nails. Built for continuous 24/7 operation.",
+          "brand": {
+            "@type": "Brand",
+            "name": "Binding Wire Machine"
+          },
+          "offers": {
+            "@type": "Offer",
+            "url": "https://www.bindingwiremachinery.com/#product/in4",
+            "priceCurrency": "INR",
+            "price": "Contact for Price",
+            "availability": "https://schema.org/InStock",
+            "itemCondition": "https://schema.org/NewCondition"
+          }
+        },
+        {
+          "@type": "Product",
+          "@id": "https://www.bindingwiremachinery.com/#product-in6",
+          "name": "IN6 Nail Making Machine",
+          "image": "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=600&q=80",
+          "description": "Industrial monster capable of producing large nails up to 6 inches. Perfect for heavy construction and pallets.",
+          "brand": {
+            "@type": "Brand",
+            "name": "Binding Wire Machine"
+          },
+          "offers": {
+            "@type": "Offer",
+            "url": "https://www.bindingwiremachinery.com/#product/in6",
+            "priceCurrency": "INR",
+            "price": "Contact for Price",
+            "availability": "https://schema.org/InStock",
+            "itemCondition": "https://schema.org/NewCondition"
+          }
+        },
+        {
+          "@type": "Product",
+          "@id": "https://www.bindingwiremachinery.com/#product-wire-drawing",
+          "name": "Wire Drawing Machine Plant",
+          "image": "https://images.unsplash.com/photo-1565515266201-92510b64be14?auto=format&fit=crop&w=800&q=80",
+          "description": "Continuous wire drawing line designed to reduce MS/HB wire gauge efficiently with bull blocks and water cooling.",
+          "brand": {
+            "@type": "Brand",
+            "name": "Binding Wire Machine"
+          },
+          "offers": {
+            "@type": "Offer",
+            "url": "https://www.bindingwiremachinery.com/#product/wire-drawing",
+            "priceCurrency": "INR",
+            "price": "Contact for Price",
+            "availability": "https://schema.org/InStock",
+            "itemCondition": "https://schema.org/NewCondition"
+          }
+        },
+        {
+          "@type": "Product",
+          "@id": "https://www.bindingwiremachinery.com/#product-binding-wire",
+          "name": "Binding Wire Making Setup",
+          "image": "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?auto=format&fit=crop&w=800&q=80",
+          "description": "Complete machinery setup for producing soft annealed black binding wire used extensively in construction.",
+          "brand": {
+            "@type": "Brand",
+            "name": "Binding Wire Machine"
+          },
+          "offers": {
+            "@type": "Offer",
+            "url": "https://www.bindingwiremachinery.com/#product/binding-wire",
+            "priceCurrency": "INR",
+            "price": "Contact for Price",
+            "availability": "https://schema.org/InStock",
+            "itemCondition": "https://schema.org/NewCondition"
+          }
+        }
+      ]
     }
     </script>
 </head>
@@ -166,7 +278,7 @@
                 <nav class="hidden lg:flex space-x-8 items-center">
                     <a href="#home" class="nav-link font-medium text-gray-600 hover:text-brand transition-colors">Home</a>
                     <a href="#about" class="nav-link font-medium text-gray-600 hover:text-brand transition-colors">About</a>
-                    
+                                        
                     <!-- Products Dropdown -->
                     <div class="relative group">
                         <button class="nav-link font-medium text-gray-600 hover:text-brand transition-colors flex items-center">
@@ -184,7 +296,7 @@
                             </div>
                         </div>
                     </div>
-                    
+                                        
                     <a href="#videos" class="nav-link font-medium text-gray-600 hover:text-brand transition-colors">Videos</a>
                     <a href="#why-us" class="nav-link font-medium text-gray-600 hover:text-brand transition-colors">Why Us</a>
                     <a href="#contact" class="bg-brand text-white px-6 py-2.5 rounded-md font-medium hover:bg-brand-dark transition-colors shadow-md">Get Quote</a>
@@ -199,7 +311,7 @@
             </div>
         </div>
 
-        <!-- Mobile Menu (Hidden by default) -->
+        <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-gray-100 absolute w-full shadow-lg">
             <div class="px-4 pt-2 pb-6 space-y-1">
                 <a href="#home" class="mobile-link block px-3 py-3 rounded-md text-base font-medium text-gray-800 hover:text-brand hover:bg-gray-50">Home</a>
@@ -215,14 +327,13 @@
 
     <!-- MAIN CONTENT AREA (SPA Container) -->
     <main id="app-content" class="flex-grow">
-
         <!-- ================= HOME PAGE ================= -->
         <section id="home" class="page-section active">
             <!-- Hero -->
             <div class="relative bg-industrial-900 h-[600px] lg:h-[700px] flex items-center overflow-hidden">
                 <img src="https://i.postimg.cc/TYfnJvm5/Gemini-Generated-Image-1ib41u1ib41u1ib.jpg" alt="Industrial Manufacturing" class="absolute inset-0 w-full h-full object-cover opacity-30 object-center">
                 <div class="absolute inset-0 hero-overlay"></div>
-                
+                                
                 <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
                     <div class="max-w-3xl animate-slide-up">
                         <span class="inline-block py-1 px-3 rounded-full bg-brand/20 border border-brand/50 text-brand font-semibold text-sm mb-6">GLOBAL EXPORT BRAND</span>
@@ -352,7 +463,7 @@
                             <p class="text-gray-600 mb-8">
                                 Our facility is equipped with state-of-the-art CNC machining centers, rigorous quality testing labs, and an expert R&D team dedicated to innovating wire and nail manufacturing processes. We ensure every machine leaving our plant meets international export standards.
                             </p>
-                            
+                                                        
                             <div class="grid grid-cols-2 gap-6 mb-8">
                                 <div class="flex items-start">
                                     <div class="w-12 h-12 rounded-full bg-red-50 flex items-center justify-center flex-shrink-0 mr-4">
@@ -373,13 +484,13 @@
                                     </div>
                                 </div>
                             </div>
-                            
+                                                        
                             <a href="#about" class="inline-block bg-industrial-900 text-white px-6 py-3 rounded hover:bg-industrial-800 transition-colors font-medium">Read Our Story</a>
                         </div>
                     </div>
                 </div>
             </div>
-            
+                        
             <!-- Quick CTA -->
             <div class="bg-brand py-16">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between">
@@ -408,7 +519,7 @@
                     </div>
                 </div>
             </div>
-            
+                        
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-16">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                     <div>
@@ -460,7 +571,7 @@
             <div id="pd-header" class="bg-industrial-900 py-16 text-center">
                 <!-- Title inserted here -->
             </div>
-            
+                        
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12">
                 <div class="flex items-center space-x-2 text-sm text-gray-500 mb-8">
                     <a href="#home" class="hover:text-brand">Home</a>
@@ -477,12 +588,12 @@
                             <img id="pd-image" src="" alt="" class="w-full h-auto rounded object-cover shadow-sm">
                         </div>
                     </div>
-                    
+                                        
                     <!-- Details -->
                     <div>
                         <h2 id="pd-title" class="text-3xl font-heading font-bold text-industrial-900 mb-4">Product Name</h2>
                         <p id="pd-desc" class="text-gray-600 text-lg mb-6"></p>
-                        
+                                                
                         <div class="mb-8">
                             <h3 class="text-xl font-bold text-industrial-900 mb-4 border-b border-gray-200 pb-2">Key Features</h3>
                             <ul id="pd-features" class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-gray-700">
@@ -498,7 +609,7 @@
                                 </tbody>
                             </table>
                         </div>
-                        
+                                                
                         <a href="#contact" class="inline-flex items-center justify-center w-full sm:w-auto bg-brand text-white px-8 py-4 rounded font-bold text-lg hover:bg-brand-dark transition-colors shadow-lg">
                             Request Quote / Inquiry
                         </a>
@@ -506,6 +617,35 @@
                 </div>
             </div>
         </section>
+
+        <!-- CRITICAL BOT RESOURCE ARCHIVE (Hidden content module built for Google Indexing Engines) -->
+        <div class="hidden" aria-hidden="true">
+            <h2>Our Full Industrial Machinery Catalog</h2>
+            <article>
+                <h3>IN1+ Nail Making Machine</h3>
+                <p>High-speed automatic nail making machine designed for producing small, high-precision nails up to 1 inch. Production Speed: 550 pcs/min, Motor: 1.5 HP, Weight: 600 Kg.</p>
+            </article>
+            <article>
+                <h3>IN3 Nail Making Machine</h3>
+                <p>The industry-standard machine for versatile nail production up to 3 inches. Production Speed: 350 pcs/min, Motor: 3.0 HP, Weight: 1000 Kg.</p>
+            </article>
+            <article>
+                <h3>IN4 Nail Making Machine</h3>
+                <p>Heavy-duty nail making machine engineered for standard 4-inch construction nails. Production Speed: 250 pcs/min, Motor: 5.0 HP, Weight: 1400 Kg.</p>
+            </article>
+            <article>
+                <h3>IN6 Nail Making Machine</h3>
+                <p>Industrial monster capable of producing large nails up to 6 inches. Production Speed: 150 pcs/min, Motor: 7.5 HP, Weight: 2220 Kg.</p>
+            </article>
+            <article>
+                <h3>Wire Drawing Machine Plant</h3>
+                <p>Continuous wire drawing line designed to reduce MS/HB wire gauge efficiently with water cooled drums and variable frequency drive panels.</p>
+            </article>
+            <article>
+                <h3>Binding Wire Making Setup</h3>
+                <p>Complete machinery setup for producing soft annealed black binding wire used extensively in the construction sector with pit type electrical furnace setup.</p>
+            </article>
+        </div>
 
         <!-- ================= VIDEOS PAGE ================= -->
         <section id="videos" class="page-section bg-gray-50 pb-20">
@@ -515,10 +655,10 @@
                     <p class="text-gray-300">Watch our high-speed machinery in action.</p>
                 </div>
             </div>
-            
+                        
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <!-- Video 1 Placeholder -->
+                    <!-- Video 1 -->
                     <div class="bg-white rounded overflow-hidden shadow-sm border border-gray-200">
                         <div class="relative h-48 bg-gray-800 flex items-center justify-center group cursor-pointer">
                             <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=600&q=80" alt="Video Thumb" class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-40 transition-opacity">
@@ -530,7 +670,7 @@
                             <h3 class="font-bold text-industrial-900">IN3 Nail Making Machine High Speed Demo</h3>
                         </div>
                     </div>
-                    <!-- Video 2 Placeholder -->
+                    <!-- Video 2 -->
                     <div class="bg-white rounded overflow-hidden shadow-sm border border-gray-200">
                         <div class="relative h-48 bg-gray-800 flex items-center justify-center group cursor-pointer">
                             <img src="https://images.unsplash.com/photo-1565515266201-92510b64be14?auto=format&fit=crop&w=600&q=80" alt="Video Thumb" class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-40 transition-opacity">
@@ -542,7 +682,7 @@
                             <h3 class="font-bold text-industrial-900">Continuous Wire Drawing Plant Setup</h3>
                         </div>
                     </div>
-                    <!-- Video 3 Placeholder -->
+                    <!-- Video 3 -->
                     <div class="bg-white rounded overflow-hidden shadow-sm border border-gray-200">
                         <div class="relative h-48 bg-gray-800 flex items-center justify-center group cursor-pointer">
                             <img src="https://images.unsplash.com/photo-1530124566582-a618bc2615dc?auto=format&fit=crop&w=600&q=80" alt="Video Thumb" class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-40 transition-opacity">
@@ -565,10 +705,9 @@
                     <h1 class="text-4xl font-heading font-bold text-white mb-4">Frequently Asked Questions</h1>
                 </div>
             </div>
-            
+                        
             <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="space-y-4" id="faq-container">
-                    <!-- FAQ items (managed via simple JS toggle classes) -->
                     <div class="border border-gray-200 rounded-lg overflow-hidden">
                         <button class="faq-btn w-full px-6 py-4 text-left font-bold text-industrial-900 bg-gray-50 hover:bg-gray-100 flex justify-between items-center focus:outline-none">
                             Do you export machines outside India?
@@ -578,7 +717,7 @@
                             Yes, we are a global export brand. We regularly export our machinery to Africa, Middle East, Southeast Asia, and South America. We handle secure packaging and assist with container shipping logistics.
                         </div>
                     </div>
-                    
+                                        
                     <div class="border border-gray-200 rounded-lg overflow-hidden">
                         <button class="faq-btn w-full px-6 py-4 text-left font-bold text-industrial-900 bg-gray-50 hover:bg-gray-100 flex justify-between items-center focus:outline-none">
                             What is the warranty period on your machines?
@@ -588,7 +727,7 @@
                             Our machines come with a standard 1-year warranty against manufacturing defects. We also guarantee the lifetime availability of spare parts for all our models.
                         </div>
                     </div>
-                    
+                                        
                     <div class="border border-gray-200 rounded-lg overflow-hidden">
                         <button class="faq-btn w-full px-6 py-4 text-left font-bold text-industrial-900 bg-gray-50 hover:bg-gray-100 flex justify-between items-center focus:outline-none">
                             Do you provide installation and training?
@@ -601,7 +740,7 @@
                 </div>
             </div>
         </section>
-        
+                
         <!-- ================= WHY CHOOSE US ================= -->
         <section id="why-us" class="page-section bg-gray-50 pb-24">
             <div class="bg-industrial-900 py-20 text-center mb-16">
@@ -650,7 +789,7 @@
                     <!-- Contact Info -->
                     <div>
                         <h2 class="text-3xl font-heading font-bold text-industrial-900 mb-8">Reach Out to Our Experts</h2>
-                        
+                                                
                         <div class="space-y-6">
                             <div class="flex items-start">
                                 <div class="w-12 h-12 bg-gray-50 rounded flex items-center justify-center flex-shrink-0 mr-4 border border-gray-200">
@@ -661,7 +800,7 @@
                                     <p class="text-gray-600 leading-relaxed">Aji Industrial Area,<br>Rajkot, Gujarat - 360003<br>India</p>
                                 </div>
                             </div>
-                            
+                                                        
                             <div class="flex items-start">
                                 <div class="w-12 h-12 bg-gray-50 rounded flex items-center justify-center flex-shrink-0 mr-4 border border-gray-200">
                                     <i class="ph-fill ph-phone-call text-2xl text-brand"></i>
@@ -671,7 +810,7 @@
                                     <p class="text-gray-600 text-lg">+91 99788 22099</p>
                                 </div>
                             </div>
-                            
+                                                        
                             <div class="flex items-start">
                                 <div class="w-12 h-12 bg-gray-50 rounded flex items-center justify-center flex-shrink-0 mr-4 border border-gray-200">
                                     <i class="ph-fill ph-envelope-simple text-2xl text-brand"></i>
@@ -685,7 +824,6 @@
 
                         <!-- Map Placeholder -->
                         <div class="mt-10 bg-gray-200 w-full h-64 rounded-lg overflow-hidden border border-gray-300 relative">
-                            <!-- In a real scenario, an iframe goes here -->
                             <div class="absolute inset-0 flex items-center justify-center flex-col text-gray-500">
                                 <i class="ph ph-map-trifold text-4xl mb-2"></i>
                                 <span>Google Maps: Aji Industrial Area, Rajkot</span>
@@ -703,11 +841,10 @@
                                     <input type="text" required class="input-field w-full px-4 py-2 border border-gray-300 rounded focus:border-brand">
                                 </div>
                                 <div>
-                                    <label class="block text-sm font-medium text-gray-700 mb-1">Company Name</label>
-                                    <input type="text" class="input-field w-full px-4 py-2 border border-gray-300 rounded focus:border-brand">
+                                    <label class="block text-sm font-medium text-gray-700 mb-1">Company Name</label>                                    <input type="text" class="input-field w-full px-4 py-2 border border-gray-300 rounded focus:border-brand">
                                 </div>
                             </div>
-                            
+                                                        
                             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                                 <div>
                                     <label class="block text-sm font-medium text-gray-700 mb-1">Email Address *</label>
@@ -718,7 +855,7 @@
                                     <input type="tel" required class="input-field w-full px-4 py-2 border border-gray-300 rounded focus:border-brand">
                                 </div>
                             </div>
-                            
+                                                        
                             <div>
                                 <label class="block text-sm font-medium text-gray-700 mb-1">Product of Interest</label>
                                 <select class="input-field w-full px-4 py-2 border border-gray-300 rounded focus:border-brand bg-white">
@@ -737,7 +874,7 @@
                                 <label class="block text-sm font-medium text-gray-700 mb-1">Message *</label>
                                 <textarea required rows="4" class="input-field w-full px-4 py-2 border border-gray-300 rounded focus:border-brand"></textarea>
                             </div>
-                            
+                                                        
                             <button type="submit" class="w-full bg-industrial-900 text-white font-bold py-3 px-4 rounded hover:bg-brand transition-colors">
                                 Submit Inquiry
                             </button>
@@ -746,12 +883,11 @@
                 </div>
             </div>
         </section>
-        
-        <!-- ================= BLOG / LEGAL PLACEHOLDERS ================= -->
+                
+        <!-- ================= LEVERAGED HIDDEN MODULES ================= -->
         <section id="blog" class="page-section bg-gray-50 pb-24"><div class="bg-industrial-900 py-20 text-center"><h1 class="text-4xl font-heading font-bold text-white">Latest Blog Articles</h1></div><div class="max-w-7xl mx-auto px-4 py-16 text-center text-gray-600"><p>Content coming soon. Stay tuned for industry insights and machinery guides.</p></div></section>
         <section id="privacy" class="page-section bg-white pb-24"><div class="bg-industrial-900 py-16 text-center"><h1 class="text-3xl font-heading font-bold text-white">Privacy Policy</h1></div><div class="max-w-3xl mx-auto px-4 py-12 text-gray-600 prose"><p>We respect your privacy. Any information collected through contact forms is used strictly for communication and business purposes. We do not sell data to third parties.</p></div></section>
         <section id="terms" class="page-section bg-white pb-24"><div class="bg-industrial-900 py-16 text-center"><h1 class="text-3xl font-heading font-bold text-white">Terms & Conditions</h1></div><div class="max-w-3xl mx-auto px-4 py-12 text-gray-600 prose"><p>By using this website, you agree to our terms. All machine specifications are subject to change for product improvement. Quotations provided are valid for 30 days.</p></div></section>
-
     </main>
 
     <!-- Footer -->
@@ -771,7 +907,7 @@
                         Premier manufacturer and global exporter of industrial nail making and wire processing machinery from Rajkot, India.
                     </p>
                 </div>
-                
+                                
                 <!-- Quick Links -->
                 <div>
                     <h3 class="text-lg font-bold mb-6 text-white border-b border-gray-800 pb-2">Quick Links</h3>
@@ -784,7 +920,7 @@
                         <li><a href="#contact" class="hover:text-brand transition-colors">Contact Us</a></li>
                     </ul>
                 </div>
-                
+                                
                 <!-- Products -->
                 <div>
                     <h3 class="text-lg font-bold mb-6 text-white border-b border-gray-800 pb-2">Products</h3>
@@ -796,7 +932,7 @@
                         <li><a href="#product/binding-wire" class="hover:text-brand transition-colors">Binding Wire Plant</a></li>
                     </ul>
                 </div>
-                
+                                
                 <!-- Contact -->
                 <div>
                     <h3 class="text-lg font-bold mb-6 text-white border-b border-gray-800 pb-2">Contact</h3>
@@ -816,7 +952,7 @@
                     </ul>
                 </div>
             </div>
-            
+                        
             <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
                 <p>&copy; 2026 Binding Wire Making Machine. All Rights Reserved.</p>
                 <div class="flex space-x-4 mt-4 md:mt-0">
@@ -840,7 +976,6 @@
 
     <!-- Application Script -->
     <script>
-        // --- Product Database ---
         const products = [
             {
                 id: 'in1',
@@ -892,7 +1027,6 @@
             }
         ];
 
-        // --- SPA Routing Logic ---
         function handleHash() {
             const hash = window.location.hash.substring(1) || 'home';
             const [path, param] = hash.split('/');
@@ -900,27 +1034,23 @@
         }
 
         function navigate(pageId, param = null) {
-            // Hide all pages
             document.querySelectorAll('.page-section').forEach(el => {
                 el.classList.remove('active');
             });
-            
-            // Handle Product Detail vs Regular Pages
+                        
             let targetId = pageId;
             if (pageId === 'product' && param) {
                 targetId = 'product-detail';
                 renderProductDetail(param);
             } else if (!document.getElementById(pageId)) {
-                targetId = 'home'; // fallback
+                targetId = 'home';
             }
 
-            // Show target
             const targetSection = document.getElementById(targetId);
             if(targetSection) {
                 targetSection.classList.add('active');
             }
 
-            // Update Nav Highlighting
             document.querySelectorAll('.nav-link, .mobile-link').forEach(link => {
                 link.classList.remove('text-brand', 'font-bold');
                 if (link.getAttribute('href') === `#${pageId}`) {
@@ -928,17 +1058,14 @@
                 }
             });
 
-            // Close mobile menu if open
             const mobileMenu = document.getElementById('mobile-menu');
             if (!mobileMenu.classList.contains('hidden')) {
                 mobileMenu.classList.add('hidden');
             }
 
-            // Scroll to top
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
 
-        // --- Render Product Grids ---
         function renderProductsIndex() {
             const grid = document.getElementById('product-grid');
             grid.innerHTML = products.map(p => `
@@ -957,7 +1084,6 @@
             `).join('');
         }
 
-        // --- Render Single Product Detail ---
         function renderProductDetail(productId) {
             const p = products.find(prod => prod.id === productId);
             if(!p) { navigate('products'); return; }
@@ -981,13 +1107,10 @@
             `).join('');
         }
 
-        // --- UI Interactions ---
-        // Mobile Menu Toggle
         document.getElementById('mobile-menu-btn').addEventListener('click', () => {
             document.getElementById('mobile-menu').classList.toggle('hidden');
         });
 
-        // FAQ Accordion
         document.querySelectorAll('.faq-btn').forEach(btn => {
             btn.addEventListener('click', () => {
                 const content = btn.nextElementSibling;
@@ -998,20 +1121,17 @@
             });
         });
 
-        // Form Submit Handler
         function handleFormSubmit(e) {
             e.preventDefault();
-            // Show toast message (No alert box allowed)
             const toast = document.getElementById('toast');
             toast.classList.add('show');
             e.target.reset();
-            
+                        
             setTimeout(() => {
                 toast.classList.remove('show');
             }, 3000);
         }
 
-        // --- Init ---
         window.addEventListener('hashchange', handleHash);
         window.addEventListener('DOMContentLoaded', () => {
             renderProductsIndex();
