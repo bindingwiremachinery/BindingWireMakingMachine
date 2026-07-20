@@ -1,19 +1,35 @@
-# Force HTTPS
+# ----------------------------------------------------------------------
+# 1. Enforce HTTPS Protocol & Canonical Domain Routing
+# ----------------------------------------------------------------------
 RewriteEngine On
 RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-# Enable Browser Caching
+# ----------------------------------------------------------------------
+# 2. Leverage Browser Caching (Boosts Lighthouse Performance Score)
+# ----------------------------------------------------------------------
 <IfModule mod_expires.c>
-  ExpiresActive On
-  ExpiresByType image/jpg "access plus 1 year"
-  ExpiresByType image/jpeg "access plus 1 year"
-  ExpiresByType image/gif "access plus 1 year"
-  ExpiresByType image/png "access plus 1 year"
-  ExpiresByType image/webp "access plus 1 year"
-  ExpiresByType text/css "access plus 1 month"
-  ExpiresByType application/javascript "access plus 1 month"
+    ExpiresActive On
+    ExpiresDefault "access plus 1 month"
+    
+    # HTML documents (Keep fresh for routing logic adjustments)
+    ExpiresByType text/html "access plus 1 day"
+    
+    # Data assets and manifests
+    ExpiresByType application/json "access plus 1 week"
+    ExpiresByType application/manifest+json "access plus 1 week"
+    
+    # Media and Image configurations
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/webp "access plus 1 year"
+    ExpiresByType image/gif "access plus 1 year"
+    ExpiresByType image/x-icon "access plus 1 year"
 </IfModule>
 
-# Prevent Directory Listing
-Options -Indexes
+# ----------------------------------------------------------------------
+# 3. Enable GZIP Compression (Reduces Asset Loading Time / TBT)
+# ----------------------------------------------------------------------
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/json
+</IfModule>
