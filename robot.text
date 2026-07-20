@@ -1,4 +1,6 @@
 User-agent: *
 Allow: /
+Allow: /index.html
 
+# Sitemaps declaration link for search engine discovery engines
 Sitemap: https://www.bindingwiremachinery.com/sitemap.xml
