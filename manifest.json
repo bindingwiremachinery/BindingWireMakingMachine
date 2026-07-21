@@ -1,18 +1,31 @@
 {
-  "short_name": "Binding Wire Machine",
-  "name": "Binding Wire Machine",
-  "description": "Premium industrial machinery, wire drawing lines, and binding wire solutions from Rajkot.",
+  "short_name": "Binding Wire",
+  "name": "Binding Wire Making Machine",
+  "description": "Leading manufacturer and exporter of Nail Making Machines, Wire Drawing Lines, and Binding Wire Machinery in Rajkot, India.",
   "icons": [
+    {
+      "src": "/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
     {
       "src": "https://i.postimg.cc/TYfnJvm5/Gemini-Generated-Image-1ib41u1ib41u1ib.jpg",
       "type": "image/jpeg",
       "sizes": "512x512",
-      "purpose": "any maskable"
+      "purpose": "any"
+    },
+    {
+      "src": "https://i.postimg.cc/TYfnJvm5/Gemini-Generated-Image-1ib41u1ib41u1ib.jpg",
+      "type": "image/jpeg",
+      "sizes": "512x512",
+      "purpose": "maskable"
     }
   ],
   "start_url": "/",
+  "scope": "/",
   "background_color": "#0f172a",
   "theme_color": "#e11d48",
   "display": "standalone",
-  "orientation": "portrait"
+  "orientation": "portrait",
+  "categories": ["industrial", "business", "manufacturing"]
 }
