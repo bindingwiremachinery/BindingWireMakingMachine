@@ -1,20 +1,13 @@
-# Default rule: Allow all legitimate search engines
+# Master Crawl Control for Indian Nail Machine
 User-agent: *
 Allow: /
-Disallow: /*?*
+Disallow: /admin/
+Disallow: /api/
+Disallow: /private/
+Disallow: /*?*query=
 
-# Explicit Allow directives for AI Discovery & Search Crawlers
-User-agent: GPTBot
-Allow: /
-
-User-agent: Google-Extended
-Allow: /
-
-User-agent: PerplexityBot
-Allow: /
-
-User-agent: ClaudeBot
-Allow: /
-
-# Sitemap Declaration
-Sitemap: https://www.bindingwiremachine.in/sitemap.xml
+# Sitemaps Engine Index
+Sitemap: https://www.bindingwiremachine.com/sitemap.xml
+Sitemap: https://www.bindingwiremachine.com/sitemap-images.xml
+Sitemap: https://www.bindingwiremachine.com/sitemap-videos.xml
+Sitemap: https://www.bindingwiremachine.com/sitemap-products.xml
