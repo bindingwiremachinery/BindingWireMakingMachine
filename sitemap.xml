@@ -1,65 +1,90 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+                            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
   <!-- Core Pages -->
   <url>
     <loc>https://www.bindingwiremachine.in/</loc>
     <lastmod>2026-07-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>1.00</priority>
+    <priority>1.0</priority>
   </url>
   <url>
     <loc>https://www.bindingwiremachine.in/about</loc>
     <lastmod>2026-07-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.bindingwiremachine.in/products</loc>
     <lastmod>2026-07-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.90</priority>
+    <priority>0.9</priority>
   </url>
 
-  <!-- Product Landing Pages -->
+  <!-- Product Landing Pages with Image Indexing for Google Search -->
   <url>
     <loc>https://www.bindingwiremachine.in/product/in1</loc>
     <lastmod>2026-07-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.bindingwiremachine.in/product/IN1+-nail-making-machine.png</image:loc>
+      <image:title>IN1+ Automatic Wire Nail Making Machine</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://www.bindingwiremachine.in/product/in3</loc>
     <lastmod>2026-07-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.bindingwiremachine.in/product/IN3-nail-making-machine.png</image:loc>
+      <image:title>IN3 Automatic Wire Nail Making Machine</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://www.bindingwiremachine.in/product/in4</loc>
     <lastmod>2026-07-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.bindingwiremachine.in/product/IN4-nail-making-machine.png</image:loc>
+      <image:title>IN4 Automatic Wire Nail Making Machine</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://www.bindingwiremachine.in/product/in6</loc>
     <lastmod>2026-07-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.bindingwiremachine.in/product/IN6-nail-making-machine.png</image:loc>
+      <image:title>IN6 Heavy Duty Automatic Wire Nail Machine</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://www.bindingwiremachine.in/product/wire-drawing</loc>
     <lastmod>2026-07-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.bindingwiremachine.in/product/Wire-Drawing-Machine.png</image:loc>
+      <image:title>600mm Continuous Wire Drawing Plant</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://www.bindingwiremachine.in/product/binding-wire</loc>
     <lastmod>2026-07-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.bindingwiremachine.in/product/binding-wire-making-machine.png</image:loc>
+      <image:title>300mm Precision Binding Wire Making Machine</image:title>
+    </image:image>
   </url>
 
   <!-- Content & Contact Pages -->
@@ -67,36 +92,36 @@
     <loc>https://www.bindingwiremachine.in/videos</loc>
     <lastmod>2026-07-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.bindingwiremachine.in/why-us</loc>
     <lastmod>2026-07-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.bindingwiremachine.in/faq</loc>
     <lastmod>2026-07-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.bindingwiremachine.in/contact</loc>
     <lastmod>2026-07-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.bindingwiremachine.in/privacy</loc>
     <lastmod>2026-07-21</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.30</priority>
+    <priority>0.3</priority>
   </url>
   <url>
     <loc>https://www.bindingwiremachine.in/terms</loc>
     <lastmod>2026-07-21</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.30</priority>
+    <priority>0.3</priority>
   </url>
 </urlset>
