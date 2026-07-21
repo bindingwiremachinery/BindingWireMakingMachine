@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+
+  <!-- Automatic Wire Nail Making Machine Live Demonstration -->
+  <url>
+    <loc>https://www.bindingwiremachine.in/videos</loc>
+    <video:video>
+      <video:thumbnail_loc>https://www.bindingwiremachine.in/product/IN1%2B-nail-making-machine.png</video:thumbnail_loc>
+      <video:title>Automatic Wire Nail Making Machine Live Production Demo</video:title>
+      <video:description>Watch our high-speed automatic wire nail making machine in full operation. Demonstrating high output capacity, precision die cutting, and low noise performance.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/PLACEHOLDER_VIDEO_ID_1</video:player_loc>
+      <video:duration>180</video:duration>
+      <video:publication_date>2026-01-15T10:00:00+05:30</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+  </url>
+
+  <!-- Continuous Wire Drawing Plant Working Process -->
+  <url>
+    <loc>https://www.bindingwiremachine.in/videos</loc>
+    <video:video>
+      <video:thumbnail_loc>https://www.bindingwiremachine.in/product/Wire-Drawing-Machine.png</video:thumbnail_loc>
+      <video:title>600mm Continuous Wire Drawing Machine Setup and Operation</video:title>
+      <video:description>Detailed working process of our 600mm continuous wire drawing plant reducing wire rod gauge efficiently for industrial nail production.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/PLACEHOLDER_VIDEO_ID_2</video:player_loc>
+      <video:duration>240</video:duration>
+      <video:publication_date>2026-02-10T11:30:00+05:30</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+  </url>
+
+  <!-- Binding Wire Making Machine Operation -->
+  <url>
+    <loc>https://www.bindingwiremachine.in/videos</loc>
+    <video:video>
+      <video:thumbnail_loc>https://www.bindingwiremachine.in/product/binding-wire-making-machine.png</video:thumbnail_loc>
+      <video:title>Precision Binding Wire Making Machine Plant Demo</video:title>
+      <video:description>See our precision 300mm binding wire machine in action producing uniform wire coils for construction and industrial binding applications.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/PLACEHOLDER_VIDEO_ID_3</video:player_loc>
+      <video:duration>150</video:duration>
+      <video:publication_date>2026-03-01T09:15:00+05:30</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+  </url>
+
+</urlset>
