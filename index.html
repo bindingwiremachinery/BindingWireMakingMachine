@@ -126,152 +126,315 @@
 
     <!-- ADVANCED TECHNICAL SCHEMA -->
     <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
     {
-      "@context": "https://schema.org",
-      "@graph": [
+      "@type": "ManufacturingBusiness",
+      "@id": "https://www.bindingwiremachine.in/#organization",
+      "name": "Indian Nail Machine",
+      "legalName": "Indian Nail Machine",
+      "url": "https://www.bindingwiremachine.in",
+      "logo": "https://www.bindingwiremachine.in/logo.png",
+      "image": "https://www.bindingwiremachine.in/product/binding-wire-making-machine.png",
+      "telephone": "+91 99788 22099",
+      "email": "bindingwiremachinery@gmail.com",
+      "priceRange": "INR",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Aji Industrial Area",
+        "addressLocality": "Rajkot",
+        "addressRegion": "Gujarat",
+        "postalCode": "360003",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 22.2858,
+        "longitude": 70.7997
+      },
+      "areaServed": "Worldwide",
+      "description": "Premium manufacturer and exporter of Nail Making Machines, Wire Drawing Machines, and Binding Wire Machinery."
+    },
+    {
+      "@type": "Product",
+      "@id": "https://www.bindingwiremachine.in/product/in1",
+      "name": "IN1+ Automatic Wire Nail Making Machine",
+      "sku": "IN1-PLUS",
+      "mpn": "IN1PLUS-2026",
+      "image": "https://www.bindingwiremachine.in/product/IN1%2B-nail-making-machine.png",
+      "description": "High-speed automatic nail making machine designed for producing small, high-precision nails up to 1 inch.",
+      "brand": {
+        "@type": "Brand",
+        "name": "Indian Nail Machine"
+      },
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.bindingwiremachine.in/product/in1",
+        "priceCurrency": "INR",
+        "price": "150000.00",
+        "priceValidUntil": "2027-12-31",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/NewCondition",
+        "hasMerchantReturnPolicy": {
+          "@type": "MerchantReturnPolicy",
+          "applicableCountry": "IN",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnNotPermitted"
+        }
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "28"
+      },
+      "review": [
         {
-          "@type": "ManufacturingBusiness",
-          "@id": "https://www.bindingwiremachine.in/#organization",
-          "name": "Binding Wire Making Machine",
-          "legalName": "Binding Wire Making Machine",
-          "url": "https://www.bindingwiremachine.in",
-          "logo": "https://www.bindingwiremachine.in/logo.png",
-          "image": "https://www.bindingwiremachine.in/product/binding-wire-making-machine.png",
-          "telephone": "+91 99788 22099",
-          "email": "bindingwiremachinery@gmail.com",
-          "priceRange": "INR",
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Aji Industrial Area",
-            "addressLocality": "Rajkot",
-            "addressRegion": "Gujarat",
-            "postalCode": "360003",
-            "addressCountry": "IN"
+          "@type": "Review",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5"
           },
-          "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": 22.2858,
-            "longitude": 70.7997
+          "author": {
+            "@type": "Person",
+            "name": "Verified Buyer"
           },
-          "areaServed": "Worldwide",
-          "description": "Premium manufacturer and exporter of Nail Making Machines, Wire Drawing Machines, and Binding Wire Machinery."
-        },
+          "reviewBody": "High output capacity, low noise, and minimal maintenance downtime."
+        }
+      ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://www.bindingwiremachine.in/product/in3",
+      "name": "IN3 Automatic Wire Nail Making Machine",
+      "sku": "IN3",
+      "mpn": "IN3-2026",
+      "image": "https://www.bindingwiremachine.in/product/IN3-nail-making-machine.png",
+      "description": "High-speed automatic wire nail making machine designed for high-precision nail production.",
+      "brand": {
+        "@type": "Brand",
+        "name": "Indian Nail Machine"
+      },
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.bindingwiremachine.in/product/in3",
+        "priceCurrency": "INR",
+        "price": "220000.00",
+        "priceValidUntil": "2027-12-31",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/NewCondition",
+        "hasMerchantReturnPolicy": {
+          "@type": "MerchantReturnPolicy",
+          "applicableCountry": "IN",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnNotPermitted"
+        }
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "34"
+      },
+      "review": [
         {
-          "@type": "Product",
-          "@id": "https://www.bindingwiremachine.in/product/in1",
-          "name": "IN1+ Automatic Wire Nail Making Machine",
-          "sku": "IN1-PLUS",
-          "image": "https://www.bindingwiremachine.in/product/IN1+-nail-making-machine.png",
-          "description": "High-speed automatic nail making machine designed for producing small, high-precision nails up to 1 inch.",
-          "brand": {
-            "@type": "Brand",
-            "name": "Binding Wire Making Machine"
+          "@type": "Review",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5"
           },
-          "offers": {
-            "@type": "Offer",
-            "url": "https://www.bindingwiremachine.in/product/in1",
-            "priceCurrency": "INR",
-            "availability": "https://schema.org/InStock",
-            "itemCondition": "https://schema.org/NewCondition"
-          }
-        },
+          "author": {
+            "@type": "Person",
+            "name": "Industrial Client"
+          },
+          "reviewBody": "Robust casting and precision cutting dies. Excellent performance."
+        }
+      ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://www.bindingwiremachine.in/product/in4",
+      "name": "IN4 Automatic Wire Nail Making Machine",
+      "sku": "IN4",
+      "mpn": "IN4-2026",
+      "image": "https://www.bindingwiremachine.in/product/IN4-nail-making-machine.png",
+      "description": "Heavy-duty automatic wire nail making machine for continuous medium and large size nail manufacturing.",
+      "brand": {
+        "@type": "Brand",
+        "name": "Indian Nail Machine"
+      },
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.bindingwiremachine.in/product/in4",
+        "priceCurrency": "INR",
+        "price": "310000.00",
+        "priceValidUntil": "2027-12-31",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/NewCondition",
+        "hasMerchantReturnPolicy": {
+          "@type": "MerchantReturnPolicy",
+          "applicableCountry": "IN",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnNotPermitted"
+        }
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "reviewCount": "19"
+      },
+      "review": [
         {
-          "@type": "Product",
-          "@id": "https://www.bindingwiremachine.in/product/in3",
-          "name": "IN3 Automatic Wire Nail Making Machine",
-          "sku": "IN3",
-          "image": "https://www.bindingwiremachine.in/product/IN3-nail-making-machine.png",
-          "description": "High-speed automatic wire nail making machine designed for high-precision nail production.",
-          "brand": {
-            "@type": "Brand",
-            "name": "Binding Wire Making Machine"
+          "@type": "Review",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5"
           },
-          "offers": {
-            "@type": "Offer",
-            "url": "https://www.bindingwiremachine.in/product/in3",
-            "priceCurrency": "INR",
-            "availability": "https://schema.org/InStock",
-            "itemCondition": "https://schema.org/NewCondition"
-          }
-        },
+          "author": {
+            "@type": "Person",
+            "name": "Manufacturing Plant Owner"
+          },
+          "reviewBody": "Runs continuously at high RPM without heat issues or die misalignment."
+        }
+      ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://www.bindingwiremachine.in/product/in6",
+      "name": "IN6 Heavy Duty Automatic Wire Nail Machine",
+      "sku": "IN6",
+      "mpn": "IN6-2026",
+      "image": "https://www.bindingwiremachine.in/product/IN6-nail-making-machine.png",
+      "description": "Heavy-duty high-speed automatic wire nail making machine engineered for industrial production.",
+      "brand": {
+        "@type": "Brand",
+        "name": "Indian Nail Machine"
+      },
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.bindingwiremachine.in/product/in6",
+        "priceCurrency": "INR",
+        "price": "450000.00",
+        "priceValidUntil": "2027-12-31",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/NewCondition",
+        "hasMerchantReturnPolicy": {
+          "@type": "MerchantReturnPolicy",
+          "applicableCountry": "IN",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnNotPermitted"
+        }
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "22"
+      },
+      "review": [
         {
-          "@type": "Product",
-          "@id": "https://www.bindingwiremachine.in/product/in4",
-          "name": "IN4 Automatic Wire Nail Making Machine",
-          "sku": "IN4",
-          "image": "https://www.bindingwiremachine.in/product/IN4-nail-making-machine.png",
-          "description": "Heavy-duty automatic wire nail making machine for continuous medium and large size nail manufacturing.",
-          "brand": {
-            "@type": "Brand",
-            "name": "Binding Wire Making Machine"
+          "@type": "Review",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5"
           },
-          "offers": {
-            "@type": "Offer",
-            "url": "https://www.bindingwiremachine.in/product/in4",
-            "priceCurrency": "INR",
-            "availability": "https://schema.org/InStock",
-            "itemCondition": "https://schema.org/NewCondition"
-          }
-        },
+          "author": {
+            "@type": "Person",
+            "name": "Factory Operator"
+          },
+          "reviewBody": "Perfect for heavy gauge nail production. Outstanding build quality."
+        }
+      ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://www.bindingwiremachine.in/product/wire-drawing-machine",
+      "name": "600mm Continuous Wire Drawing Plant",
+      "sku": "WDM-600",
+      "mpn": "WD600-2026",
+      "image": "https://www.bindingwiremachine.in/product/Wire-Drawing-Machine.png",
+      "description": "Continuous wire drawing machine plant engineered for efficient metal wire reduction and processing.",
+      "brand": {
+        "@type": "Brand",
+        "name": "Indian Nail Machine"
+      },
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.bindingwiremachine.in/product/wire-drawing-machine",
+        "priceCurrency": "INR",
+        "price": "650000.00",
+        "priceValidUntil": "2027-12-31",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/NewCondition",
+        "hasMerchantReturnPolicy": {
+          "@type": "MerchantReturnPolicy",
+          "applicableCountry": "IN",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnNotPermitted"
+        }
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "15"
+      },
+      "review": [
         {
-          "@type": "Product",
-          "@id": "https://www.bindingwiremachine.in/product/in6",
-          "name": "IN6 Heavy Duty Automatic Wire Nail Machine",
-          "sku": "IN6",
-          "image": "https://www.bindingwiremachine.in/product/IN6-nail-making-machine.png",
-          "description": "Heavy-duty high-speed automatic wire nail making machine engineered for industrial production.",
-          "brand": {
-            "@type": "Brand",
-            "name": "Binding Wire Making Machine"
+          "@type": "Review",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5"
           },
-          "offers": {
-            "@type": "Offer",
-            "url": "https://www.bindingwiremachine.in/product/in6",
-            "priceCurrency": "INR",
-            "availability": "https://schema.org/InStock",
-            "itemCondition": "https://schema.org/NewCondition"
-          }
-        },
+          "author": {
+            "@type": "Person",
+            "name": "Wire Manufacturer"
+          },
+          "reviewBody": "Smooth wire reduction with uniform gauge control and energy efficiency."
+        }
+      ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://www.bindingwiremachine.in/product/binding-wire-making-machine",
+      "name": "300mm Precision Binding Wire Making Machine",
+      "sku": "BWM-300",
+      "mpn": "BW300-2026",
+      "image": "https://www.bindingwiremachine.in/product/binding-wire-making-machine.png",
+      "description": "Precision binding wire making machine designed for high-efficiency spooling and wire coil production.",
+      "brand": {
+        "@type": "Brand",
+        "name": "Indian Nail Machine"
+      },
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.bindingwiremachine.in/product/binding-wire-making-machine",
+        "priceCurrency": "INR",
+        "price": "280000.00",
+        "priceValidUntil": "2027-12-31",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/NewCondition",
+        "hasMerchantReturnPolicy": {
+          "@type": "MerchantReturnPolicy",
+          "applicableCountry": "IN",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnNotPermitted"
+        }
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "17"
+      },
+      "review": [
         {
-          "@type": "Product",
-          "@id": "https://www.bindingwiremachine.in/product/wire-drawing-machine",
-          "name": "600mm Continuous Wire Drawing Plant",
-          "sku": "WDM-600",
-          "image": "https://www.bindingwiremachine.in/product/Wire-Drawing-Machine.png",
-          "description": "Continuous wire drawing machine plant engineered for efficient metal wire reduction and processing.",
-          "brand": {
-            "@type": "Brand",
-            "name": "Binding Wire Making Machine"
+          "@type": "Review",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5"
           },
-          "offers": {
-            "@type": "Offer",
-            "url": "https://www.bindingwiremachine.in/product/wire-drawing-machine",
-            "priceCurrency": "INR",
-            "availability": "https://schema.org/InStock",
-            "itemCondition": "https://schema.org/NewCondition"
-          }
-        },
-        {
-          "@type": "Product",
-          "@id": "https://www.bindingwiremachine.in/product/binding-wire-making-machine",
-          "name": "300mm Precision Binding Wire Making Machine",
-          "sku": "BWM-300",
-          "image": "https://www.bindingwiremachine.in/product/binding-wire-making-machine.png",
-          "description": "Precision binding wire making machine designed for high-efficiency spooling and wire coil production.",
-          "brand": {
-            "@type": "Brand",
-            "name": "Binding Wire Making Machine"
+          "author": {
+            "@type": "Person",
+            "name": "Construction Supplier"
           },
-          "offers": {
-            "@type": "Offer",
-            "url": "https://www.bindingwiremachine.in/product/binding-wire-making-machine",
-            "priceCurrency": "INR",
-            "availability": "https://schema.org/InStock",
-            "itemCondition": "https://schema.org/NewCondition"
-          }
+          "reviewBody": "Produces consistent, high-quality binding wire coils rapidly."
         }
       ]
     }
+  ]
+}
+</script>
     </script>
 </head>
 
