@@ -1055,7 +1055,7 @@
                 el.classList.remove('active');
             });
                         
-            // Force lowercase transformation to guarantee case-insensitive matches for 'about', 'products', etc.
+            // Force lowercase transformation to guarantee case-insensitive matches
             let targetId = pageId ? pageId.toLowerCase() : 'home';
             
             if (targetId === 'product' && param) {
@@ -1063,7 +1063,7 @@
                 renderProductDetail(param);
             } else if (!document.getElementById(targetId)) {
                 // Look for uppercase fallback if section ID was written as id="About" or id="Products"
-                const uppercaseFallback = pageId.charAt(0).toUpperCase() + pageId.slice(1);
+                const uppercaseFallback = pageId ? (pageId.charAt(0).toUpperCase() + pageId.slice(1)) : 'Home';
                 if (document.getElementById(uppercaseFallback)) {
                     targetId = uppercaseFallback;
                 } else {
@@ -1073,15 +1073,18 @@
 
             // Activate the targeted section panel smoothly
             const targetSection = document.getElementById(targetId);
-            if(targetSection) {
+            if (targetSection) {
                 targetSection.classList.add('active');
             }
+
+            // DYNAMIC SEO ENGINE: Updates Title, Meta Description, and Canonical URL per route
+            updateRouteSEO(pageId, param);
 
             // Sync navigation highlights
             document.querySelectorAll('.nav-link, .mobile-link').forEach(link => {
                 link.classList.remove('text-brand', 'font-bold');
                 const hrefAttr = link.getAttribute('href');
-                if (hrefAttr === `/${pageId}` || (pageId === 'home' && hrefAttr === '/home')) {
+                if (hrefAttr === `/${pageId}` || (pageId === 'home' && (hrefAttr === '/home' || hrefAttr === '/'))) {
                     link.classList.add('text-brand');
                 }
             });
@@ -1094,10 +1097,70 @@
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
 
-        // Resolves the true structural URL pattern on page initializations
+        // Dynamic SEO Update Manager
+        function updateRouteSEO(pageId, param) {
+            const metaDesc = document.querySelector('meta[name="description"]');
+            let canonical = document.querySelector('link[rel="canonical"]');
+            if (!canonical) {
+                canonical = document.createElement('link');
+                canonical.setAttribute('rel', 'canonical');
+                document.head.appendChild(canonical);
+            }
+
+            const baseUrl = 'https://www.bindingwiremachine.in';
+            const cleanId = pageId ? pageId.toLowerCase() : 'home';
+
+            let title = "Premium Industrial Machinery | Binding Wire Making Machine | Rajkot";
+            let description = "Leading manufacturer and exporter of IN1+ to IN6 Nail Making Machines, Wire Drawing Machines, and Binding Wire Machinery in Rajkot, India.";
+            let routePath = "/";
+
+            if (cleanId === 'product' && param) {
+                const prod = products.find(p => p.id === param);
+                if (prod) {
+                    title = `${prod.name} | Binding Wire Machinery Rajkot`;
+                    description = prod.desc;
+                    routePath = `/product/${param}`;
+                }
+            } else if (cleanId === 'products') {
+                title = "Industrial Machinery Catalog | Nail & Wire Making Machines";
+                description = "Explore our complete range of high-speed automatic nail making machines, wire drawing lines, and binding wire plants.";
+                routePath = "/products";
+            } else if (cleanId === 'about') {
+                title = "About Us | Binding Wire Machinery Manufacturer Rajkot";
+                description = "Pioneering industrial machinery manufacturing in Rajkot, Gujarat. ISO 9001:2015 certified global exporter.";
+                routePath = "/about";
+            } else if (cleanId === 'videos') {
+                title = "Machine Operation Videos | Binding Wire Machinery Rajkot";
+                description = "Watch high-speed automatic nail making machines and continuous wire drawing plants operating live.";
+                routePath = "/videos";
+            } else if (cleanId === 'contact') {
+                title = "Contact Us | Get Machinery Quotation | Rajkot Facility";
+                description = "Get in touch with our engineering team for custom machinery quotes, export specifications, and factory visits.";
+                routePath = "/contact";
+            } else if (cleanId === 'faq') {
+                title = "FAQ | Frequently Asked Questions | Binding Wire Machine";
+                description = "Find answers regarding machine export, warranty, spare parts, and installation assistance.";
+                routePath = "/faq";
+            } else if (cleanId === 'why-us') {
+                title = "Why Choose Us | Premium Industrial Nail & Wire Machinery";
+                description = "Discover why international buyers select our heavy-duty, low-maintenance nail and wire processing equipment.";
+                routePath = "/why-us";
+            }
+
+            document.title = title;
+            if (metaDesc) metaDesc.setAttribute('content', description);
+            canonical.setAttribute('href', `${baseUrl}${routePath}`);
+        }
+
+        // Resolves the true structural URL pattern on page initializations & refreshes
         function resolveInitialRoute() {
-            const path = window.location.pathname;
-            if (path === '/' || path === '/home') {
+            let path = window.location.pathname;
+            // Normalize trailing slashes (e.g. /products/ -> /products)
+            if (path.length > 1 && path.endsWith('/')) {
+                path = path.slice(0, -1);
+            }
+
+            if (path === '' || path === '/' || path === '/home') {
                 renderRoute('home');
             } else if (path.startsWith('/product/')) {
                 const param = path.substring(9);
@@ -1114,7 +1177,7 @@
             grid.innerHTML = products.map(p => `
                 <div class="bg-white rounded-lg overflow-hidden shadow-sm border border-gray-100 card-hover">
                     <div class="h-64 overflow-hidden">
-                        <img src="${p.img}" alt="${p.name}" class="w-full h-full object-cover transition-transform duration-700 hover:scale-110">
+                        <img src="${p.img}" alt="${p.name}" loading="lazy" class="w-full h-full object-cover transition-transform duration-700 hover:scale-110">
                     </div>
                     <div class="p-6">
                         <h4 class="text-xl font-heading font-bold text-industrial-900 mb-2">${p.name}</h4>
@@ -1136,7 +1199,7 @@
             document.getElementById('pd-title').textContent = p.name;
             document.getElementById('pd-desc').textContent = p.desc;
             document.getElementById('pd-image').src = p.img;
-            document.getElementById('pd-image').alt = p.name;
+            document.getElementById('pd-image').alt = p.name || "Industrial Machine";
 
             document.getElementById('pd-features').innerHTML = p.features.map(f => `
                 <li class="flex items-start"><i class="ph-fill ph-check-circle text-brand mt-1 mr-2"></i> ${f}</li>
@@ -1152,16 +1215,6 @@
 
         document.getElementById('mobile-menu-btn').addEventListener('click', () => {
             document.getElementById('mobile-menu').classList.toggle('hidden');
-        });
-
-        document.querySelectorAll('.faq-btn').forEach(btn => {
-            btn.addEventListener('click', () => {
-                const content = btn.nextElementSibling;
-                const icon = btn.querySelector('i');
-                content.classList.toggle('hidden');
-                icon.classList.toggle('rotate-180');
-                btn.classList.toggle('text-brand');
-            });
         });
 
         function handleFormSubmit(e) {
