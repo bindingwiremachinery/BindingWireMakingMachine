@@ -1,0 +1,22 @@
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Indian Nail Machine",
+  "image": "https://www.bindingwiremachine.com/product/nail-making-machine.png",
+  "telephone": "+91-9978822099",
+  "email": "info@bindingwiremachine.com",
+  "priceRange": "$$$",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Aji Industrial Area, Phase-2, Shed No. 123",
+    "addressLocality": "Rajkot",
+    "addressRegion": "Gujarat",
+    "postalCode": "360003",
+    "addressCountry": "IN"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 22.2841667,
+    "longitude": 70.8351111
+  }
+}
