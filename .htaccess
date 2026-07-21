@@ -1,28 +1,68 @@
-# Enforce HTTPS Protocol & Canonical Domain Routing
-RewriteEngine On
-RewriteCond %{HTTPS} off
-RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+# ==============================================================================
+# 1. ENFORCE HTTPS & WWW CANONICAL ROUTING (SEO Best Practice)
+# ==============================================================================
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
 
-# HTML5 History Routing: Redirect all virtual sub-paths back to index.html safely
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)$ index.html [QSA,L]
+  # Force HTTPS
+  RewriteCond %{HTTPS} off
+  RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-# Leverage Browser Caching (Boosts Lighthouse Performance Score)
-<IfModule mod_expires.c>
-    ExpiresActive On
-    ExpiresDefault "access plus 1 month"
-    ExpiresByType text/html "access plus 1 day"
-    ExpiresByType application/json "access plus 1 week"
-    ExpiresByType application/manifest+json "access plus 1 week"
-    ExpiresByType image/jpeg "access plus 1 year"
-    ExpiresByType image/png "access plus 1 year"
-    ExpiresByType image/webp "access plus 1 year"
-    ExpiresByType image/gif "access plus 1 year"
-    ExpiresByType image/x-icon "access plus 1 year"
+  # Force www.bindingwiremachine.in (Prevents duplicate content issues)
+  RewriteCond %{HTTP_HOST} !^www\. [NC]
+  RewriteRule ^(.*)$ https://www.bindingwiremachine.in/$1 [L,R=301]
+
+  # ==============================================================================
+  # 2. HTML5 HISTORY API ROUTING (SPA Refresh Handler)
+  # ==============================================================================
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^(.*)$ index.html [QSA,L]
 </IfModule>
 
-# Enable GZIP Compression
+# ==============================================================================
+# 3. SECURITY HEADERS (Lighthouse Audit Score Boost)
+# ==============================================================================
+<IfModule mod_headers.c>
+  # Protect against MIME type sniffing
+  Header set X-Content-Type-Options "nosniff"
+  # Protect against clickjacking
+  Header set X-Frame-Options "SAMEORIGIN"
+  # Protect referrer data
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+# ==============================================================================
+# 4. LEVERAGE BROWSER CACHING (Max Performance)
+# ==============================================================================
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresDefault "access plus 1 month"
+  
+  # HTML & Manifests
+  ExpiresByType text/html "access plus 0 seconds"
+  ExpiresByType application/json "access plus 1 week"
+  ExpiresByType application/manifest+json "access plus 1 week"
+
+  # CSS, JavaScript & Fonts
+  ExpiresByType text/css "access plus 1 year"
+  ExpiresByType text/javascript "access plus 1 year"
+  ExpiresByType application/javascript "access plus 1 year"
+  ExpiresByType font/woff2 "access plus 1 year"
+
+  # Media & Images
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/gif "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType image/x-icon "access plus 1 year"
+</IfModule>
+
+# ==============================================================================
+# 5. ENABLE GZIP / DEFLATE COMPRESSION (Speed Optimization)
+# ==============================================================================
 <IfModule mod_deflate.c>
-    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/json
+  AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/json image/svg+xml
 </IfModule>
