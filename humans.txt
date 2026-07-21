@@ -1,0 +1,8 @@
+/* TEAM */
+  Proprietor & Founder: Yasin Ahamed Sandhi
+  Location: Rajkot, Gujarat, India
+
+/* SITE */
+  Standards: HTML5, CSS3, Tailwind CSS, JS (ES6 SPA Router)
+  Components: Schema.org JSON-LD, PWA WebManifest
+  Language: English
