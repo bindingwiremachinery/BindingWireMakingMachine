@@ -1,0 +1,5 @@
+Contact: mailto:info@bindingwiremachine.com
+Preferred-Languages: en, hi, gu
+Canonical: https://www.bindingwiremachine.com/.well-known/security.txt
+Policy: https://www.bindingwiremachine.com/security-policy
+Expires: 2027-12-31T23:59:59.000Z
