@@ -1,0 +1,21 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "IN Series Automatic Wire Nail Making Machine",
+  "image": "https://www.bindingwiremachine.com/product/nail-making-machine.png",
+  "description": "High-speed automatic wire nail making machines engineered in Rajkot for heavy industrial usage.",
+  "sku": "IN-NAIL-01",
+  "mpn": "IN-SERIES-2026",
+  "brand": {
+    "@type": "Brand",
+    "name": "Indian Nail Machine"
+  },
+  "offers": {
+    "@type": "AggregateOffer",
+    "priceCurrency": "INR",
+    "lowPrice": "150000",
+    "highPrice": "850000",
+    "offerCount": "6",
+    "availability": "https://schema.org/InStock"
+  }
+}
