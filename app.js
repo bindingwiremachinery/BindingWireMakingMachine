@@ -1,5 +1,5 @@
 /**
- * Single Page Application Router & Dynamic SEO Engine
+ * Single Page Application Router & Dynamic Heavy SEO Engine
  * Target Domain: bindingwiremachine.in
  */
 
@@ -8,7 +8,7 @@ const products = [
         id: 'in1',
         name: 'IN1+ Automatic Wire Nail Making Machine',
         desc: 'High-speed automatic nail making machine designed for producing small, high-precision nails (up to 1 inch). Ideal for hardware and roofing applications.',
-        img: 'IN1+-nail-making-machine.png',
+        img: 'product/IN1+-nail-making-machine.png',
         features: ['High RPM for maximum output', 'Automated wire feeding', 'Tungsten carbide cutters', 'Low power consumption', 'Compact footprint'],
         specs: { 'Nail Length': '12mm - 50mm (0.5-2 inch)', 'Wire Dia': '0.9mm - 2mm', 'Production Speed': '550 pcs/min', 'Motor': '1.5 HP', 'Weight': 'Approx 600 Kg' }
     },
@@ -16,7 +16,7 @@ const products = [
         id: 'in3',
         name: 'IN3 Automatic Wire Nail Making Machine',
         desc: 'The industry-standard machine for versatile nail production up to 3 inches. Combines robust build quality with excellent production speed.',
-        img: 'IN3-nail-making-machine.png',
+        img: 'product/IN3-nail-making-machine.png',
         features: ['Heavy-duty casting frame', 'Centralized lubrication system', 'Easy die replacement', 'High precision heading', 'Low vibration'],
         specs: { 'Nail Length': '25mm - 100mm (1-4 inch)', 'Wire Dia': '2.0mm - 4.0mm', 'Production Speed': '350 pcs/min', 'Motor': '3.0 HP', 'Weight': 'Approx 1000 Kg' }
     },
@@ -24,7 +24,7 @@ const products = [
         id: 'in4',
         name: 'IN4 Automatic Wire Nail Making Machine',
         desc: 'Heavy-duty nail making machine engineered for standard 4-inch construction nails. Built to withstand continuous 24/7 operation.',
-        img: 'IN4-nail-making-machine.png',
+        img: 'product/IN4-nail-making-machine.png',
         features: ['Enhanced crank shaft', 'Forged connecting rods', 'Superior heat dissipation', 'Safe operation guards', 'Minimal maintenance'],
         specs: { 'Nail Length': '25mm - 100mm (1-5 inch)', 'Wire Dia': '2.5mm - 5.0mm', 'Production Speed': '250 pcs/min', 'Motor': '5.0 HP', 'Weight': 'Approx 1400 Kg' }
     },
@@ -32,7 +32,7 @@ const products = [
         id: 'in6',
         name: 'IN6 Heavy Duty Automatic Wire Nail Machine',
         desc: 'Industrial monster capable of producing large nails up to 6 inches. Perfect for heavy construction, pallets, and specialized applications.',
-        img: 'IN6-nail-making-machine.png',
+        img: 'product/IN6-nail-making-machine.png',
         features: ['Massive structural rigidity', 'High tonnage pressing', 'Advanced bearing systems', 'Pneumatic assist (optional)', 'Long die life'],
         specs: { 'Nail Length': '50mm - 150mm (6 inch)', 'Wire Dia': '3.0mm - 6.0mm', 'Production Speed': '150 pcs/min', 'Motor': '7.5 HP', 'Weight': 'Approx 2200 Kg' }
     },
@@ -40,7 +40,7 @@ const products = [
         id: 'wire-drawing',
         name: '600mm Continuous Wire Drawing Plant',
         desc: 'Continuous wire drawing line designed to reduce MS/HB wire gauge efficiently. Features bull blocks, water cooling, and variable speed drives.',
-        img: 'Wire-Drawing-Machine.png',
+        img: 'product/Wire-Drawing-Machine.png',
         features: ['Multi-block configuration', 'Water cooled drums', 'VFD control panel', 'High-grade tungsten dies', 'Automatic spooling'],
         specs: { 'Inlet Dia': 'Up to 8.0mm', 'Outlet Dia': 'As per requirement', 'Drum Dia': '600mm / 450mm / 300mm', 'Drive': 'AC Variable Frequency', 'Cooling': 'Internal Water & Air' }
     },
@@ -48,7 +48,7 @@ const products = [
         id: 'binding-wire',
         name: '300mm Precision Binding Wire Making Machine',
         desc: 'Complete machinery setup for producing soft annealed black binding wire used extensively in the construction sector.',
-        img: 'Binding-Wire-Making-Setup.png',
+        img: 'product/binding-wire-making-machine.png',
         features: ['Annealing furnace integration', 'Accurate weight coiling', 'Rust preventive coating dip', 'High daily tonnage', 'Energy efficient'],
         specs: { 'Wire Gauge': '18 SWG to 22 SWG', 'Furnace Type': 'Pit Type Electrical/Gas', 'Coil Weight': '1 Kg to 25 Kg', 'Operation': 'Semi-automatic', 'Output': '1 Ton - 5 Ton / day' }
     }
@@ -97,7 +97,7 @@ function renderRoute(pageId, param = null) {
         targetSection.classList.add('active');
     }
 
-    // 4. Update dynamic SEO metadata
+    // 4. Update dynamic heavy-SEO metadata
     updateRouteSEO(pageId, param);
 
     // 5. Update active link highlights
@@ -118,9 +118,14 @@ function renderRoute(pageId, param = null) {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
-// Dynamic SEO Update Manager
+// Heavy SEO Meta Update Manager (Meta, Canonical, OpenGraph, Twitter)
 function updateRouteSEO(pageId, param) {
     const metaDesc = document.querySelector('meta[name="description"]');
+    const ogTitle = document.querySelector('meta[property="og:title"]');
+    const ogDesc = document.querySelector('meta[property="og:description"]');
+    const ogUrl = document.querySelector('meta[property="og:url"]');
+    const ogImage = document.querySelector('meta[property="og:image"]');
+
     let canonical = document.querySelector('link[rel="canonical"]');
     if (!canonical) {
         canonical = document.createElement('link');
@@ -134,6 +139,7 @@ function updateRouteSEO(pageId, param) {
     let title = "Premium Industrial Machinery | Binding Wire Making Machine | Rajkot";
     let description = "Leading manufacturer and exporter of IN1+ to IN6 Wire Nail Making Machines, Wire Drawing Machines, and Binding Wire Machinery in Rajkot, India.";
     let routePath = "/";
+    let imagePath = `${baseUrl}/product/binding-wire-making-machine.png`;
 
     if (cleanId === 'product' && param) {
         const prod = products.find(p => p.id === param);
@@ -141,6 +147,7 @@ function updateRouteSEO(pageId, param) {
             title = `${prod.name} | Binding Wire Machinery Rajkot`;
             description = prod.desc;
             routePath = `/product/${param}`;
+            imagePath = `${baseUrl}/${prod.img}`;
         }
     } else if (cleanId === 'products') {
         title = "Industrial Machinery Catalog | Nail & Wire Making Machines";
@@ -168,15 +175,23 @@ function updateRouteSEO(pageId, param) {
         routePath = "/why-us";
     }
 
+    const fullUrl = `${baseUrl}${routePath}`;
+
+    // Update Primary SEO
     document.title = title;
     if (metaDesc) metaDesc.setAttribute('content', description);
-    canonical.setAttribute('href', `${baseUrl}${routePath}`);
+    canonical.setAttribute('href', fullUrl);
+
+    // Update OpenGraph Social SEO
+    if (ogTitle) ogTitle.setAttribute('content', title);
+    if (ogDesc) ogDesc.setAttribute('content', description);
+    if (ogUrl) ogUrl.setAttribute('content', fullUrl);
+    if (ogImage) ogImage.setAttribute('content', imagePath);
 }
 
 // Resolves structural URL patterns on initialization and refreshes
 function resolveInitialRoute() {
     let path = window.location.pathname;
-    // Normalize trailing slashes (e.g., /products/ -> /products)
     if (path.length > 1 && path.endsWith('/')) {
         path = path.slice(0, -1);
     }
@@ -198,7 +213,7 @@ function renderProductsIndex() {
     grid.innerHTML = products.map(p => `
         <div class="bg-white rounded-lg overflow-hidden shadow-sm border border-gray-100 card-hover">
             <div class="h-64 overflow-hidden">
-                <img src="${p.img}" alt="${p.name}" loading="lazy" class="w-full h-full object-cover transition-transform duration-700 hover:scale-110">
+                <img src="${p.img}" alt="${p.name}" width="400" height="300" loading="lazy" class="w-full h-full object-cover transition-transform duration-700 hover:scale-110">
             </div>
             <div class="p-6">
                 <h4 class="text-xl font-heading font-bold text-industrial-900 mb-2">${p.name}</h4>
@@ -226,12 +241,21 @@ function renderProductDetail(productId) {
         <li class="flex items-start"><i class="ph-fill ph-check-circle text-brand mt-1 mr-2"></i> ${f}</li>
     `).join('');
 
+    // Accessible Table Rendering (Fixes Lighthouse Accessibility Audit)
     document.getElementById('pd-specs').innerHTML = Object.entries(p.specs).map(([key, val]) => `
         <tr>
-            <td class="py-3 px-4 font-semibold text-industrial-900 bg-gray-100 w-1/3">${key}</td>
+            <th scope="row" class="py-3 px-4 font-semibold text-industrial-900 bg-gray-100 w-1/3 text-left">${key}</th>
             <td class="py-3 px-4 text-gray-700">${val}</td>
         </tr>
     `).join('');
+}
+
+// Global FAQ Toggle Helper
+function toggleFaq(btn) {
+    const content = btn.nextElementSibling;
+    const icon = btn.querySelector('i');
+    content.classList.toggle('hidden');
+    icon.classList.toggle('rotate-180');
 }
 
 // Event Listeners
