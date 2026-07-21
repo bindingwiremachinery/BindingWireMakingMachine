@@ -1,7 +1,9 @@
+# Default rule: Allow all legitimate search engines
 User-agent: *
 Allow: /
+Disallow: /*?*
 
-# Directives for Search Engines & AI Discovery
+# Explicit Allow directives for AI Discovery & Search Crawlers
 User-agent: GPTBot
 Allow: /
 
@@ -11,5 +13,8 @@ Allow: /
 User-agent: PerplexityBot
 Allow: /
 
-# Sitemap declaration
+User-agent: ClaudeBot
+Allow: /
+
+# Sitemap Declaration
 Sitemap: https://www.bindingwiremachine.in/sitemap.xml
