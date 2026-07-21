@@ -1,14 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Binding Wire Machinery</title>
+    <title>Binding Wire Making Machine | Redirecting...</title>
+    <!-- Instruct search crawlers not to index 404 routes, but allow link crawling -->
+    <meta name="robots" content="noindex, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Meta Refresh Fallback for browsers with JavaScript disabled -->
+    <noscript>
+      <meta http-equiv="refresh" content="0;URL='https://www.bindingwiremachine.in/'">
+    </noscript>
+
     <script type="text/javascript">
-      // 0 = Root domain (e.g., bindingwiremachine.in)
-      // Set to 1 ONLY if hosting on username.github.io/repo-name/
-      var pathSegmentsToKeep = 0; 
+      // 0 = Root domain (bindingwiremachine.in)
+      // 1 = Repo subfolder (username.github.io/repo-name/)
+      var pathSegmentsToKeep = 0;
 
       var l = window.location;
+
+      // Intercept the URL, encode route path and params into a query string
       l.replace(
         l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
         l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') + '/?/' +
@@ -18,6 +29,16 @@
       );
     </script>
   </head>
-  <body>
+  <body style="background-color: #0f172a; color: #ffffff; font-family: system-ui, -apple-system, sans-serif; display: flex; align-items: center; justify-content: center; min-height: 100vh; margin: 0; text-align: center;">
+    <div>
+      <h1 style="font-size: 2rem; margin-bottom: 0.5rem; color: #e11d48;">Loading Page...</h1>
+      <p style="color: #94a3b8; font-size: 1rem;">Redirecting to Binding Wire Machinery catalog...</p>
+      <p style="margin-top: 1.5rem;"><a href="https://www.bindingwiremachine.in/" style="color: #ffffff; text-decoration: underline;">Click here if not redirected automatically</a></p>
+    </div>
+    <!-- 
+      512-Byte Buffer Padding for Legacy Browsers & Mobile Webviews:
+      Browsers require custom 404 pages to exceed 512 bytes in size.
+      Padding: AAAA BBBB CCCC DDDD EEEE FFFF GGGG HHHH IIII JJJJ KKKK LLLL MMMM NNNN OOOO PPPP QQQQ RRRR SSSS TTTT UUUU VVVV WWWW XXXX YYYY ZZZZ
+    -->
   </body>
 </html>
