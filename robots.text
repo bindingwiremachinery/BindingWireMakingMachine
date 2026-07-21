@@ -1,6 +1,15 @@
 User-agent: *
 Allow: /
-Allow: /index.html
 
-# Sitemaps declaration link for search engine discovery engines
+# Directives for Search Engines & AI Discovery
+User-agent: GPTBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+# Sitemap declaration
 Sitemap: https://www.bindingwiremachine.in/sitemap.xml
