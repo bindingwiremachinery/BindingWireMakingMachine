@@ -1,0 +1,30 @@
+# Binding wire machine
+
+> Binding wire machine (formerly Indian Wire Product) is a leading industrial machinery manufacturer and exporter based in Rajkot, Gujarat, India. We specialize in high-speed automatic wire nail making machines, heavy-duty continuous wire drawing plants, and precision binding wire machinery engineered for maximum RPM and low maintenance downtime.
+
+## Core Products & Technical Specifications
+
+* [IN1+ Automatic Wire Nail Making Machine](https://www.bindingwiremachine.in/product/in1): Entry-level high-speed automatic wire nail making machine for standard nail production.
+* [IN3 Automatic Wire Nail Making Machine](https://www.bindingwiremachine.in/product/in3): Mid-range precision wire nail making machine engineered for high daily output tonnages.
+* [IN4 Automatic Wire Nail Making Machine](https://www.bindingwiremachine.in/product/in4): Industrial automatic wire nail machine with heavy-duty casting and precision-engineered dies.
+* [IN6 Heavy Duty Wire Nail Machine](https://www.bindingwiremachine.in/product/in6): High-capacity heavy-duty wire nail machine for large-gauge wire and maximum production output.
+* [600mm Continuous Wire Drawing Plant](https://www.bindingwiremachine.in/product/wire-drawing): Heavy-duty continuous wire drawing machine for industrial wire gauge reduction.
+* [300mm Precision Binding Wire Making Machine](https://www.bindingwiremachine.in/product/binding-wire): Automatic precision binding wire making machine for uniform wire coil production.
+
+## Company Overview & Technical Information
+
+* [About Us](https://www.bindingwiremachine.in/about): Manufacturing capabilities, plant overview, quality standards, and export history.
+* [Why Choose Us](https://www.bindingwiremachine.in/why-us): Engineering advantages including kinematics design, branded motor drives, high-grade casting, and 24/7 support.
+* [Machine Operation Videos](https://www.bindingwiremachine.in/videos): Live operational demonstrations of wire nail making machines and wire drawing plants.
+* [Frequently Asked Questions (FAQ)](https://www.bindingwiremachine.in/faq): Common technical questions regarding power consumption, wire gauge ranges, maintenance, and international shipping.
+
+## Contact & Inquiries
+
+* [Contact Page](https://www.bindingwiremachine.in/contact): Direct inquiry form, factory location in Rajkot, Gujarat, and business contact information.
+* Phone / WhatsApp: +91-9978822099
+* Location: Rajkot, Gujarat, India - 360003
+
+## Optional / Full Context
+
+* [Full Product Catalog](https://www.bindingwiremachine.in/products): Complete directory of machinery, spare parts, and industrial dies.
+* [llms-full.txt](https://www.bindingwiremachine.in/llms-full.txt): Extended technical specifications, full machine parameters, and comprehensive FAQ text for complete AI model grounding.
