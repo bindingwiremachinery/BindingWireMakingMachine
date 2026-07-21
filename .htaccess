@@ -1,76 +1,123 @@
 # ==============================================================================
-# 1. ENFORCE HTTPS & WWW CANONICAL ROUTING (SEO Best Practice)
+# 1. CANONICAL REDIRECTS (HTTPS & WWW FORCING)
 # ==============================================================================
 <IfModule mod_rewrite.c>
-  RewriteEngine On
-  RewriteBase /
+    RewriteEngine On
+    RewriteBase /
 
-  # Force HTTPS
-  RewriteCond %{HTTPS} off
-  RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
-
-  # Force www.bindingwiremachine.in (Prevents duplicate content issues)
-  RewriteCond %{HTTP_HOST} !^www\. [NC]
-  RewriteRule ^(.*)$ https://www.bindingwiremachine.in/$1 [L,R=301]
-
-  # ==============================================================================
-  # 2. HTML5 HISTORY API ROUTING (SPA Refresh Handler)
-  # ==============================================================================
-  RewriteCond %{REQUEST_FILENAME} !-f
-  RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteRule ^(.*)$ index.html [QSA,L]
+    # Force HTTPS and www.bindingwiremachine.in
+    RewriteCond %{HTTPS} off [OR]
+    RewriteCond %{HTTP_HOST} !^www\. [NC]
+    RewriteCond %{HTTP_HOST} ^(?:www\.)?(.*)$ [NC]
+    RewriteRule ^(.*)$ https://www.bindingwiremachine.in/$1 [L,R=301]
 </IfModule>
 
 # ==============================================================================
-# 3. SECURITY HEADERS (Lighthouse Audit Score Boost)
+# 2. AUTOMATIC WEBP IMAGE SERVING (FOR BROWSERS THAT SUPPORT WEBP)
 # ==============================================================================
+# If a browser supports WebP and a .webp version of a requested PNG/JPG exists,
+# serve the .webp file automatically without changing HTML markup.
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{HTTP_ACCEPT} image/webp
+    RewriteCond %{DOCUMENT_ROOT}/$1.webp -f
+    RewriteRule ^(?i)(.+)\.(jpe?g|png)$ $1.webp [L,T=image/webp,E=ACCEPT:1]
+</IfModule>
+
 <IfModule mod_headers.c>
-  # Protect against MIME type sniffing
-  Header set X-Content-Type-Options "nosniff"
-  # Protect against clickjacking
-  Header set X-Frame-Options "SAMEORIGIN"
-  # Protect referrer data
-  Header set Referrer-Policy "strict-origin-when-cross-origin"
-  # Force fresh HTML loads on every visit
-  <FilesMatch "\.(html|htm)$">
-    Header set Cache-Control "max-age=0, no-cache, no-store, must-revalidate"
-  </FilesMatch>
+    Header append Vary Accept env=REDIRECT_ACCEPT
+</IfModule>
+
+<IfModule mod_mime.c>
+    AddType image/webp .webp
 </IfModule>
 
 # ==============================================================================
-# 4. LEVERAGE BROWSER CACHING (Max Performance)
+# 3. GZIP / DEFLATE TEXT COMPRESSION
+# ==============================================================================
+<IfModule mod_deflate.c>
+    # Compress HTML, CSS, JavaScript, Text, XML and fonts
+    AddOutputFilterByType DEFLATE application/javascript \
+                                   application/json \
+                                   application/rss+xml \
+                                   application/vnd.ms-fontobject \
+                                   application/x-font-ttf \
+                                   application/x-web-app-manifest+json \
+                                   application/xhtml+xml \
+                                   application/xml \
+                                   font/opentype \
+                                   font/otf \
+                                   font/ttf \
+                                   image/svg+xml \
+                                   image/x-icon \
+                                   text/css \
+                                   text/html \
+                                   text/plain \
+                                   text/vcard \
+                                   text/vtt \
+                                   text/xml
+</IfModule>
+
+# ==============================================================================
+# 4. EXPIRES HEADERS & BROWSER CACHING (FIXES LIGHTHOUSE CACHE ISSUES)
 # ==============================================================================
 <IfModule mod_expires.c>
-  ExpiresActive On
-  ExpiresDefault "access plus 1 month"
-  
-  # HTML & Manifests
-  ExpiresByType text/html "access plus 0 seconds"
-  ExpiresByType application/json "access plus 1 week"
-  ExpiresByType application/manifest+json "access plus 1 week"
+    ExpiresActive On
+    ExpiresDefault "access plus 1 month"
 
-  # CSS, JavaScript & Fonts
-  ExpiresByType text/css "access plus 1 year"
-  ExpiresByType text/javascript "access plus 1 year"
-  ExpiresByType application/javascript "access plus 1 year"
-  ExpiresByType font/woff2 "access plus 1 year"
+    # Images (1 Year Cache)
+    ExpiresByType image/webp                    "access plus 1 year"
+    ExpiresByType image/png                     "access plus 1 year"
+    ExpiresByType image/jpeg                    "access plus 1 year"
+    ExpiresByType image/gif                     "access plus 1 year"
+    ExpiresByType image/svg+xml                 "access plus 1 year"
+    ExpiresByType image/x-icon                  "access plus 1 year"
 
-  # Media & Images
-  ExpiresByType image/jpeg "access plus 1 year"
-  ExpiresByType image/png "access plus 1 year"
-  ExpiresByType image/webp "access plus 1 year"
-  ExpiresByType image/gif "access plus 1 year"
-  ExpiresByType image/svg+xml "access plus 1 year"
-  ExpiresByType image/x-icon "access plus 1 year"
+    # CSS / JavaScript (1 Year Cache)
+    ExpiresByType text/css                      "access plus 1 year"
+    ExpiresByType application/javascript        "access plus 1 year"
+    ExpiresByType text/javascript               "access plus 1 year"
+
+    # Web Fonts (1 Year Cache)
+    ExpiresByType font/ttf                      "access plus 1 year"
+    ExpiresByType font/otf                      "access plus 1 year"
+    ExpiresByType font/woff                     "access plus 1 year"
+    ExpiresByType font/woff2                    "access plus 1 year"
+
+    # XML Sitemaps / Manifests (1 Week Cache)
+    ExpiresByType application/xml               "access plus 7 days"
+    ExpiresByType text/xml                      "access plus 7 days"
+    ExpiresByType application/manifest+json     "access plus 7 days"
+
+    # HTML Pages (No Cache or Very Short Cache for Dynamic Updates)
+    ExpiresByType text/html                     "access plus 0 seconds"
 </IfModule>
 
 # ==============================================================================
-# 5. COMPRESSION ENGINE (Brotli Priority + Gzip Fallback)
+# 5. CACHE-CONTROL HEADERS
 # ==============================================================================
-<IfModule mod_brotli.c>
-  AddOutputFilterByType BROTLI_COMPRESS text/html text/plain text/xml text/css text/javascript application/javascript application/json image/svg+xml
+<IfModule mod_headers.c>
+    # Static Assets: Immutable 1-Year Caching
+    <FilesMatch "\.(ico|jpe?g|png|gif|webp|svg|css|js|woff2?|ttf|otf)$">
+        Header set Cache-Control "max-age=31536000, public, immutable"
+    </FilesMatch>
+
+    # Dynamic Pages: Revalidate Always
+    <FilesMatch "\.(html|htm)$">
+        Header set Cache-Control "max-age=0, private, must-revalidate"
+    </FilesMatch>
 </IfModule>
 
-<IfModule mod_deflate.c>
-  AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/json image/svg+xml
+# ==============================================================================
+# 6. SECURITY HEADERS & PERFORMANCE CONTROLS
+# ==============================================================================
+<IfModule mod_headers.c>
+    # Prevent clickjacking attacks
+    Header set X-Frame-Options "SAMEORIGIN"
+    # Prevent MIME-type sniffing
+    Header set X-Content-Type-Options "nosniff"
+    # Enable Cross-Site Scripting (XSS) filter
+    Header set X-XSS-Protection "1; mode=block"
+    # Keep referrer info intact for accurate search analytics
+    Header set Referrer-Policy "strict-origin-when-cross-origin"
 </IfModule>
