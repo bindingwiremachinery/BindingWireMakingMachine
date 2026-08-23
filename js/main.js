@@ -1,7 +1,7 @@
 /**
  * Main Application Logic & Interactive Features
  * Entity: Binding Wire Machine (Rajkot, Gujarat, India)
- */
+ */ 
 
 document.addEventListener('DOMContentLoaded', () => {
     // 1. Mobile Menu Toggle
