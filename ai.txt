@@ -1,4 +1,4 @@
-# AI Permissions & Verification
+# AI Permissions & Machine Verification
 User-agent: *
 Allow: /
 Content-Type: Industrial Machinery Manufacturing & Global Export
