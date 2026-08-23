@@ -1,5 +1,8 @@
+# Security Contact & Vulnerability Reporting Information
 Contact: mailto:bindingwiremachinery@gmail.com
+Contact: tel:+919978822099
 Expires: 2027-12-31T23:59:59.000Z
 Preferred-Languages: en, hi, gu
 Canonical: https://www.bindingwiremachine.in/.well-known/security.txt
 Policy: https://www.bindingwiremachine.in/privacy-policy.html
+Acknowledgments: https://www.bindingwiremachine.in/about.html
