@@ -1,14 +1,26 @@
 User-agent: *
 Allow: /
 
-# Agentic Search Engine Crawlers
+# Agentic Search Engine Crawlers & LLM Bots
 User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
 Allow: /
 
 User-agent: ClaudeBot
 Allow: /
 
+User-agent: anthropic-ai
+Allow: /
+
 User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-Search
 Allow: /
 
 User-agent: Google-Extended
@@ -21,6 +33,9 @@ User-agent: Meta-ExternalAgent
 Allow: /
 
 User-agent: Amazonbot
+Allow: /
+
+User-agent: cohere-ai
 Allow: /
 
 # Priority Sitemaps & Context
