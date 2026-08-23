@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // 2. FAQ Accordion Toggle Handlers (Supports both class & inline triggers)
+    // 2. FAQ Accordion Toggle Handlers
     const faqButtons = document.querySelectorAll('.faq-btn');
     faqButtons.forEach(btn => {
         btn.addEventListener('click', () => {
@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-// 3. Standalone Video Modal Utility (Pure CSS / Zero Tailwind Dependency)
+// 3. Standalone Video Modal Utility
 function openVideoModal(videoUrl) {
     let modal = document.getElementById('video-modal');
     if (!modal) {
@@ -82,12 +82,10 @@ function openVideoModal(videoUrl) {
             </div>
         `;
         
-        // Close when clicking modal backdrop
         modal.addEventListener('click', (e) => {
             if (e.target === modal) closeVideoModal();
         });
 
-        // Close on Escape key press
         document.addEventListener('keydown', (e) => {
             if (e.key === 'Escape') closeVideoModal();
         });
