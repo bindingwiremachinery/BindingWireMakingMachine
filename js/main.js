@@ -1,149 +1,72 @@
 /**
- * BINDING WIRE MACHINE - PRODUCTION ENGINE (GitHub Pages Ready)
- * Handles: Animated Stats Counters, Parallax Scrolling, Form Validations,
- * Price Estimators, and UI Micro-interactions.
+ * Main Application Logic & Interactive Features
+ * Entity: Binding Wire Machine (Rajkot, Gujarat, India)
  */
 
 document.addEventListener('DOMContentLoaded', () => {
-  initCounters();
-  initBackToTop();
-  initParallax();
-  initFormValidation();
-  initPricingCalculator();
+    // 1. Mobile Menu Toggle
+    const menuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    if (menuBtn && mobileMenu) {
+        menuBtn.addEventListener('click', () => {
+            const isHidden = mobileMenu.classList.contains('hidden');
+            if (isHidden) {
+                mobileMenu.classList.remove('hidden');
+                menuBtn.setAttribute('aria-expanded', 'true');
+            } else {
+                mobileMenu.classList.add('hidden');
+                menuBtn.setAttribute('aria-expanded', 'false');
+            }
+        });
+    }
+
+    // 2. FAQ Accordion Toggle Handlers
+    const faqButtons = document.querySelectorAll('.faq-btn');
+    faqButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const content = btn.nextElementSibling;
+            const icon = btn.querySelector('.ph-caret-down');
+            const isExpanded = btn.getAttribute('aria-expanded') === 'true';
+
+            // Close siblings
+            document.querySelectorAll('.faq-content').forEach(c => c.classList.add('hidden'));
+            document.querySelectorAll('.faq-btn').forEach(b => b.setAttribute('aria-expanded', 'false'));
+            document.querySelectorAll('.ph-caret-down').forEach(i => i.classList.remove('rotate-180'));
+
+            if (!isExpanded) {
+                content.classList.remove('hidden');
+                btn.setAttribute('aria-expanded', 'true');
+                if (icon) icon.classList.add('rotate-180');
+            }
+        });
+    });
 });
 
-// 1. Animated Stats Counter (Triggered when scrolled into viewport)
-function initCounters() {
-  const counters = document.querySelectorAll('.counter-val');
-  if (!counters.length) return;
-
-  const observerOptions = { threshold: 0.3 };
-  const counterObserver = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        const target = +entry.target.getAttribute('data-target');
-        const duration = 1500;
-        const stepTime = 25;
-        const totalSteps = duration / stepTime;
-        const increment = target / totalSteps;
-        let current = 0;
-
-        const timer = setInterval(() => {
-          current += increment;
-          if (current >= target) {
-            entry.target.innerText = target.toLocaleString();
-            clearInterval(timer);
-          } else {
-            entry.target.innerText = Math.floor(current).toLocaleString();
-          }
-        }, stepTime);
-
-        observer.unobserve(entry.target);
-      }
-    });
-  }, observerOptions);
-
-  counters.forEach(counter => counterObserver.observe(counter));
-}
-
-// 2. Parallax Depth Controller
-function initParallax() {
-  window.addEventListener('scroll', () => {
-    const scrollY = window.pageYOffset;
-    const parallaxLayers = document.querySelectorAll('[data-parallax-speed]');
-    parallaxLayers.forEach(layer => {
-      const speed = parseFloat(layer.getAttribute('data-parallax-speed'));
-      layer.style.transform = `translateY(${scrollY * speed}px)`;
-    });
-  }, { passive: true });
-}
-
-// 3. Back to Top Button Controller
-function initBackToTop() {
-  const backToTopBtn = document.getElementById('backToTopBtn');
-  if (!backToTopBtn) return;
-
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 300) {
-      backToTopBtn.style.display = 'flex';
-    } else {
-      backToTopBtn.style.display = 'none';
-    }
-  }, { passive: true });
-
-  backToTopBtn.addEventListener('click', (e) => {
-    e.preventDefault();
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  });
-}
-
-// 4. Form Validation & WhatsApp Lead Generator
-function initFormValidation() {
-  const forms = document.querySelectorAll('.needs-validation');
-  Array.from(forms).forEach(form => {
-    form.addEventListener('submit', event => {
-      if (!form.checkValidity()) {
-        event.preventDefault();
-        event.stopPropagation();
-      } else {
-        event.preventDefault();
-        
-        // Extract field values
-        const name = form.querySelector('#rfqName')?.value || 'Buyer';
-        const phone = form.querySelector('#rfqPhone')?.value || '';
-        const email = form.querySelector('#rfqEmail')?.value || '';
-        const machine = form.querySelector('#rfqMachine')?.value || 'Machinery Inquiry';
-        const msg = form.querySelector('#rfqMsg')?.value || '';
-
-        const feedbackBox = form.querySelector('.form-feedback');
-        if (feedbackBox) {
-          feedbackBox.classList.remove('d-none');
-          feedbackBox.innerHTML = `
-            <div class="alert alert-success mt-3 py-2">
-              <strong>Requirement Received!</strong> Opening WhatsApp to connect directly with our Rajkot engineering plant...
+// 3. Video Modal Utility
+function openVideoModal(videoUrl) {
+    let modal = document.getElementById('video-modal');
+    if (!modal) {
+        modal = document.createElement('div');
+        modal.id = 'video-modal';
+        modal.className = 'fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-4';
+        modal.innerHTML = `
+            <div class="relative w-full max-w-4xl bg-black rounded-lg overflow-hidden shadow-2xl">
+                <button onclick="closeVideoModal()" class="absolute top-4 right-4 text-white text-3xl font-bold z-10 hover:text-brand">&times;</button>
+                <div class="aspect-video w-full">
+                    <iframe id="modal-iframe" class="w-full h-full" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
             </div>
-          `;
-        }
-
-        // WhatsApp redirect fallback
-        const waText = encodeURIComponent(
-          `*New RFQ from website*\n*Name:* ${name}\n*Phone:* ${phone}\n*Email:* ${email}\n*Machine:* ${machine}\n*Notes:* ${msg}`
-        );
-        setTimeout(() => {
-          window.open(`https://wa.me/919978822099?text=${waText}`, '_blank');
-          form.reset();
-        }, 1200);
-      }
-      form.classList.add('was-validated');
-    }, false);
-  });
+        `;
+        document.body.appendChild(modal);
+    }
+    document.getElementById('modal-iframe').src = videoUrl;
+    modal.classList.remove('hidden');
 }
 
-// 5. Interactive Price / Output Estimator
-function initPricingCalculator() {
-  const nailOutputRange = document.getElementById('calcTargetOutput');
-  const machineTypeSelect = document.getElementById('calcMachineType');
-  const estimatedCapDisplay = document.getElementById('calcEstimatedCap');
-  const estimatedCostDisplay = document.getElementById('calcEstimatedPrice');
-
-  if (!nailOutputRange || !machineTypeSelect) return;
-
-  function recalculate() {
-    const outputKg = parseInt(nailOutputRange.value, 10);
-    const machineBase = parseInt(machineTypeSelect.value, 10);
-    const outputValEl = document.getElementById('calcOutputVal');
-    if (outputValEl) outputValEl.innerText = `${outputKg.toLocaleString()} kg/day`;
-
-    const basePriceINR = (outputKg * 140) + machineBase;
-    if (estimatedCostDisplay) {
-      estimatedCostDisplay.innerText = `₹ ${basePriceINR.toLocaleString('en-IN')}`;
+function closeVideoModal() {
+    const modal = document.getElementById('video-modal');
+    if (modal) {
+        document.getElementById('modal-iframe').src = '';
+        modal.classList.add('hidden');
     }
-    if (estimatedCapDisplay) {
-      estimatedCapDisplay.innerText = `${Math.round(outputKg / 8)} kg/hr (8hr shift)`;
-    }
-  }
-
-  nailOutputRange.addEventListener('input', recalculate);
-  machineTypeSelect.addEventListener('change', recalculate);
-  recalculate();
 }
