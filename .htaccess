@@ -2,7 +2,6 @@
 # Apache Configuration for bindingwiremachine.in
 # ------------------------------------------------------------------------------
 
-# 1. Enable Rewrite Engine
 <IfModule mod_rewrite.c>
     RewriteEngine On
     RewriteBase /
@@ -11,22 +10,20 @@
     RewriteCond %{HTTPS} off
     RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-    # Force Non-WWW to WWW (or vice-versa, matching canonical)
+    # Force WWW
     RewriteCond %{HTTP_HOST} ^bindingwiremachine\.in [NC]
     RewriteRule ^(.*)$ https://www.bindingwiremachine.in/$1 [L,R=301]
 
-    # Clean URL rewrites (serve .html without showing extension)
+    # Clean URL rewrites
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_FILENAME}\.html -f
     RewriteRule ^([^\.]+)$ $1.html [NC,L]
 </IfModule>
 
-# 2. Gzip & Deflate Compression
 <IfModule mod_deflate.c>
     AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/json image/svg+xml
 </IfModule>
 
-# 3. Browser Caching for Core Web Vitals (Lighthouse 95+)
 <IfModule mod_expires.c>
     ExpiresActive On
     ExpiresByType image/webp "access plus 1 year"
@@ -38,5 +35,4 @@
     ExpiresByType font/woff2 "access plus 1 year"
 </IfModule>
 
-# 4. Custom Error Documents
 ErrorDocument 404 /404.html
