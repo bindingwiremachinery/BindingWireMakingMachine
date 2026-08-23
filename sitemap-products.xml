@@ -49,15 +49,33 @@
         <priority>0.6</priority>
     </url>
     <url>
+        <loc>https://www.bindingwiremachine.in/location.html</loc>
+        <lastmod>2026-08-23</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
         <loc>https://www.bindingwiremachine.in/contact.html</loc>
         <lastmod>2026-08-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://www.bindingwiremachine.in/location.html</loc>
+        <loc>https://www.bindingwiremachine.in/privacy-policy.html</loc>
         <lastmod>2026-08-23</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+    <url>
+        <loc>https://www.bindingwiremachine.in/terms.html</loc>
+        <lastmod>2026-08-23</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+    <url>
+        <loc>https://www.bindingwiremachine.in/shipping-return-policy.html</loc>
+        <lastmod>2026-08-23</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
     </url>
 </urlset>
