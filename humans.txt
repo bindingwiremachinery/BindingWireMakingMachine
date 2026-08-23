@@ -1,9 +1,10 @@
 /* TEAM */
 Proprietor & Engineering Lead: Binding Wire Machine Team
 Location: Rajkot, Gujarat, India
-Contact: +91 99788 22099
+Direct Phone: +91 99788 22099
+Email: bindingwiremachinery@gmail.com
 
 /* SITE */
-Standards: HTML5, CSS3, Schema.org, WCAG 2.1 AA
-Frameworks: Tailwind CSS, Phosphor Icons
-Target Domain: bindingwiremachine.in
+Standards: HTML5, CSS3, Schema.org, WCAG 2.1 AAA
+Performance: Zero-Runtime Standalone CSS, Pure Inline SVG
+Domain: bindingwiremachine.in
