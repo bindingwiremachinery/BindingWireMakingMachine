@@ -5,7 +5,6 @@
     <link>https://www.bindingwiremachine.in/</link>
     <description>Manufacturer and exporter of High-Speed Automatic Wire Nail Making Machines, Continuous Wire Drawing Lines, and Binding Wire Machinery in Rajkot, India.</description>
 
-    <!-- 1. IN1+ Automatic Wire Nail Making Machine -->
     <item>
       <g:id>IN1-PLUS</g:id>
       <g:title>IN1+ Automatic High-Speed Wire Nail Making Machine (0.5 to 1.0 Inch)</g:title>
@@ -32,7 +31,6 @@
       <g:custom_label_2>Export Ready</g:custom_label_2>
     </item>
 
-    <!-- 2. IN3 Automatic Wire Nail Making Machine -->
     <item>
       <g:id>IN3</g:id>
       <g:title>IN3 Automatic High-Speed Wire Nail Making Machine (1.0 to 3.0 Inch)</g:title>
@@ -59,11 +57,10 @@
       <g:custom_label_2>Export Ready</g:custom_label_2>
     </item>
 
-    <!-- 3. IN4 Heavy Duty Automatic Wire Nail Machine -->
     <item>
       <g:id>IN4</g:id>
       <g:title>IN4 Heavy Duty Automatic Wire Nail Making Machine (2.0 to 4.0 Inch)</g:title>
-      <g:description>Heavy-duty IN4 automatic wire nail making machine engineered for standard 4-inch building construction nails. Delivers 250 pcs/min output with a 5.0 HP motor and rigid cast iron vibration-dampening frame.</g:description>
+      <g:description>Heavy-duty IN4 automatic wire nail making machine engineered for standard 4-inch building construction nails. Delivers 250 pcs/min output with a 5.0 HP motor and rigid cast iron frame.</g:description>
       <g:link>https://www.bindingwiremachine.in/nail-making-machine.html</g:link>
       <g:image_link>https://www.bindingwiremachine.in/product/IN4-nail-making-machine.webp</g:image_link>
       <g:additional_image_link>https://www.bindingwiremachine.in/product/nail-making-machine.webp</g:additional_image_link>
@@ -86,7 +83,6 @@
       <g:custom_label_2>Export Ready</g:custom_label_2>
     </item>
 
-    <!-- 4. IN6 Heavy Duty Automatic Wire Nail Machine -->
     <item>
       <g:id>IN6</g:id>
       <g:title>IN6 Heavy Duty Automatic Wire Nail Machine (3.0 to 6.0 Inch)</g:title>
@@ -113,11 +109,10 @@
       <g:custom_label_2>Export Ready</g:custom_label_2>
     </item>
 
-    <!-- 5. Continuous Wire Drawing Machine Plant -->
     <item>
       <g:id>WDM-600</g:id>
       <g:title>Continuous Wire Drawing Machine Plant (3 to 7 Blocks Multi-Pass)</g:title>
-      <g:description>Continuous multi-block wire drawing machine plant engineered to reduce MS, HB, and high-carbon wire rods down from 5.5mm to 1.2mm. Equipped with water-cooled drawing drums, tungsten carbide dies, and Variable Frequency Drive (VFD).</g:description>
+      <g:description>Continuous multi-block wire drawing machine plant engineered to reduce MS, HB, and high-carbon wire rods down from 5.5mm to 1.2mm. Equipped with water-cooled drawing drums and tungsten carbide dies.</g:description>
       <g:link>https://www.bindingwiremachine.in/wire-draw-machine.html</g:link>
       <g:image_link>https://www.bindingwiremachine.in/product/wire-drawing-machine.webp</g:image_link>
       <g:additional_image_link>https://www.bindingwiremachine.in/product/Continuous-Wire-Drawing-Plant-Setup.webp</g:additional_image_link>
@@ -140,11 +135,10 @@
       <g:custom_label_2>Export Ready</g:custom_label_2>
     </item>
 
-    <!-- 6. Automatic Binding Wire Making Machinery Setup -->
     <item>
       <g:id>BWM-300</g:id>
       <g:title>Automatic Binding Wire Making Machinery Setup (Annealing &amp; Spooling)</g:title>
-      <g:description>Complete industrial plant setup for manufacturing black annealed binding wire used in construction rebar binding. Includes fine drawing blocks, electric pit annealing furnace, and automatic weight-based spooling.</g:description>
+      <g:description>Complete industrial plant setup for manufacturing black annealed binding wire used in construction rebar binding. Includes fine drawing blocks, electric pit annealing furnace, and automatic spooling.</g:description>
       <g:link>https://www.bindingwiremachine.in/binding-wire-making-machine.html</g:link>
       <g:image_link>https://www.bindingwiremachine.in/product/binding-wire-making-machine.webp</g:image_link>
       <g:additional_image_link>https://www.bindingwiremachine.in/product/wire-nail-making-machine.webp</g:additional_image_link>
