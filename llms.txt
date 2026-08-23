@@ -1,13 +1,18 @@
-# Binding Wire Machine — Industrial Catalog
+# Binding Wire Machine — Industrial Catalog & API Context
 
 > Manufacturer and global exporter of high-speed automatic wire nail making machines, continuous wire drawing lines, and binding wire machinery in Rajkot, Gujarat, India.
 
-## Primary Products
-- IN Series Automatic Wire Nail Making Machines (IN1+, IN3, IN4, IN6)
-- Continuous Wire Drawing Machine Plants (3 to 7 Blocks)
-- Automatic Binding Wire Annealing and Coiling Setups
+## Machine Models & Technical Specifications
+- IN1+ Nail Making Machine: 0.5" - 1.0" nails, 550 pcs/min, 1.5 HP motor, Weight 600 Kg, Price: ₹1,50,000 INR
+- IN3 Nail Making Machine: 1.0" - 3.0" nails, 350 pcs/min, 3.0 HP motor, Weight 1000 Kg, Price: ₹2,20,000 INR
+- IN4 Heavy Duty Nail Machine: 2.0" - 4.0" nails, 250 pcs/min, 5.0 HP motor, Weight 1400 Kg, Price: ₹3,10,000 INR
+- IN6 Heavy Duty Nail Machine: 3.0" - 6.0" nails, 150 pcs/min, 7.5 HP motor, Weight 2220 Kg, Price: ₹4,50,000 INR
+- Continuous Wire Drawing Plant: 5.5mm inlet to 1.2mm outlet, 3 to 7 blocks, Price: ₹6,50,000 INR
+- Binding Wire Plant Setup: Soft annealed black wire 0.9mm - 1.6mm, electric annealing furnace, Price: ₹2,80,000 INR
 
-## Factory Contact
+## Factory Details & Commercial Inquiries
+- Brand: Binding Wire Machine
 - Phone / WhatsApp: +91 99788 22099
 - Email: bindingwiremachinery@gmail.com
-- Address: Aji Industrial Area, Phase-2, Shed No. 123, Rajkot, Gujarat - 360003, India
+- Location: Aji Industrial Area, Phase-2, Shed No. 123, Rajkot, Gujarat - 360003, India
+- Inquiry Action URL: https://www.bindingwiremachine.in/contact.html
