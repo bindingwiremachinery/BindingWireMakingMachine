@@ -3,35 +3,324 @@
   "@graph": [
     {
       "@type": "Product",
-      "name": "IN Series Automatic High-Speed Wire Nail Making Machine",
-      "sku": "IN1-TO-IN6",
-      "mpn": "IN-2026",
-      "image": "https://www.bindingwiremachine.in/product/nail-making-machine.webp",
-      "description": "Automatic wire nail making machine range IN1+ to IN6 for high speed production of nails up to 6 inches.",
-      "brand": { "@type": "Brand", "name": "Binding Wire Machine" },
+      "@id": "https://www.bindingwiremachine.in/nail-making-machine.html#in1-plus",
+      "name": "IN1+ Automatic High-Speed Wire Nail Making Machine",
+      "sku": "IN1-PLUS",
+      "mpn": "IN1PLUS-2026",
+      "image": "https://www.bindingwiremachine.in/product/IN1%2B-nail-making-machine.webp",
+      "description": "High-speed automatic wire nail making machine designed for high-precision small nails up to 1 inch at 550 pcs/min with 1.5 HP motor.",
+      "brand": {
+        "@type": "Brand",
+        "name": "Binding Wire Machine"
+      },
+      "category": "Industrial Machinery > Nail Making Machines",
       "offers": {
-        "@type": "AggregateOffer",
+        "@type": "Offer",
+        "url": "https://www.bindingwiremachine.in/nail-making-machine.html",
         "priceCurrency": "INR",
-        "lowPrice": "150000.00",
-        "highPrice": "450000.00",
-        "offerCount": "4",
+        "price": "150000.00",
+        "priceValidUntil": "2027-12-31",
         "availability": "https://schema.org/InStock",
-        "itemCondition": "https://schema.org/NewCondition"
+        "itemCondition": "https://schema.org/NewCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Binding Wire Machine"
+        },
+        "shippingDetails": {
+          "@type": "OfferShippingDetails",
+          "shippingRate": {
+            "@type": "MonetaryAmount",
+            "value": "0.00",
+            "currency": "INR"
+          },
+          "shippingDestination": {
+            "@type": "DefinedRegion",
+            "addressCountry": "IN"
+          }
+        },
+        "hasMerchantReturnPolicy": {
+          "@type": "MerchantReturnPolicy",
+          "applicableCountry": "IN",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnNotPermitted"
+        }
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "28"
+      },
+      "review": [
+        {
+          "@type": "Review",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5"
+          },
+          "author": {
+            "@type": "Person",
+            "name": "Industrial Fastener Manufacturer"
+          },
+          "reviewBody": "High speed output capacity with low noise and minimal downtime. Excellent build quality."
+        }
+      ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://www.bindingwiremachine.in/nail-making-machine.html#in3",
+      "name": "IN3 Automatic High-Speed Wire Nail Making Machine",
+      "sku": "IN3",
+      "mpn": "IN3-2026",
+      "image": "https://www.bindingwiremachine.in/product/IN3-nail-making-machine.webp",
+      "description": "Standard automatic wire nail making machine for versatile nail production up to 3 inches at 350 pcs/min with 3.0 HP motor.",
+      "brand": {
+        "@type": "Brand",
+        "name": "Binding Wire Machine"
+      },
+      "category": "Industrial Machinery > Nail Making Machines",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.bindingwiremachine.in/nail-making-machine.html",
+        "priceCurrency": "INR",
+        "price": "220000.00",
+        "priceValidUntil": "2027-12-31",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/NewCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Binding Wire Machine"
+        },
+        "shippingDetails": {
+          "@type": "OfferShippingDetails",
+          "shippingRate": {
+            "@type": "MonetaryAmount",
+            "value": "0.00",
+            "currency": "INR"
+          },
+          "shippingDestination": {
+            "@type": "DefinedRegion",
+            "addressCountry": "IN"
+          }
+        },
+        "hasMerchantReturnPolicy": {
+          "@type": "MerchantReturnPolicy",
+          "applicableCountry": "IN",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnNotPermitted"
+        }
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "34"
+      },
+      "review": [
+        {
+          "@type": "Review",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5"
+          },
+          "author": {
+            "@type": "Person",
+            "name": "Hardware Exporter"
+          },
+          "reviewBody": "Robust heavy-duty casting and precision cutting dies. Smooth operation around the clock."
+        }
+      ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://www.bindingwiremachine.in/nail-making-machine.html#in4",
+      "name": "IN4 Heavy Duty Automatic Wire Nail Machine",
+      "sku": "IN4",
+      "mpn": "IN4-2026",
+      "image": "https://www.bindingwiremachine.in/product/IN4-nail-making-machine.webp",
+      "description": "Heavy-duty wire nail machine engineered for continuous standard 4-inch building construction nails at 250 pcs/min with 5.0 HP motor.",
+      "brand": {
+        "@type": "Brand",
+        "name": "Binding Wire Machine"
+      },
+      "category": "Industrial Machinery > Nail Making Machines",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.bindingwiremachine.in/nail-making-machine.html",
+        "priceCurrency": "INR",
+        "price": "310000.00",
+        "priceValidUntil": "2027-12-31",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/NewCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Binding Wire Machine"
+        },
+        "shippingDetails": {
+          "@type": "OfferShippingDetails",
+          "shippingRate": {
+            "@type": "MonetaryAmount",
+            "value": "0.00",
+            "currency": "INR"
+          },
+          "shippingDestination": {
+            "@type": "DefinedRegion",
+            "addressCountry": "IN"
+          }
+        },
+        "hasMerchantReturnPolicy": {
+          "@type": "MerchantReturnPolicy",
+          "applicableCountry": "IN",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnNotPermitted"
+        }
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "reviewCount": "19"
       }
     },
     {
       "@type": "Product",
+      "@id": "https://www.bindingwiremachine.in/nail-making-machine.html#in6",
+      "name": "IN6 Heavy Duty Automatic Wire Nail Machine",
+      "sku": "IN6",
+      "mpn": "IN6-2026",
+      "image": "https://www.bindingwiremachine.in/product/IN6-nail-making-machine.webp",
+      "description": "Heavy industrial wire nail machine engineered for 3 to 6 inch nails with a 2,220 Kg frame, 7.5 HP motor, and 150-200 pcs/min output.",
+      "brand": {
+        "@type": "Brand",
+        "name": "Binding Wire Machine"
+      },
+      "category": "Industrial Machinery > Nail Making Machines",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.bindingwiremachine.in/nail-making-machine.html",
+        "priceCurrency": "INR",
+        "price": "450000.00",
+        "priceValidUntil": "2027-12-31",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/NewCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Binding Wire Machine"
+        },
+        "shippingDetails": {
+          "@type": "OfferShippingDetails",
+          "shippingRate": {
+            "@type": "MonetaryAmount",
+            "value": "0.00",
+            "currency": "INR"
+          },
+          "shippingDestination": {
+            "@type": "DefinedRegion",
+            "addressCountry": "IN"
+          }
+        },
+        "hasMerchantReturnPolicy": {
+          "@type": "MerchantReturnPolicy",
+          "applicableCountry": "IN",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnNotPermitted"
+        }
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "22"
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://www.bindingwiremachine.in/wire-draw-machine.html#product",
       "name": "Continuous Wire Drawing Machine Plant",
       "sku": "WDM-600",
       "mpn": "WD600-2026",
       "image": "https://www.bindingwiremachine.in/product/wire-drawing-machine.webp",
-      "description": "Continuous multi-block wire drawing machine plant for reducing wire gauge with water cooling drums.",
-      "brand": { "@type": "Brand", "name": "Binding Wire Machine" },
+      "description": "Multi-block continuous wire drawing plant for reducing wire gauge from 5.5mm down to 1.2mm with water-cooled drums and VFD acceleration.",
+      "brand": {
+        "@type": "Brand",
+        "name": "Binding Wire Machine"
+      },
+      "category": "Industrial Machinery > Wire Drawing Plants",
       "offers": {
         "@type": "Offer",
+        "url": "https://www.bindingwiremachine.in/wire-draw-machine.html",
         "priceCurrency": "INR",
         "price": "650000.00",
-        "availability": "https://schema.org/InStock"
+        "priceValidUntil": "2027-12-31",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/NewCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Binding Wire Machine"
+        },
+        "shippingDetails": {
+          "@type": "OfferShippingDetails",
+          "shippingRate": {
+            "@type": "MonetaryAmount",
+            "value": "0.00",
+            "currency": "INR"
+          },
+          "shippingDestination": {
+            "@type": "DefinedRegion",
+            "addressCountry": "IN"
+          }
+        },
+        "hasMerchantReturnPolicy": {
+          "@type": "MerchantReturnPolicy",
+          "applicableCountry": "IN",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnNotPermitted"
+        }
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "45"
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://www.bindingwiremachine.in/binding-wire-making-machine.html#product",
+      "name": "Automatic Binding Wire Making Machinery Setup",
+      "sku": "BWM-300",
+      "mpn": "BW300-2026",
+      "image": "https://www.bindingwiremachine.in/product/binding-wire-making-machine.webp",
+      "description": "Turnkey plant setup for manufacturing soft annealed black binding wire with electric pit annealing furnace and automated spooling.",
+      "brand": {
+        "@type": "Brand",
+        "name": "Binding Wire Machine"
+      },
+      "category": "Industrial Machinery > Wire Processing Machinery",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.bindingwiremachine.in/binding-wire-making-machine.html",
+        "priceCurrency": "INR",
+        "price": "280000.00",
+        "priceValidUntil": "2027-12-31",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/NewCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Binding Wire Machine"
+        },
+        "shippingDetails": {
+          "@type": "OfferShippingDetails",
+          "shippingRate": {
+            "@type": "MonetaryAmount",
+            "value": "0.00",
+            "currency": "INR"
+          },
+          "shippingDestination": {
+            "@type": "DefinedRegion",
+            "addressCountry": "IN"
+          }
+        },
+        "hasMerchantReturnPolicy": {
+          "@type": "MerchantReturnPolicy",
+          "applicableCountry": "IN",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnNotPermitted"
+        }
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "58"
       }
     }
   ]
