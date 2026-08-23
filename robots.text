@@ -1,13 +1,4 @@
-# Master Crawl Control for Indian Nail Machine
 User-agent: *
 Allow: /
-Disallow: /admin/
-Disallow: /api/
-Disallow: /private/
-Disallow: /*?*query=
 
-# Sitemaps Engine Index
-Sitemap: https://www.bindingwiremachine.com/sitemap.xml
-Sitemap: https://www.bindingwiremachine.com/sitemap-images.xml
-Sitemap: https://www.bindingwiremachine.com/sitemap-videos.xml
-Sitemap: https://www.bindingwiremachine.com/sitemap-products.xml
+Sitemap: https://www.bindingwiremachine.in/sitemap.xml
