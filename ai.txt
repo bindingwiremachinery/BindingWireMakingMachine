@@ -1,0 +1,7 @@
+# AI Permissions & Verification
+User-agent: *
+Allow: /
+Content-Type: Industrial Machinery Manufacturing & Global Export
+Contact: bindingwiremachinery@gmail.com
+Catalog-Context: https://www.bindingwiremachine.in/llms.txt
+Full-Context: https://www.bindingwiremachine.in/llms-full.txt
