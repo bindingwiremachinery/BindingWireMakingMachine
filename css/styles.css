@@ -23,13 +23,14 @@ h1, h2, h3, h4, h5, h6 { font-family: "Montserrat", -apple-system, sans-serif; f
 a { color: inherit; text-decoration: none; }
 img { display: block; max-width: 100%; height: auto; }
 
-/* Accessibility 48px Minimum Tap Targets */
+/* Accessibility 48px Tap Targets */
 button, a.nav-link, .btn, input, select, textarea { min-height: 48px; min-width: 48px; display: inline-flex; align-items: center; justify-content: center; }
 
 /* Containers */
 .container { max-width: 80rem; margin: 0 auto; padding: 0 1rem; width: 100%; }
 .container-narrow { max-width: 56rem; margin: 0 auto; padding: 0 1rem; width: 100%; }
 .section-py { padding: 4.5rem 0; }
+.offscreen-render { content-visibility: auto; contain-intrinsic-size: 1px 500px; }
 
 /* Top Bar */
 .top-bar { background-color: var(--ind-950); color: #f1f5f9; font-size: 0.875rem; padding: 0.6rem 0; display: none; }
