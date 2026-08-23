@@ -1,6 +1,15 @@
 {
-  "name": "Binding Wire Machine",
+  "id": "/",
+  "name": "Binding Wire Machine - Rajkot",
   "short_name": "BindingWire",
+  "description": "High-Speed Automatic Wire Nail & Binding Wire Making Machine Manufacturers and Exporters in Rajkot, India.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#0f172a",
+  "theme_color": "#e11d48",
+  "categories": ["business", "industrial", "productivity"],
   "icons": [
     {
       "src": "/favicon-32x32.png",
@@ -11,11 +20,18 @@
       "src": "/apple-touch-icon.png",
       "sizes": "180x180",
       "type": "image/png"
+    },
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
     }
-  ],
-  "theme_color": "#e11d48",
-  "background_color": "#0f172a",
-  "display": "standalone",
-  "start_url": "/",
-  "scope": "/"
+  ]
 }
