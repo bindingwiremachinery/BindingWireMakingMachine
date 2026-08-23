@@ -7,7 +7,6 @@
 (function () {
     'use strict';
 
-    // 1. Verify Self-Referencing Canonical Tag
     function verifyCanonical() {
         const canonical = document.querySelector('link[rel="canonical"]');
         const expectedUrl = window.location.origin + window.location.pathname;
@@ -19,7 +18,6 @@
         }
     }
 
-    // 2. Track B2B Leads & Form Submissions
     window.trackLeadConversion = function (productName, destinationCountry) {
         if (typeof window.gtag === 'function') {
             window.gtag('event', 'generate_lead', {
@@ -30,10 +28,8 @@
                 destination: destinationCountry || 'Domestic / Export'
             });
         }
-        console.log('[SEO] Lead conversion logged for:', productName || 'General Quotation');
     };
 
-    // 3. Track Click-to-Call & WhatsApp Inquiries
     function bindContactClickTracking() {
         document.querySelectorAll('a[href^="tel:"]').forEach(function (el) {
             el.addEventListener('click', function () {
@@ -58,26 +54,13 @@
         });
     }
 
-    // 4. Runtime Structured Data Health Check
-    function checkStructuredData() {
-        const schemas = document.querySelectorAll('script[type="application/ld+json"]');
-        if (schemas.length === 0) {
-            console.warn('[SEO] No JSON-LD structured data detected on this page.');
-        } else {
-            console.log('[SEO] Validated ' + schemas.length + ' JSON-LD schema block(s).');
-        }
-    }
-
-    // Initialize on DOM ready
     if (document.readyState === 'loading') {
         document.addEventListener('DOMContentLoaded', function () {
             verifyCanonical();
             bindContactClickTracking();
-            checkStructuredData();
         });
     } else {
         verifyCanonical();
         bindContactClickTracking();
-        checkStructuredData();
     }
 })();
