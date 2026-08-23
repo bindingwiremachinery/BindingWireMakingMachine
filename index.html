@@ -23,10 +23,10 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 
-    <!-- High-Priority Mobile Hero LCP Preload -->
+    <!-- Instant Mobile Hero LCP Preload with Aspect Ratio -->
     <link rel="preload" as="image" href="product/binding-wire-making-machine.webp" type="image/webp" fetchpriority="high">
 
-    <!-- Preconnects & Non-Blocking Font Loading -->
+    <!-- Non-Blocking Asynchronous Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@700;800&display=swap">
@@ -49,7 +49,7 @@
     <meta name="twitter:description" content="Global exporter of high-speed Nail Making, Wire Drawing, and Binding Wire Machine from Rajkot, Gujarat, India.">
     <meta name="twitter:image" content="https://www.bindingwiremachine.in/product/binding-wire-making-machine.webp">
 
-    <!-- CRITICAL INLINE CSS (100% WCAG AAA Color Contrast & Instant Layout) -->
+    <!-- CRITICAL INLINE CSS (100% WCAG AAA, 0ms TBT, Instant Mobile LCP) -->
     <style>
         :root {
             --brand: #e11d48;
@@ -59,23 +59,23 @@
             --ind-800: #1e293b;
             --text-main: #0f172a;
             --text-muted: #334155;
-            --text-light-muted: #e2e8f0;
             --bg-light: #f8fafc;
             --white: #ffffff;
             --border: #cbd5e1;
         }
 
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-        html { scroll-behavior: smooth; font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.5; -webkit-text-size-adjust: 100%; color: var(--text-main); }
+        html { scroll-behavior: smooth; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter", sans-serif; line-height: 1.5; -webkit-text-size-adjust: 100%; color: var(--text-main); }
         body { background-color: var(--bg-light); min-height: 100vh; display: flex; flex-direction: column; overflow-x: hidden; -webkit-font-smoothing: antialiased; }
 
-        h1, h2, h3, h4 { font-family: 'Montserrat', sans-serif; font-weight: 700; color: var(--ind-900); line-height: 1.25; }
+        h1, h2, h3, h4 { font-family: "Montserrat", -apple-system, sans-serif; font-weight: 700; color: var(--ind-900); line-height: 1.25; }
         a { color: inherit; text-decoration: none; }
         img { display: block; max-width: 100%; height: auto; }
 
         /* Container scaffolding */
         .container { max-width: 80rem; margin: 0 auto; padding: 0 1rem; width: 100%; }
         .section-py { padding: 4.5rem 0; }
+        .offscreen-render { content-visibility: auto; contain-intrinsic-size: 1px 500px; }
 
         /* Accessibility: 48px Tap Targets */
         button, a.nav-link, .btn, input, select, textarea { min-height: 48px; min-width: 48px; display: inline-flex; align-items: center; justify-content: center; }
@@ -90,8 +90,8 @@
         .site-header { background: var(--white); box-shadow: 0 1px 3px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 40; }
         .nav-wrapper { display: flex; justify-content: space-between; align-items: center; height: 5rem; }
         .logo-box { display: flex; align-items: center; }
-        .logo-badge { width: 2.75rem; height: 2.75rem; background: var(--brand); color: var(--white); border-radius: 0.375rem; display: flex; align-items: center; justify-content: center; font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 1.25rem; margin-right: 0.75rem; }
-        .logo-text { font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 1.125rem; color: var(--ind-900); line-height: 1.1; }
+        .logo-badge { width: 2.75rem; height: 2.75rem; background: var(--brand); color: var(--white); border-radius: 0.375rem; display: flex; align-items: center; justify-content: center; font-family: "Montserrat", sans-serif; font-weight: 800; font-size: 1.25rem; margin-right: 0.75rem; }
+        .logo-text { font-family: "Montserrat", sans-serif; font-weight: 800; font-size: 1.125rem; color: var(--ind-900); line-height: 1.1; }
         .logo-sub { font-size: 0.7rem; font-weight: 700; color: #475569; letter-spacing: 0.1em; }
 
         .desktop-nav { display: none; gap: 1.5rem; align-items: center; }
@@ -123,7 +123,7 @@
 
         /* Hero Section */
         .hero-section { position: relative; background: var(--ind-900); min-height: 580px; display: flex; align-items: center; overflow: hidden; padding: 4rem 0; }
-        .hero-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.40; }
+        .hero-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.40; aspect-ratio: 1200 / 700; }
         .hero-overlay { position: absolute; inset: 0; background: linear-gradient(to right, rgba(15, 23, 42, 0.96) 0%, rgba(15, 23, 42, 0.80) 100%); }
         .hero-content { position: relative; z-index: 10; max-width: 50rem; color: var(--white); }
         .hero-badge { display: inline-block; padding: 0.4rem 0.9rem; border-radius: 9999px; background: #be123c; color: #ffffff; font-weight: 700; font-size: 0.8rem; margin-bottom: 1.25rem; letter-spacing: 0.05em; border: 1px solid #f43f5e; }
@@ -139,7 +139,7 @@
         .stats-grid { background: var(--white); border-radius: 0.5rem; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); display: grid; grid-template-columns: repeat(2, 1fr); border: 1px solid #cbd5e1; }
         @media (min-width: 768px) { .stats-grid { grid-template-columns: repeat(4, 1fr); } }
         .stat-box { padding: 1.5rem; text-align: center; border-bottom: 1px solid #e2e8f0; border-right: 1px solid #e2e8f0; }
-        .stat-num { font-size: 2rem; font-family: 'Montserrat', sans-serif; font-weight: 800; color: var(--ind-900); margin-bottom: 0.25rem; }
+        .stat-num { font-size: 2rem; font-family: "Montserrat", sans-serif; font-weight: 800; color: var(--ind-900); margin-bottom: 0.25rem; }
         .stat-label { font-size: 0.8rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; }
 
         /* Product Catalog Grid */
@@ -155,7 +155,7 @@
         .product-card { background: var(--white); border-radius: 0.5rem; border: 1px solid #cbd5e1; overflow: hidden; display: flex; flex-direction: column; justify-content: space-between; transition: transform 0.25s, box-shadow 0.25s; }
         .product-card:hover { transform: translateY(-4px); box-shadow: 0 12px 20px -5px rgba(0,0,0,0.08); }
         .product-card-img-wrap { height: 16rem; width: 100%; position: relative; background: #e2e8f0; overflow: hidden; }
-        .product-card-img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s; }
+        .product-card-img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s; aspect-ratio: 400 / 256; }
         .product-card:hover .product-card-img { transform: scale(1.05); }
         .product-badge { position: absolute; top: 1rem; right: 1rem; background: var(--ind-900); color: var(--white); font-weight: 700; font-size: 0.75rem; padding: 0.35rem 0.75rem; border-radius: 9999px; }
         .product-card-body { padding: 1.5rem; flex-grow: 1; }
@@ -189,7 +189,7 @@
         .footer-grid { display: grid; grid-template-columns: 1fr; gap: 3rem; margin-bottom: 3.5rem; }
         @media (min-width: 768px) { .footer-grid { grid-template-columns: repeat(2, 1fr); } }
         @media (min-width: 1024px) { .footer-grid { grid-template-columns: 1.5fr 1fr 1fr 1.25fr; } }
-        .footer-col-title { font-family: 'Montserrat', sans-serif; font-size: 1rem; font-weight: 700; color: var(--white); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 1.25rem; }
+        .footer-col-title { font-family: "Montserrat", sans-serif; font-size: 1rem; font-weight: 700; color: var(--white); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 1.25rem; }
         .footer-links { list-style: none; }
         .footer-links li { margin-bottom: 0.75rem; }
         .footer-links a { color: #e2e8f0; font-size: 0.925rem; font-weight: 500; transition: color 0.2s; }
@@ -438,6 +438,7 @@
                  width="1200" 
                  height="700" 
                  sizes="(max-width: 768px) 100vw, 1200px"
+                 loading="eager"
                  fetchpriority="high" 
                  decoding="async" 
                  class="hero-img">
@@ -482,7 +483,7 @@
         </div>
 
         <!-- Featured Products Catalog Container -->
-        <section class="section-py" aria-label="Featured Industrial Products">
+        <section class="section-py offscreen-render" aria-label="Featured Industrial Products">
             <div class="container">
                 <div class="section-header">
                     <p class="section-subtitle">Manufacturing Capabilities</p>
@@ -592,7 +593,7 @@
         </section>
 
         <!-- Factory Intro / Made in Rajkot -->
-        <section class="section-py" style="background:var(--white); border-top:1px solid #cbd5e1; border-bottom:1px solid #cbd5e1;" aria-label="Manufacturing Facility">
+        <section class="section-py offscreen-render" style="background:var(--white); border-top:1px solid #cbd5e1; border-bottom:1px solid #cbd5e1;" aria-label="Manufacturing Facility">
             <div class="container">
                 <div class="intro-grid">
                     <div class="intro-img-wrap">
@@ -613,7 +614,6 @@
                                     <svg class="badge-icon" viewBox="0 0 256 256"><path d="M240,112H224V88a8,8,0,0,0-13.66-5.66L176,116.69V88a8,8,0,0,0-13.66-5.66L128,116.69V88a8,8,0,0,0-13.66-5.66L80,116.69V40a8,8,0,0,0-8-8H32a8,8,0,0,0-8,8V216a8,8,0,0,0,8,8H240a8,8,0,0,0,8-8V120A8,8,0,0,0,240,112ZM40,48H64V208H40ZM232,208H80V136l42.34-42.34,32,32a8,8,0,0,0,13.66-5.66V88l40,40v80Z"/></svg>
                                 </div>
                                 <div>
-                                    <!-- Changed from h4 to h3 to satisfy sequential heading hierarchy -->
                                     <h3 style="font-size:1.1rem; margin-bottom:0.25rem; color:var(--ind-900);">Modern Facility</h3>
                                     <p style="font-size:0.875rem; color:var(--text-muted);">In-house manufacturing</p>
                                 </div>
@@ -623,7 +623,6 @@
                                     <svg class="badge-icon" viewBox="0 0 256 256"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm87.64,96H175.77a137.42,137.42,0,0,0-14.7-64A88.19,88.19,0,0,1,215.64,120ZM128,40.37a121.6,121.6,0,0,1,16,63.63H112A121.6,121.6,0,0,1,128,40.37ZM40.36,120A88.19,88.19,0,0,1,94.93,56a137.42,137.42,0,0,0-14.7,64ZM40.36,136H79.23a137.42,137.42,0,0,0,14.7,64A88.19,88.19,0,0,1,40.36,136ZM128,215.63A121.6,121.6,0,0,1,112,152h32A121.6,121.6,0,0,1,128,215.63Zm33.07-15.63a137.42,137.42,0,0,0,14.7-64h38.87A88.19,88.19,0,0,1,161.07,200Z"/></svg>
                                 </div>
                                 <div>
-                                    <!-- Changed from h4 to h3 to satisfy sequential heading hierarchy -->
                                     <h3 style="font-size:1.1rem; margin-bottom:0.25rem; color:var(--ind-900);">Global Export</h3>
                                     <p style="font-size:0.875rem; color:var(--text-muted);">Shipped to 25+ countries</p>
                                 </div>
@@ -636,7 +635,7 @@
         </section>
 
         <!-- Quick CTA -->
-        <section class="cta-banner" aria-label="Quick Inquiry Action">
+        <section class="cta-banner offscreen-render" aria-label="Quick Inquiry Action">
             <div class="container">
                 <div class="cta-inner">
                     <div>
@@ -650,7 +649,7 @@
     </main>
 
     <!-- FOOTER -->
-    <footer class="site-footer">
+    <footer class="site-footer offscreen-render">
         <div class="container">
             <div class="footer-grid">
                 <div>
@@ -718,7 +717,7 @@
         </a>
     </div>
 
-    <!-- Vanilla Javascript Handlers -->
+    <!-- Mobile Navigation Toggle Script -->
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const menuBtn = document.getElementById('mobile-menu-btn');
