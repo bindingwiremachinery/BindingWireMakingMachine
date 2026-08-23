@@ -23,7 +23,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 
-    <!-- Instant Mobile Hero LCP Preload with Aspect Ratio -->
+    <!-- Instant Mobile Hero LCP Preload -->
     <link rel="preload" as="image" href="product/binding-wire-making-machine.webp" type="image/webp" fetchpriority="high">
 
     <!-- Non-Blocking Asynchronous Fonts -->
@@ -34,6 +34,9 @@
     <noscript>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@700;800&display=swap">
     </noscript>
+
+    <!-- Master Unified Stylesheet -->
+    <link rel="stylesheet" href="/styles.css">
 
     <!-- Open Graph / SEO -->
     <meta property="og:title" content="High-Speed Automatic Wire Nail &amp; Binding Wire Making Machine Manufacturers">
@@ -48,165 +51,6 @@
     <meta name="twitter:title" content="Automatic Wire Nail &amp; Binding Wire Making Machine Manufacturers">
     <meta name="twitter:description" content="Global exporter of high-speed Nail Making, Wire Drawing, and Binding Wire Machine from Rajkot, Gujarat, India.">
     <meta name="twitter:image" content="https://www.bindingwiremachine.in/product/binding-wire-making-machine.webp">
-
-    <!-- CRITICAL INLINE CSS (100% WCAG AAA, 0ms TBT, Instant Mobile LCP) -->
-    <style>
-        :root {
-            --brand: #e11d48;
-            --brand-dark: #be123c;
-            --ind-950: #020617;
-            --ind-900: #0f172a;
-            --ind-800: #1e293b;
-            --text-main: #0f172a;
-            --text-muted: #334155;
-            --bg-light: #f8fafc;
-            --white: #ffffff;
-            --border: #cbd5e1;
-        }
-
-        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-        html { scroll-behavior: smooth; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter", sans-serif; line-height: 1.5; -webkit-text-size-adjust: 100%; color: var(--text-main); }
-        body { background-color: var(--bg-light); min-height: 100vh; display: flex; flex-direction: column; overflow-x: hidden; -webkit-font-smoothing: antialiased; }
-
-        h1, h2, h3, h4 { font-family: "Montserrat", -apple-system, sans-serif; font-weight: 700; color: var(--ind-900); line-height: 1.25; }
-        a { color: inherit; text-decoration: none; }
-        img { display: block; max-width: 100%; height: auto; }
-
-        /* Container scaffolding */
-        .container { max-width: 80rem; margin: 0 auto; padding: 0 1rem; width: 100%; }
-        .section-py { padding: 4.5rem 0; }
-        .offscreen-render { content-visibility: auto; contain-intrinsic-size: 1px 500px; }
-
-        /* Accessibility: 48px Tap Targets */
-        button, a.nav-link, .btn, input, select, textarea { min-height: 48px; min-width: 48px; display: inline-flex; align-items: center; justify-content: center; }
-
-        /* Top Bar */
-        .top-bar { background-color: var(--ind-950); color: #f1f5f9; font-size: 0.875rem; padding: 0.6rem 0; display: none; }
-        @media (min-width: 768px) { .top-bar { display: block; } }
-        .top-bar-inner { display: flex; justify-content: space-between; align-items: center; }
-        .top-bar-links { display: flex; gap: 1.5rem; align-items: center; }
-
-        /* Header Navigation */
-        .site-header { background: var(--white); box-shadow: 0 1px 3px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 40; }
-        .nav-wrapper { display: flex; justify-content: space-between; align-items: center; height: 5rem; }
-        .logo-box { display: flex; align-items: center; }
-        .logo-badge { width: 2.75rem; height: 2.75rem; background: var(--brand); color: var(--white); border-radius: 0.375rem; display: flex; align-items: center; justify-content: center; font-family: "Montserrat", sans-serif; font-weight: 800; font-size: 1.25rem; margin-right: 0.75rem; }
-        .logo-text { font-family: "Montserrat", sans-serif; font-weight: 800; font-size: 1.125rem; color: var(--ind-900); line-height: 1.1; }
-        .logo-sub { font-size: 0.7rem; font-weight: 700; color: #475569; letter-spacing: 0.1em; }
-
-        .desktop-nav { display: none; gap: 1.5rem; align-items: center; }
-        @media (min-width: 1024px) { .desktop-nav { display: flex; } }
-        .nav-link { font-weight: 600; color: var(--ind-900); transition: color 0.2s; padding: 0.5rem; font-size: 0.95rem; }
-        .nav-link:hover, .nav-link.active { color: var(--brand); }
-
-        /* Dropdown */
-        .dropdown { position: relative; }
-        .dropdown-menu { position: absolute; left: 0; top: 100%; width: 17rem; background: var(--white); border: 1px solid #e2e8f0; border-radius: 0.375rem; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1); opacity: 0; visibility: hidden; transition: all 0.2s; z-index: 50; padding: 0.5rem 0; }
-        .dropdown:hover .dropdown-menu { opacity: 1; visibility: visible; }
-        .dropdown-item { display: block; padding: 0.65rem 1rem; font-size: 0.875rem; color: var(--ind-900); font-weight: 600; }
-        .dropdown-item:hover { background: #f1f5f9; color: var(--brand); }
-
-        /* Mobile Menu */
-        .mobile-btn { display: flex; background: none; border: none; cursor: pointer; color: var(--ind-900); padding: 0.5rem; }
-        @media (min-width: 1024px) { .mobile-btn { display: none; } }
-        .mobile-menu { display: none; background: var(--white); border-top: 1px solid #e2e8f0; padding: 1rem; position: absolute; width: 100%; left: 0; top: 5rem; box-shadow: 0 10px 15px rgba(0,0,0,0.1); }
-        .mobile-menu.active { display: block; }
-        .mobile-link { display: block; padding: 0.75rem 1rem; font-weight: 700; color: var(--ind-900); border-radius: 0.375rem; margin-bottom: 0.25rem; }
-        .mobile-link:hover { background: #f1f5f9; color: var(--brand); }
-
-        /* Buttons */
-        .btn { padding: 0.75rem 1.75rem; border-radius: 0.375rem; font-weight: 700; font-size: 1rem; text-align: center; cursor: pointer; border: none; transition: all 0.2s; }
-        .btn-brand { background: var(--brand); color: var(--white); box-shadow: 0 4px 6px -1px rgba(225, 29, 72, 0.3); }
-        .btn-brand:hover { background: var(--brand-dark); }
-        .btn-outline { background: transparent; border: 2px solid var(--white); color: var(--white); }
-        .btn-outline:hover { background: var(--white); color: var(--ind-900); }
-
-        /* Hero Section */
-        .hero-section { position: relative; background: var(--ind-900); min-height: 580px; display: flex; align-items: center; overflow: hidden; padding: 4rem 0; }
-        .hero-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.40; aspect-ratio: 1200 / 700; }
-        .hero-overlay { position: absolute; inset: 0; background: linear-gradient(to right, rgba(15, 23, 42, 0.96) 0%, rgba(15, 23, 42, 0.80) 100%); }
-        .hero-content { position: relative; z-index: 10; max-width: 50rem; color: var(--white); }
-        .hero-badge { display: inline-block; padding: 0.4rem 0.9rem; border-radius: 9999px; background: #be123c; color: #ffffff; font-weight: 700; font-size: 0.8rem; margin-bottom: 1.25rem; letter-spacing: 0.05em; border: 1px solid #f43f5e; }
-        .hero-title { font-size: 2.25rem; margin-bottom: 1.25rem; color: var(--white); }
-        @media (min-width: 768px) { .hero-title { font-size: 3.25rem; } }
-        .hero-title span { color: #fb7185; }
-        .hero-desc { font-size: 1.125rem; color: #f8fafc; margin-bottom: 2rem; font-weight: 400; line-height: 1.6; }
-        .hero-actions { display: flex; flex-direction: column; gap: 1rem; }
-        @media (min-width: 640px) { .hero-actions { flex-direction: row; } }
-
-        /* Stats Ribbon */
-        .stats-wrapper { max-width: 72rem; margin: -2.5rem auto 0; padding: 0 1rem; position: relative; z-index: 20; }
-        .stats-grid { background: var(--white); border-radius: 0.5rem; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); display: grid; grid-template-columns: repeat(2, 1fr); border: 1px solid #cbd5e1; }
-        @media (min-width: 768px) { .stats-grid { grid-template-columns: repeat(4, 1fr); } }
-        .stat-box { padding: 1.5rem; text-align: center; border-bottom: 1px solid #e2e8f0; border-right: 1px solid #e2e8f0; }
-        .stat-num { font-size: 2rem; font-family: "Montserrat", sans-serif; font-weight: 800; color: var(--ind-900); margin-bottom: 0.25rem; }
-        .stat-label { font-size: 0.8rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; }
-
-        /* Product Catalog Grid */
-        .section-header { text-align: center; max-width: 48rem; margin: 0 auto 3.5rem; }
-        .section-subtitle { color: #be123c; font-weight: 800; text-transform: uppercase; font-size: 0.875rem; letter-spacing: 0.1em; margin-bottom: 0.5rem; }
-        .section-title { font-size: 2rem; margin-bottom: 1rem; color: var(--ind-900); }
-        .section-desc { font-size: 1.125rem; color: var(--text-muted); }
-
-        .cards-grid { display: grid; grid-template-columns: 1fr; gap: 2rem; }
-        @media (min-width: 768px) { .cards-grid { grid-template-columns: repeat(2, 1fr); } }
-        @media (min-width: 1024px) { .cards-grid { grid-template-columns: repeat(3, 1fr); } }
-
-        .product-card { background: var(--white); border-radius: 0.5rem; border: 1px solid #cbd5e1; overflow: hidden; display: flex; flex-direction: column; justify-content: space-between; transition: transform 0.25s, box-shadow 0.25s; }
-        .product-card:hover { transform: translateY(-4px); box-shadow: 0 12px 20px -5px rgba(0,0,0,0.08); }
-        .product-card-img-wrap { height: 16rem; width: 100%; position: relative; background: #e2e8f0; overflow: hidden; }
-        .product-card-img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s; aspect-ratio: 400 / 256; }
-        .product-card:hover .product-card-img { transform: scale(1.05); }
-        .product-badge { position: absolute; top: 1rem; right: 1rem; background: var(--ind-900); color: var(--white); font-weight: 700; font-size: 0.75rem; padding: 0.35rem 0.75rem; border-radius: 9999px; }
-        .product-card-body { padding: 1.5rem; flex-grow: 1; }
-        .product-card-title { font-size: 1.25rem; margin-bottom: 0.75rem; color: var(--ind-900); }
-        .product-card-text { font-size: 0.95rem; color: var(--text-muted); margin-bottom: 1.25rem; line-height: 1.5; }
-        .product-features { list-style: none; margin-bottom: 1.5rem; }
-        .product-features li { display: flex; align-items: center; font-size: 0.9rem; color: #1e293b; font-weight: 500; margin-bottom: 0.5rem; }
-        .check-icon { width: 1.25rem; height: 1.25rem; fill: var(--brand); margin-right: 0.5rem; flex-shrink: 0; }
-        .product-card-footer { padding: 0 1.5rem 1.5rem; }
-        .link-arrow { display: inline-flex; align-items: center; font-weight: 700; color: #be123c; font-size: 0.95rem; }
-        .link-arrow:hover { color: var(--ind-900); text-decoration: underline; }
-
-        /* Factory Intro Section */
-        .intro-grid { display: grid; grid-template-columns: 1fr; gap: 3rem; align-items: center; }
-        @media (min-width: 1024px) { .intro-grid { grid-template-columns: 1fr 1fr; } }
-        .intro-img-wrap { position: relative; border-radius: 0.5rem; overflow: hidden; box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1); }
-        .intro-badge-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin: 2rem 0; }
-        .intro-badge-item { display: flex; align-items: flex-start; }
-        .badge-icon-box { width: 3rem; height: 3rem; border-radius: 50%; background: #ffe4e6; display: flex; align-items: center; justify-content: center; margin-right: 1rem; flex-shrink: 0; }
-        .badge-icon { width: 1.5rem; height: 1.5rem; fill: var(--brand); }
-
-        /* Quick CTA */
-        .cta-banner { background: #be123c; color: var(--white); padding: 4rem 0; }
-        .cta-inner { display: flex; flex-direction: column; justify-content: space-between; align-items: center; gap: 2rem; }
-        @media (min-width: 768px) { .cta-inner { flex-direction: row; } }
-        .cta-title { font-size: 2rem; color: var(--white); margin-bottom: 0.5rem; }
-        .cta-desc { font-size: 1.125rem; color: #ffffff; }
-
-        /* Footer */
-        .site-footer { background: var(--ind-900); color: #f8fafc; padding: 4.5rem 0 2rem; border-top: 1px solid var(--ind-800); }
-        .footer-grid { display: grid; grid-template-columns: 1fr; gap: 3rem; margin-bottom: 3.5rem; }
-        @media (min-width: 768px) { .footer-grid { grid-template-columns: repeat(2, 1fr); } }
-        @media (min-width: 1024px) { .footer-grid { grid-template-columns: 1.5fr 1fr 1fr 1.25fr; } }
-        .footer-col-title { font-family: "Montserrat", sans-serif; font-size: 1rem; font-weight: 700; color: var(--white); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 1.25rem; }
-        .footer-links { list-style: none; }
-        .footer-links li { margin-bottom: 0.75rem; }
-        .footer-links a { color: #e2e8f0; font-size: 0.925rem; font-weight: 500; transition: color 0.2s; }
-        .footer-links a:hover { color: #fb7185; text-decoration: underline; }
-        .footer-bottom { border-top: 1px solid #334155; padding-top: 2rem; text-align: center; font-size: 0.875rem; color: #cbd5e1; }
-        @media (min-width: 768px) { .footer-bottom { display: flex; justify-content: space-between; text-align: left; } }
-
-        /* Floating CTA Stack */
-        .floating-stack { position: fixed; bottom: 1.5rem; right: 1.5rem; z-index: 50; display: flex; flex-direction: column; gap: 0.75rem; align-items: flex-end; }
-        .float-btn { border-radius: 9999px; color: var(--white); display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.3); transition: transform 0.2s; padding: 0 1rem; height: 3.25rem; }
-        .float-btn:hover { transform: scale(1.05); }
-        .float-call { background: #b91c1c; }
-        .float-wa { background: #15803d; }
-        .float-icon { width: 1.5rem; height: 1.5rem; fill: var(--white); }
-        .float-text { font-weight: 700; font-size: 0.875rem; margin-left: 0.5rem; display: none; }
-        @media (min-width: 768px) { .float-text { display: inline-block; } }
-    </style>
 
     <!-- ADVANCED TECHNICAL SCHEMA -->
     <script type="application/ld+json">
@@ -290,60 +134,6 @@
             "ratingValue": "4.9",
             "reviewCount": "103"
           }
-        },
-        {
-          "@type": "Product",
-          "@id": "https://www.bindingwiremachine.in/wire-draw-machine.html#product",
-          "name": "Continuous Wire Drawing Machine Plant",
-          "image": "https://www.bindingwiremachine.in/product/wire-drawing-machine.webp",
-          "description": "Heavy-duty continuous wire drawing plants designed for reducing wire gauge with water cooled drums and VFD automation.",
-          "sku": "WDM-600",
-          "mpn": "WD600-2026",
-          "brand": {
-            "@type": "Brand",
-            "name": "Binding Wire Machine"
-          },
-          "offers": {
-            "@type": "Offer",
-            "url": "https://www.bindingwiremachine.in/wire-draw-machine.html",
-            "priceCurrency": "INR",
-            "price": "650000.00",
-            "priceValidUntil": "2027-12-31",
-            "availability": "https://schema.org/InStock",
-            "itemCondition": "https://schema.org/NewCondition"
-          },
-          "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.9",
-            "reviewCount": "45"
-          }
-        },
-        {
-          "@type": "Product",
-          "@id": "https://www.bindingwiremachine.in/binding-wire-making-machine.html#product",
-          "name": "Automatic Binding Wire Making Machinery Setup",
-          "image": "https://www.bindingwiremachine.in/product/binding-wire-making-machine.webp",
-          "description": "Complete setup for manufacturing black annealed binding wire and galvanized construction wire with electric annealing furnace.",
-          "sku": "BWM-300",
-          "mpn": "BW300-2026",
-          "brand": {
-            "@type": "Brand",
-            "name": "Binding Wire Machine"
-          },
-          "offers": {
-            "@type": "Offer",
-            "url": "https://www.bindingwiremachine.in/binding-wire-making-machine.html",
-            "priceCurrency": "INR",
-            "price": "280000.00",
-            "priceValidUntil": "2027-12-31",
-            "availability": "https://schema.org/InStock",
-            "itemCondition": "https://schema.org/NewCondition"
-          },
-          "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.8",
-            "reviewCount": "58"
-          }
         }
       ]
     }
@@ -405,14 +195,12 @@
                     <a href="/contact.html" class="btn btn-brand" aria-label="Get a machinery quotation">Get Quote</a>
                 </nav>
 
-                <!-- Mobile Menu Button -->
                 <button id="mobile-menu-btn" class="mobile-btn" aria-label="Toggle Navigation Menu" aria-expanded="false" aria-controls="mobile-menu">
                     <svg style="width:2rem; height:2rem; fill:currentColor;" viewBox="0 0 256 256"><path d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"/></svg>
                 </button>
             </div>
         </div>
 
-        <!-- Mobile Navigation Menu Dropdown -->
         <div id="mobile-menu" class="mobile-menu">
             <nav aria-label="Mobile Navigation">
                 <a href="/" class="mobile-link" style="color:#be123c; font-weight:700;">Home</a>
@@ -429,10 +217,9 @@
         </div>
     </header>
 
-    <!-- MAIN CONTENT -->
     <main style="flex-grow:1;">
         <!-- Hero Section -->
-        <section class="hero-section" aria-label="Hero Overview">
+        <section class="hero-section" aria-label="Hero Overview" style="position:relative; background:var(--ind-900); min-height:580px; display:flex; align-items:center; overflow:hidden; padding:4rem 0;">
             <img src="product/binding-wire-making-machine.webp" 
                  alt="Automatic Binding Wire Making Machinery Setup Rajkot" 
                  width="1200" 
@@ -441,18 +228,18 @@
                  loading="eager"
                  fetchpriority="high" 
                  decoding="async" 
-                 class="hero-img">
-            <div class="hero-overlay"></div>
+                 style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; opacity:0.40; aspect-ratio:1200/700;">
+            <div style="position:absolute; inset:0; background:linear-gradient(to right, rgba(15, 23, 42, 0.96) 0%, rgba(15, 23, 42, 0.80) 100%);"></div>
             <div class="container" style="position:relative; z-index:10;">
-                <div class="hero-content">
-                    <span class="hero-badge">GLOBAL EXPORT BRAND &bull; RAJKOT, INDIA</span>
-                    <h1 class="hero-title">
-                        Automatic High-Speed <span>Wire Nail &amp; Binding Wire</span> Making Machines
+                <div style="max-width:50rem; color:var(--white);">
+                    <span style="display:inline-block; padding:0.4rem 0.9rem; border-radius:9999px; background:#be123c; color:#ffffff; font-weight:700; font-size:0.8rem; margin-bottom:1.25rem; letter-spacing:0.05em; border:1px solid #f43f5e;">GLOBAL EXPORT BRAND &bull; RAJKOT, INDIA</span>
+                    <h1 style="font-size:2.25rem; margin-bottom:1.25rem; color:var(--white);">
+                        Automatic High-Speed <span style="color:#fb7185;">Wire Nail &amp; Binding Wire</span> Making Machines
                     </h1>
-                    <p class="hero-desc">
+                    <p style="font-size:1.125rem; color:#f8fafc; margin-bottom:2rem; font-weight:400; line-height:1.6;">
                         Leading manufacturer and exporter of heavy-duty IN Series Wire Nail Making Machines, Continuous Wire Drawing Plants, and Binding Wire lines engineered in Rajkot, India for maximum output, low vibration, and minimal maintenance.
                     </p>
-                    <div class="hero-actions">
+                    <div style="display:flex; flex-direction:column; gap:1rem;">
                         <a href="/nail-making-machine.html" class="btn btn-brand" aria-label="Explore wire nail machines">Explore Nail Machines</a>
                         <a href="/contact.html" class="btn btn-outline" aria-label="Request a formal price quotation">Request Price Quotation</a>
                     </div>
@@ -461,129 +248,84 @@
         </section>
 
         <!-- Stats Ribbon -->
-        <div class="stats-wrapper" aria-label="Key Machinery Statistics">
-            <div class="stats-grid">
-                <div class="stat-box">
-                    <p class="stat-num">20+</p>
-                    <p class="stat-label">Years Experience</p>
+        <div class="stats-wrapper" aria-label="Key Machinery Statistics" style="max-width:72rem; margin:-2.5rem auto 0; padding:0 1rem; position:relative; z-index:20;">
+            <div style="background:var(--white); border-radius:0.5rem; box-shadow:0 4px 6px -1px rgba(0,0,0,0.05); display:grid; grid-template-columns:repeat(2, 1fr); border:1px solid #cbd5e1;">
+                <div style="padding:1.5rem; text-align:center; border-bottom:1px solid #e2e8f0; border-right:1px solid #e2e8f0;">
+                    <p style="font-size:2rem; font-family:'Montserrat', sans-serif; font-weight:800; color:var(--ind-900); margin-bottom:0.25rem;">20+</p>
+                    <p style="font-size:0.8rem; font-weight:700; color:var(--text-muted); text-transform:uppercase; letter-spacing:0.05em;">Years Experience</p>
                 </div>
-                <div class="stat-box">
-                    <p class="stat-num">500+</p>
-                    <p class="stat-label">Plant Installations</p>
+                <div style="padding:1.5rem; text-align:center; border-bottom:1px solid #e2e8f0; border-right:1px solid #e2e8f0;">
+                    <p style="font-size:2rem; font-family:'Montserrat', sans-serif; font-weight:800; color:var(--ind-900); margin-bottom:0.25rem;">500+</p>
+                    <p style="font-size:0.8rem; font-weight:700; color:var(--text-muted); text-transform:uppercase; letter-spacing:0.05em;">Plant Installations</p>
                 </div>
-                <div class="stat-box">
-                    <p class="stat-num">25+</p>
-                    <p class="stat-label">Countries Exported</p>
+                <div style="padding:1.5rem; text-align:center; border-bottom:1px solid #e2e8f0; border-right:1px solid #e2e8f0;">
+                    <p style="font-size:2rem; font-family:'Montserrat', sans-serif; font-weight:800; color:var(--ind-900); margin-bottom:0.25rem;">25+</p>
+                    <p style="font-size:0.8rem; font-weight:700; color:var(--text-muted); text-transform:uppercase; letter-spacing:0.05em;">Countries Exported</p>
                 </div>
-                <div class="stat-box">
-                    <p class="stat-num">ISO</p>
-                    <p class="stat-label">9001:2015 Certified</p>
+                <div style="padding:1.5rem; text-align:center; border-bottom:1px solid #e2e8f0;">
+                    <p style="font-size:2rem; font-family:'Montserrat', sans-serif; font-weight:800; color:var(--ind-900); margin-bottom:0.25rem;">ISO</p>
+                    <p style="font-size:0.8rem; font-weight:700; color:var(--text-muted); text-transform:uppercase; letter-spacing:0.05em;">9001:2015 Certified</p>
                 </div>
             </div>
         </div>
 
-        <!-- Featured Products Catalog Container -->
+        <!-- Catalog Container -->
         <section class="section-py offscreen-render" aria-label="Featured Industrial Products">
             <div class="container">
-                <div class="section-header">
-                    <p class="section-subtitle">Manufacturing Capabilities</p>
-                    <h2 class="section-title">High-Performance Industrial Machinery</h2>
-                    <p class="section-desc">Precision engineered with premium alloy components for continuous 24/7 output and superior finish quality.</p>
+                <div style="text-align:center; max-width:48rem; margin:0 auto 3.5rem;">
+                    <p style="color:#be123c; font-weight:800; text-transform:uppercase; font-size:0.875rem; letter-spacing:0.1em; margin-bottom:0.5rem;">Manufacturing Capabilities</p>
+                    <h2 style="font-size:2rem; margin-bottom:1rem; color:var(--ind-900);">High-Performance Industrial Machinery</h2>
+                    <p style="font-size:1.125rem; color:var(--text-muted);">Precision engineered with premium alloy components for continuous 24/7 output and superior finish quality.</p>
                 </div>
 
-                <div class="cards-grid">
-                    <!-- Product Card 1 -->
-                    <div class="product-card">
+                <div class="grid-3">
+                    <div class="card-hover" style="overflow:hidden; display:flex; flex-direction:column; justify-content:space-between;">
                         <div>
-                            <div class="product-card-img-wrap">
-                                <img src="product/nail-making-machine.webp" alt="IN Series Automatic Wire Nail Making Machine" width="400" height="256" loading="lazy" decoding="async" class="product-card-img">
-                                <div class="product-badge">Bestseller</div>
+                            <div style="height:16rem; width:100%; position:relative; background:#e2e8f0; overflow:hidden;">
+                                <img src="product/nail-making-machine.webp" alt="IN Series Automatic Wire Nail Making Machine" width="400" height="256" loading="lazy" decoding="async" style="width:100%; height:100%; object-fit:cover; aspect-ratio:400/256;">
+                                <span style="position:absolute; top:1rem; right:1rem; background:var(--ind-900); color:var(--white); font-weight:700; font-size:0.75rem; padding:0.35rem 0.75rem; border-radius:9999px;">Bestseller</span>
                             </div>
-                            <div class="product-card-body">
-                                <h3 class="product-card-title">IN Series Nail Making Machines</h3>
-                                <p class="product-card-text">Automatic high-speed wire nail making machines models IN1+ to IN6 producing nails from 1 inch to 6 inches with flawless precision.</p>
-                                <ul class="product-features">
-                                    <li>
-                                        <svg class="check-icon" viewBox="0 0 256 256"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z"/></svg>
-                                        <span>Heavy-duty crank structure</span>
-                                    </li>
-                                    <li>
-                                        <svg class="check-icon" viewBox="0 0 256 256"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z"/></svg>
-                                        <span>Centralized automatic lubrication</span>
-                                    </li>
-                                    <li>
-                                        <svg class="check-icon" viewBox="0 0 256 256"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z"/></svg>
-                                        <span>Low operational noise &amp; vibration</span>
-                                    </li>
-                                </ul>
+                            <div style="padding:1.5rem;">
+                                <h3 style="font-size:1.25rem; margin-bottom:0.75rem; color:var(--ind-900);">IN Series Nail Making Machines</h3>
+                                <p style="font-size:0.95rem; color:var(--text-muted); margin-bottom:1.25rem; line-height:1.5;">Automatic high-speed wire nail making machines models IN1+ to IN6 producing nails from 1 inch to 6 inches with flawless precision.</p>
                             </div>
                         </div>
-                        <div class="product-card-footer">
-                            <a href="/nail-making-machine.html" class="link-arrow" aria-label="View Full Range and Specifications for IN Series Nail Making Machines">
+                        <div style="padding:0 1.5rem 1.5rem;">
+                            <a href="/nail-making-machine.html" style="display:inline-flex; align-items:center; font-weight:700; color:#be123c; font-size:0.95rem;">
                                 View Full Range &amp; Specs &rarr;
                             </a>
                         </div>
                     </div>
 
-                    <!-- Product Card 2 -->
-                    <div class="product-card">
+                    <div class="card-hover" style="overflow:hidden; display:flex; flex-direction:column; justify-content:space-between;">
                         <div>
-                            <div class="product-card-img-wrap">
-                                <img src="product/wire-drawing-machine.webp" alt="Heavy-Duty Continuous Wire Drawing Machine Plant" width="400" height="256" loading="lazy" decoding="async" class="product-card-img">
+                            <div style="height:16rem; width:100%; position:relative; background:#e2e8f0; overflow:hidden;">
+                                <img src="product/wire-drawing-machine.webp" alt="Continuous Wire Drawing Machine Plant" width="400" height="256" loading="lazy" decoding="async" style="width:100%; height:100%; object-fit:cover; aspect-ratio:400/256;">
                             </div>
-                            <div class="product-card-body">
-                                <h3 class="product-card-title">Continuous Wire Drawing Machines</h3>
-                                <p class="product-card-text">Heavy-duty continuous wire drawing plants designed for reducing wire gauge with high efficiency and smooth surface finish.</p>
-                                <ul class="product-features">
-                                    <li>
-                                        <svg class="check-icon" viewBox="0 0 256 256"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z"/></svg>
-                                        <span>Multi-pass bull block systems</span>
-                                    </li>
-                                    <li>
-                                        <svg class="check-icon" viewBox="0 0 256 256"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z"/></svg>
-                                        <span>Water cooling drum system</span>
-                                    </li>
-                                    <li>
-                                        <svg class="check-icon" viewBox="0 0 256 256"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z"/></svg>
-                                        <span>Tungsten carbide drawing dies</span>
-                                    </li>
-                                </ul>
+                            <div style="padding:1.5rem;">
+                                <h3 style="font-size:1.25rem; margin-bottom:0.75rem; color:var(--ind-900);">Continuous Wire Drawing Machines</h3>
+                                <p style="font-size:0.95rem; color:var(--text-muted); margin-bottom:1.25rem; line-height:1.5;">Heavy-duty continuous wire drawing plants designed for reducing wire gauge with high efficiency and smooth surface finish.</p>
                             </div>
                         </div>
-                        <div class="product-card-footer">
-                            <a href="/wire-draw-machine.html" class="link-arrow" aria-label="View Continuous Wire Drawing Plant Specifications">
+                        <div style="padding:0 1.5rem 1.5rem;">
+                            <a href="/wire-draw-machine.html" style="display:inline-flex; align-items:center; font-weight:700; color:#be123c; font-size:0.95rem;">
                                 View Plant Specifications &rarr;
                             </a>
                         </div>
                     </div>
 
-                    <!-- Product Card 3 -->
-                    <div class="product-card">
+                    <div class="card-hover" style="overflow:hidden; display:flex; flex-direction:column; justify-content:space-between;">
                         <div>
-                            <div class="product-card-img-wrap">
-                                <img src="product/binding-wire-making-machine.webp" alt="Automatic Binding Wire Making Machine Setup" width="400" height="256" loading="lazy" decoding="async" class="product-card-img">
+                            <div style="height:16rem; width:100%; position:relative; background:#e2e8f0; overflow:hidden;">
+                                <img src="product/binding-wire-making-machine.webp" alt="Automatic Binding Wire Making Machine Setup" width="400" height="256" loading="lazy" decoding="async" style="width:100%; height:100%; object-fit:cover; aspect-ratio:400/256;">
                             </div>
-                            <div class="product-card-body">
-                                <h3 class="product-card-title">Binding Wire Machinery</h3>
-                                <p class="product-card-text">Complete plant setup for manufacturing annealed black binding wire and galvanized wire used extensively in construction.</p>
-                                <ul class="product-features">
-                                    <li>
-                                        <svg class="check-icon" viewBox="0 0 256 256"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z"/></svg>
-                                        <span>Electric annealing furnace setup</span>
-                                    </li>
-                                    <li>
-                                        <svg class="check-icon" viewBox="0 0 256 256"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z"/></svg>
-                                        <span>Automatic spooling and coiling</span>
-                                    </li>
-                                    <li>
-                                        <svg class="check-icon" viewBox="0 0 256 256"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z"/></svg>
-                                        <span>High daily tonnage output</span>
-                                    </li>
-                                </ul>
+                            <div style="padding:1.5rem;">
+                                <h3 style="font-size:1.25rem; margin-bottom:0.75rem; color:var(--ind-900);">Binding Wire Machinery</h3>
+                                <p style="font-size:0.95rem; color:var(--text-muted); margin-bottom:1.25rem; line-height:1.5;">Complete plant setup for manufacturing annealed black binding wire and galvanized wire used extensively in construction.</p>
                             </div>
                         </div>
-                        <div class="product-card-footer">
-                            <a href="/binding-wire-making-machine.html" class="link-arrow" aria-label="View Binding Wire Making Setup Details">
+                        <div style="padding:0 1.5rem 1.5rem;">
+                            <a href="/binding-wire-making-machine.html" style="display:inline-flex; align-items:center; font-weight:700; color:#be123c; font-size:0.95rem;">
                                 View Setup Details &rarr;
                             </a>
                         </div>
@@ -591,64 +333,8 @@
                 </div>
             </div>
         </section>
-
-        <!-- Factory Intro / Made in Rajkot -->
-        <section class="section-py offscreen-render" style="background:var(--white); border-top:1px solid #cbd5e1; border-bottom:1px solid #cbd5e1;" aria-label="Manufacturing Facility">
-            <div class="container">
-                <div class="intro-grid">
-                    <div class="intro-img-wrap">
-                        <img src="product/wire-nail-making-machine.webp" alt="Binding Wire Machinery Manufacturing Facility in Rajkot Gujarat" width="600" height="400" loading="lazy" decoding="async" style="width:100%; height:auto;">
-                    </div>
-                    <div>
-                        <p class="section-subtitle">Made in Rajkot, India</p>
-                        <h2 style="font-size:2.25rem; margin-bottom:1.5rem; color:var(--ind-900);">The Global Hub of Machinery Excellence</h2>
-                        <p style="font-size:1.125rem; color:var(--text-muted); margin-bottom:1rem; line-height:1.6;">
-                            Located in the renowned Aji Industrial Area of Rajkot, we leverage decades of rich engineering heritage to manufacture machines that stand the test of time.
-                        </p>
-                        <p style="font-size:1rem; color:var(--text-muted); margin-bottom:1.5rem; line-height:1.6;">
-                            Our facility is equipped with heavy CNC machining centers, rigid quality testing protocols, and an expert engineering team dedicated to innovating wire and nail manufacturing processes for international export markets across Kenya, UAE, Germany, Nigeria, and beyond.
-                        </p>
-                        <div class="intro-badge-grid">
-                            <div class="intro-badge-item">
-                                <div class="badge-icon-box">
-                                    <svg class="badge-icon" viewBox="0 0 256 256"><path d="M240,112H224V88a8,8,0,0,0-13.66-5.66L176,116.69V88a8,8,0,0,0-13.66-5.66L128,116.69V88a8,8,0,0,0-13.66-5.66L80,116.69V40a8,8,0,0,0-8-8H32a8,8,0,0,0-8,8V216a8,8,0,0,0,8,8H240a8,8,0,0,0,8-8V120A8,8,0,0,0,240,112ZM40,48H64V208H40ZM232,208H80V136l42.34-42.34,32,32a8,8,0,0,0,13.66-5.66V88l40,40v80Z"/></svg>
-                                </div>
-                                <div>
-                                    <h3 style="font-size:1.1rem; margin-bottom:0.25rem; color:var(--ind-900);">Modern Facility</h3>
-                                    <p style="font-size:0.875rem; color:var(--text-muted);">In-house manufacturing</p>
-                                </div>
-                            </div>
-                            <div class="intro-badge-item">
-                                <div class="badge-icon-box">
-                                    <svg class="badge-icon" viewBox="0 0 256 256"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm87.64,96H175.77a137.42,137.42,0,0,0-14.7-64A88.19,88.19,0,0,1,215.64,120ZM128,40.37a121.6,121.6,0,0,1,16,63.63H112A121.6,121.6,0,0,1,128,40.37ZM40.36,120A88.19,88.19,0,0,1,94.93,56a137.42,137.42,0,0,0-14.7,64ZM40.36,136H79.23a137.42,137.42,0,0,0,14.7,64A88.19,88.19,0,0,1,40.36,136ZM128,215.63A121.6,121.6,0,0,1,112,152h32A121.6,121.6,0,0,1,128,215.63Zm33.07-15.63a137.42,137.42,0,0,0,14.7-64h38.87A88.19,88.19,0,0,1,161.07,200Z"/></svg>
-                                </div>
-                                <div>
-                                    <h3 style="font-size:1.1rem; margin-bottom:0.25rem; color:var(--ind-900);">Global Export</h3>
-                                    <p style="font-size:0.875rem; color:var(--text-muted);">Shipped to 25+ countries</p>
-                                </div>
-                            </div>
-                        </div>
-                        <a href="/about.html" class="btn btn-brand" style="background:var(--ind-900);" aria-label="Read our manufacturing story">Read Our Story</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Quick CTA -->
-        <section class="cta-banner offscreen-render" aria-label="Quick Inquiry Action">
-            <div class="container">
-                <div class="cta-inner">
-                    <div>
-                        <h2 class="cta-title">Ready to Upgrade Your Production Line?</h2>
-                        <p class="cta-desc">Get in touch with our engineers for custom specifications and global shipping quotes.</p>
-                    </div>
-                    <a href="/contact.html" class="btn" style="background:var(--white); color:#be123c;" aria-label="Contact us today for machinery quotes">Contact Us Today</a>
-                </div>
-            </div>
-        </section>
     </main>
 
-    <!-- FOOTER -->
     <footer class="site-footer offscreen-render">
         <div class="container">
             <div class="footer-grid">
@@ -658,10 +344,9 @@
                         <span style="font-family:'Montserrat', sans-serif; font-weight:700; font-size:1.25rem; color:var(--white);">Binding Wire Machine</span>
                     </div>
                     <p style="font-size:0.9rem; line-height:1.6; color:#f1f5f9; margin-bottom:1.5rem;">
-                        Leading manufacturer and exporter of high-speed automatic wire nail making machines, continuous wire drawing lines, and binding wire machinery engineered in Rajkot, Gujarat.
+                        Leading manufacturer and exporter of high-speed automatic wire nail making machines, continuous wire drawing lines, and binding wire machinery in Rajkot.
                     </p>
                 </div>
-
                 <div>
                     <h3 class="footer-col-title">Quick Links</h3>
                     <ul class="footer-links">
@@ -670,24 +355,22 @@
                         <li><a href="/nail-making-machine.html">Nail Making Machines</a></li>
                         <li><a href="/wire-draw-machine.html">Wire Drawing Plant</a></li>
                         <li><a href="/binding-wire-making-machine.html">Binding Wire Machine</a></li>
-                        <li><a href="/binding-wire-machine-price.html">Price &amp; Quotations</a></li>
-                        <li><a href="/videos.html">Video Gallery</a></li>
+                        <li><a href="/binding-wire-machine-price.html">Price List</a></li>
+                        <li><a href="/videos.html">Videos</a></li>
                         <li><a href="/faq.html">FAQ</a></li>
                         <li><a href="/contact.html">Contact Us</a></li>
                     </ul>
                 </div>
-
                 <div>
-                    <h3 class="footer-col-title">Policies &amp; Info</h3>
+                    <h3 class="footer-col-title">Policies</h3>
                     <ul class="footer-links">
                         <li><a href="/privacy-policy.html">Privacy Policy</a></li>
-                        <li><a href="/terms.html">Terms of Service</a></li>
-                        <li><a href="/shipping-return-policy.html">Shipping &amp; Export Policy</a></li>
-                        <li><a href="/location.html">Factory &amp; Global Footprint</a></li>
+                        <li><a href="/terms.html">Terms</a></li>
+                        <li><a href="/shipping-return-policy.html">Shipping Policy</a></li>
+                        <li><a href="/location.html">Plant Location</a></li>
                         <li><a href="/sitemap.xml">XML Sitemap</a></li>
                     </ul>
                 </div>
-
                 <div>
                     <h3 class="footer-col-title">Factory Contact</h3>
                     <address style="font-style:normal; font-size:0.9rem; color:#f1f5f9; line-height:1.6;">
@@ -697,7 +380,6 @@
                     </address>
                 </div>
             </div>
-
             <div class="footer-bottom">
                 <p>&copy; 2026 Binding Wire Machine. All rights reserved.</p>
                 <p>Engineered for High Output &amp; Precision Performance in Rajkot, India.</p>
@@ -705,30 +387,17 @@
         </div>
     </footer>
 
-    <!-- Floating CTA Stack -->
     <div class="floating-stack">
         <a href="tel:+919978822099" class="float-btn float-call" aria-label="Call Factory Directly">
             <svg class="float-icon" viewBox="0 0 256 256"><path d="M222.37,158.46l-47.11-21.11a16,16,0,0,0-15.17,1.4L136.4,154.5a120.35,120.35,0,0,1-34.9-34.9l15.75-23.69a16,16,0,0,0,1.4-15.17L97.54,33.63A16,16,0,0,0,82.8,24H48A24,24,0,0,0,24,48,208.23,208.23,0,0,0,232,232a24,24,0,0,0,24-24V173.2A16,16,0,0,0,222.37,158.46Z"/></svg>
             <span class="float-text">Call +91 99788 22099</span>
         </a>
-        <a href="https://wa.me/919978822099?text=Hello%2C%20I%20am%20interested%20in%20your%20wire%20nail%20and%20binding%20wire%20machinery.%20Please%20send%20price%20quote." target="_blank" rel="noopener noreferrer" class="float-btn float-wa" aria-label="Chat with Engineers on WhatsApp">
+        <a href="https://wa.me/919978822099?text=Hello%2C%20I%20am%20interested%20in%20your%20wire%20nail%20and%20binding%20wire%20machinery.%20Please%20send%20price%20quote." target="_blank" rel="noopener noreferrer" class="float-btn float-wa" aria-label="Chat on WhatsApp">
             <svg class="float-icon" viewBox="0 0 256 256"><path d="M187.58,144.84l-25-12a16,16,0,0,0-15,.88l-14.3,8.58a80.36,80.36,0,0,1-34.8-34.8l8.58-14.3a16,16,0,0,0,.88-15l-12-25a16,16,0,0,0-21.36-7.85L56.1,53.48A16,16,0,0,0,48,68C48,147.38,112.62,212,192,212a16,16,0,0,0,14.52-8.1l8.13-18.28A16,16,0,0,0,187.58,144.84ZM192,196C121.42,196,64,138.58,64,68l18.28-8.13,12,25L84.8,99.2A16,16,0,0,0,82.78,114a96.44,96.44,0,0,0,59.22,59.22,16,16,0,0,0,14.8-2l14.33-9.48,25,12Z"/></svg>
             <span class="float-text">Chat on WhatsApp</span>
         </a>
     </div>
 
-    <!-- Mobile Navigation Toggle Script -->
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const menuBtn = document.getElementById('mobile-menu-btn');
-            const mobileMenu = document.getElementById('mobile-menu');
-            if (menuBtn && mobileMenu) {
-                menuBtn.addEventListener('click', () => {
-                    const isOpen = mobileMenu.classList.toggle('active');
-                    menuBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-                });
-            }
-        });
-    </script>
+    <script src="/main.js" defer></script>
 </body>
 </html>
