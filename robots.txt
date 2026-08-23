@@ -1,7 +1,7 @@
 User-agent: *
 Allow: /
 
-# Agentic Search Engine Crawlers & LLM Bots
+# Agentic AI & LLM Search Engine Crawlers
 User-agent: GPTBot
 Allow: /
 
@@ -38,7 +38,7 @@ Allow: /
 User-agent: cohere-ai
 Allow: /
 
-# Priority Sitemaps & Context
+# Official XML Sitemaps
 Sitemap: https://www.bindingwiremachine.in/sitemap.xml
 Sitemap: https://www.bindingwiremachine.in/sitemap-products.xml
 Sitemap: https://www.bindingwiremachine.in/sitemap-images.xml
