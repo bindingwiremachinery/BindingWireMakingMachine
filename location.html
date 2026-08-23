@@ -3,178 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#030712">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    
-    <!-- SEO OPTIMIZED -->
-    <title>Contact & Location | Industrial Machine Manufacturer Rajkot</title>
-    <meta name="description" content="Locate our industrial manufacturing plant in Rajkot, Gujarat. Get in touch with the leading binding wire and nail machine manufacturer for global export.">
-    <meta name="keywords" content="location near me, Rajkot machinery manufacturer, contact binding wire machine, nail machine exporter India">
-    <link rel="canonical" href="https://bindingwiremachine.in/location.html">
+    <meta name="description" content="Factory location and international export network of Binding Wire Machine in Aji Industrial Area, Rajkot, Gujarat, India.">
+    <meta name="keywords" content="Rajkot industrial machinery location, Aji industrial area factory, wire nail machine factory Rajkot, industrial export ports India">
+    <meta name="author" content="Binding Wire Machine">
+    <link rel="canonical" href="https://www.bindingwiremachine.in/location.html">
+    <title>Factory Location &amp; Global Export Logistics | Rajkot Gujarat</title>
 
-    <!-- Open Graph / Social SEO -->
-    <meta property="og:title" content="Contact & Location | Industrial Machine Manufacturer Rajkot">
-    <meta property="og:description" content="Visit our manufacturing plant in Rajkot, Gujarat. Get in touch with the leading binding wire and nail machine manufacturer.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://bindingwiremachine.in/location.html">
-    <meta property="og:image" content="https://bindingwiremachine.in/product/binding-wire-making-machine.png">
-
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Contact & Location | Industrial Machine Manufacturer Rajkot">
-    <meta name="twitter:description" content="Visit our manufacturing plant in Rajkot, Gujarat. Get in touch with the leading binding wire and nail machine manufacturer.">
-
-    <!-- Preconnect / Performance Optimization -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
-    <link rel="preconnect" href="https://cdn.tailwindcss.com">
-
-    <!-- Styles & Scripts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web" defer></script>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-    <!-- Structured Data (LocalBusiness Schema) -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "ManufacturingBusiness",
-      "name": "Binding Wire Making Machine",
-      "image": "https://bindingwiremachine.in/product/binding-wire-making-machine.png",
-      "@id": "https://bindingwiremachine.in/#organization",
-      "url": "https://bindingwiremachine.in",
-      "telephone": "+91 99788 22099",
-      "email": "bindingwiremachinery@gmail.com",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Aji Vasahat St No 9, Aji Industrial Area",
-        "addressLocality": "Rajkot",
-        "addressRegion": "Gujarat",
-        "postalCode": "360003",
-        "addressCountry": "IN"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 22.2736,
-        "longitude": 70.7323
-      },
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday",
-          "Saturday"
-        ],
-        "opens": "09:00",
-        "closes": "19:00"
-      }
-    }
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'sans-serif'], heading: ['Montserrat', 'sans-serif'] },
+                    colors: { industrial: { 50: '#f8fafc', 100: '#f1f5f9', 800: '#1e293b', 900: '#0f172a', 950: '#020617' }, brand: { DEFAULT: '#e11d48', dark: '#be123c' } }
+                }
+            }
+        }
     </script>
-
-    <style>
-        body { background-color: #030712; color: #e2e8f0; font-family: 'Inter', sans-serif; overflow-x: hidden; }
-        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.05); }
-        #webgl-canvas { position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: -1; pointer-events: none; }
-        .map-glossy { filter: invert(90%) hue-rotate(180deg) brightness(80%) contrast(120%); transition: filter 0.5s; }
-        .map-glossy:hover { filter: invert(100%) hue-rotate(180deg) brightness(100%) contrast(160%); }
-        .font-display { font-family: 'Syncopate', sans-serif; }
-    </style>
+    <link rel="stylesheet" href="/styles.css">
 </head>
-<body class="antialiased selection:bg-cyan-400 selection:text-navy">
-
-    <canvas id="webgl-canvas"></canvas>
-
-    <!-- Navigation -->
-    <header class="fixed w-full top-0 z-50 glass border-b border-white/10">
-        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="index.html" class="text-xl font-display font-bold text-white tracking-wider" aria-label="Binding Wire Machinery Home">BWM<span class="text-cyan-400">.</span></a>
-            <nav class="hidden md:flex gap-8 text-sm font-semibold tracking-widest uppercase" aria-label="Main Navigation">
-                <a href="index.html" class="hover:text-cyan-400 transition-colors">Home</a>
-                <a href="product.html" class="hover:text-cyan-400 transition-colors">Machinery</a>
-                <a href="location.html" class="text-cyan-400" aria-current="page">Location</a>
-            </nav>
-            <a href="https://wa.me/919978822099" target="_blank" rel="noopener noreferrer" aria-label="Contact us on WhatsApp" class="px-6 py-2 border border-cyan-400 text-cyan-400 rounded-full hover:bg-cyan-400 hover:text-navy transition-all text-sm font-bold">CONTACT</a>
+<body class="bg-gray-50 text-gray-800 font-sans antialiased flex flex-col min-h-screen">
+    <header class="bg-white shadow-md sticky top-0 z-40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="/" class="flex items-center">
+                    <div class="w-10 h-10 bg-brand text-white rounded flex items-center justify-center font-heading font-bold text-xl mr-3">BW</div>
+                    <div>
+                        <span class="font-heading font-bold text-industrial-900 text-lg sm:text-xl leading-tight block">BINDING WIRE</span>
+                        <span class="text-xs text-gray-500 font-semibold tracking-wider block">MACHINERY</span>
+                    </div>
+                </a>
+                <nav class="hidden lg:flex space-x-8 items-center">
+                    <a href="/" class="nav-link font-medium text-gray-600 hover:text-brand">Home</a>
+                    <a href="/about.html" class="nav-link font-medium text-gray-600 hover:text-brand">About</a>
+                    <a href="/location.html" class="nav-link font-medium text-brand">Location</a>
+                    <a href="/contact.html" class="bg-brand text-white px-6 py-2.5 rounded-md font-medium">Get Quote</a>
+                </nav>
+            </div>
         </div>
     </header>
 
-    <main class="pt-32 pb-24">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="text-center mb-16">
-                <h1 class="text-4xl md:text-6xl font-display font-bold text-white mb-6">GLOBAL <span class="text-cyan-400">HEADQUARTERS</span></h1>
-                <p class="text-gray-400 max-w-2xl mx-auto">Visit our state-of-the-art manufacturing facility in Rajkot to see our industrial nail machines in action.</p>
+    <main class="flex-grow">
+        <div class="bg-industrial-900 py-16 text-center">
+            <div class="max-w-4xl mx-auto px-4">
+                <span class="inline-block py-1 px-3 rounded-full bg-brand/20 border border-brand/50 text-brand font-semibold text-xs mb-3 uppercase tracking-wider">Manufacturing Base</span>
+                <h1 class="text-3xl sm:text-5xl font-heading font-bold text-white mb-4">Rajkot Factory &amp; Global Logistics</h1>
+                <p class="text-gray-300 text-lg">Conveniently situated in Gujarat's premier engineering corridor with immediate highway and port connectivity.</p>
             </div>
+        </div>
 
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-                <!-- Info Grid -->
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                    <div class="glass p-8 rounded-xl border-l-2 border-cyan-400">
-                        <i class="fas fa-map-marker-alt text-cyan-400 text-2xl mb-4" aria-hidden="true"></i>
-                        <h2 class="text-white font-bold mb-2 text-lg">Factory Location</h2>
-                        <p class="text-gray-400 text-sm">Aji Vasahat St No 9, Rajkot, Gujarat - 360003, India</p>
-                    </div>
-                    <div class="glass p-8 rounded-xl border-l-2 border-cyan-400">
-                        <i class="fas fa-phone-alt text-cyan-400 text-2xl mb-4" aria-hidden="true"></i>
-                        <h2 class="text-white font-bold mb-2 text-lg">Direct Line</h2>
-                        <p class="text-gray-400 text-sm"><a href="tel:+919978822099" class="hover:text-cyan-400 transition-colors">+91 99788 22099</a></p>
-                    </div>
-                    <div class="glass p-8 rounded-xl border-l-2 border-cyan-400">
-                        <i class="fas fa-envelope text-cyan-400 text-2xl mb-4" aria-hidden="true"></i>
-                        <h2 class="text-white font-bold mb-2 text-lg">Email Desk</h2>
-                        <p class="text-gray-400 text-sm"><a href="mailto:bindingwiremachinery@gmail.com" class="hover:text-cyan-400 transition-colors">bindingwiremachinery@gmail.com</a></p>
-                    </div>
-                    <div class="glass p-8 rounded-xl border-l-2 border-cyan-400">
-                        <i class="fas fa-clock text-cyan-400 text-2xl mb-4" aria-hidden="true"></i>
-                        <h2 class="text-white font-bold mb-2 text-lg">Support Hours</h2>
-                        <p class="text-gray-400 text-sm">Mon - Sat: 9:00 AM - 7:00 PM</p>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
+                <div>
+                    <h2 class="text-3xl font-heading font-bold text-industrial-900 mb-6">Strategic Location in Aji Industrial Area</h2>
+                    <p class="text-gray-600 text-lg mb-4">
+                        Rajkot is globally acknowledged as the capital of casting, forging, and heavy machine tool engineering in India. Operating from Aji Industrial Area Phase-2, we utilize precision foundry castings, induction heat-treatment facilities, and skilled metallurgy experts.
+                    </p>
+                    <p class="text-gray-600 mb-6">
+                        Our plant is directly connected via national highways to major international container ports (Mundra, Kandla, and Nhava Sheva / Mumbai), enabling rapid 20ft and 40ft container dispatch across global shipping routes.
+                    </p>
+                    <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm space-y-3">
+                        <p><strong>Factory Address:</strong> Aji Industrial Area, Phase-2, Shed No. 123, Rajkot, Gujarat - 360003, India</p>
+                        <p><strong>Nearest Airport:</strong> Rajkot International Airport (Hirasar - HSR)</p>
+                        <p><strong>Nearest Export Sea Ports:</strong> Mundra Port / Kandla Port / Nhava Sheva (JNPT)</p>
                     </div>
                 </div>
-
-                <!-- Google Map -->
-                <div class="h-[400px] lg:h-auto w-full rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
-                    <iframe 
-                        title="Google Maps Location of Factory in Rajkot, Gujarat"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1m3!1d118106.70010221669!2d70.73231454523315!3d22.273630792078657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3959c98ac71cbd83%3A0x1088ebcb6e8cc31d!2sRajkot%2C%20Gujarat%20360003!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
-                        width="800" height="600" class="map-glossy w-full h-full border-0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="h-96 rounded-lg overflow-hidden shadow-lg border border-gray-200">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3692.0643871537172!2d70.8235057!3d22.2755507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3959b5006bec494b%3A0x72a9f4a5464d49e4!2sBinding%20Wire%20Making%20Machine!5e0!3m2!1sen!2sin!4v1784656165468!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
             </div>
         </div>
     </main>
 
-    <!-- WebGL Script -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-    <script>
-        const canvas = document.getElementById('webgl-canvas');
-        const scene = new THREE.Scene();
-        const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-        camera.position.z = 40;
-        const renderer = new THREE.WebGLRenderer({ canvas, alpha: true, antialias: false });
-        renderer.setSize(window.innerWidth, window.innerHeight);
-        renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
-
-        const geo = new THREE.BufferGeometry();
-        const pts = new Float32Array(500 * 3);
-        for(let i=0; i<500*3; i++) pts[i] = (Math.random()-0.5)*150;
-        geo.setAttribute('position', new THREE.BufferAttribute(pts, 3));
-        const mat = new THREE.PointsMaterial({ size: 0.1, color: 0x22d3ee, transparent: true, opacity: 0.4 });
-        const mesh = new THREE.Points(geo, mat);
-        scene.add(mesh);
-
-        function animate() {
-            requestAnimationFrame(animate);
-            mesh.rotation.y += 0.001;
-            renderer.render(scene, camera);
-        }
-        animate();
-
-        window.addEventListener('resize', () => {
-            camera.aspect = window.innerWidth / window.innerHeight;
-            camera.updateProjectionMatrix();
-            renderer.setSize(window.innerWidth, window.innerHeight);
-        });
-    </script>
+    <footer class="bg-industrial-900 text-gray-400 py-12 border-t border-industrial-800">
+        <div class="max-w-7xl mx-auto px-4 text-center sm:flex sm:justify-between">
+            <p>&copy; 2026 Binding Wire Machine. Rajkot, India.</p>
+            <a href="/contact.html" class="hover:text-white">Contact Us</a>
+        </div>
+    </footer>
+    <script src="/main.js" defer></script>
 </body>
 </html>
