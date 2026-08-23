@@ -1,5 +1,5 @@
 /* ==========================================================================
-   BINDING WIRE MACHINE - MASTER DESIGN SYSTEM (100% PARITY ACROSS ALL PAGES)
+   BINDING WIRE MACHINE - MASTER PRODUCTION DESIGN SYSTEM
    ========================================================================== */
 
 :root {
@@ -23,7 +23,7 @@ h1, h2, h3, h4, h5, h6 { font-family: "Montserrat", -apple-system, sans-serif; f
 a { color: inherit; text-decoration: none; }
 img { display: block; max-width: 100%; height: auto; }
 
-/* Accessibility 48px Tap Targets */
+/* Accessibility 48px Minimum Tap Targets */
 button, a.nav-link, .btn, input, select, textarea { min-height: 48px; min-width: 48px; display: inline-flex; align-items: center; justify-content: center; }
 
 /* Containers */
