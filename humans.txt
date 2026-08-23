@@ -1,8 +1,9 @@
 /* TEAM */
-  Proprietor & Founder: Yasin Ahamed Sandhi
-  Location: Rajkot, Gujarat, India
+Proprietor & Engineering Lead: Binding Wire Machine Team
+Location: Rajkot, Gujarat, India
+Contact: +91 99788 22099
 
 /* SITE */
-  Standards: HTML5, CSS3, Tailwind CSS, JS (ES6 SPA Router)
-  Components: Schema.org JSON-LD, PWA WebManifest
-  Language: English
+Standards: HTML5, CSS3, Schema.org, WCAG 2.1 AA
+Frameworks: Tailwind CSS, Phosphor Icons
+Target Domain: bindingwiremachine.in
