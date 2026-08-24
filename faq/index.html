@@ -1,26 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Frequently Asked Questions | Binding Wire Machinery</title>
-    <meta name="description" content="Technical answers regarding power requirements, wire raw materials (HB/MS), output capacities, and worldwide shipping.">
+    <title>Technical FAQ | Wire & Nail Making Machinery</title>
+    <meta name="description" content="Technical answers on wire raw materials (HB mild steel), 3-phase electrical power (415V/380V), tooling longevity, and warranty terms.">
     <link rel="canonical" href="https://www.bindingwiremachine.in/faq/">
     <link rel="stylesheet" href="/styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'sans-serif'], heading: ['Montserrat', 'sans-serif'] },
+                    colors: { industrial: { 50: '#f8fafc', 100: '#f1f5f9', 800: '#1e293b', 900: '#0f172a', 950: '#020617' }, brand: { DEFAULT: '#e11d48', dark: '#be123c' } }
+                }
+            }
+        }
+    </script>
+    <script src="https://unpkg.com/@phosphor-icons/web" defer></script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Do you export machines outside India?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes, we regularly export machinery across Africa, the Middle East, Southeast Asia, and South America." }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the warranty period on your machines?",
+          "acceptedAnswer": { "@type": "Answer", "text": "All machines come with a 1-year manufacturing defect warranty alongside lifetime availability of spare parts." }
+        },
+        {
+          "@type": "Question",
+          "name": "What raw material is required for nail making?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Cold drawn Mild Steel (MS) or Hard Bright (HB) wire drawn to the specified SWG gauge." }
+        }
+      ]
+    }
+    </script>
 </head>
-<body class="bg-gray-50">
-    <main class="py-16 max-w-4xl mx-auto px-4">
-        <h1 class="text-4xl font-heading font-bold text-industrial-900 mb-8">Frequently Asked Questions</h1>
+<body class="bg-gray-50 text-gray-800 font-sans antialiased min-h-screen flex flex-col justify-between">
+    <header class="bg-white shadow-md sticky top-0 z-40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-20">
+            <a href="/" class="flex items-center">
+                <div class="w-10 h-10 bg-brand text-white rounded flex items-center justify-center font-heading font-bold text-xl mr-3">BW</div>
+                <div>
+                    <h2 class="font-heading font-bold text-industrial-900 text-lg sm:text-xl leading-tight">BINDING WIRE</h2>
+                    <p class="text-xs text-gray-500 font-semibold tracking-wider">MACHINERY</p>
+                </div>
+            </a>
+            <nav class="hidden md:flex space-x-6 items-center">
+                <a href="/" class="font-medium text-gray-600 hover:text-brand">Home</a>
+                <a href="/products/" class="font-medium text-gray-600 hover:text-brand">Products</a>
+                <a href="/about/" class="font-medium text-gray-600 hover:text-brand">About Us</a>
+                <a href="/contact/" class="bg-brand text-white px-5 py-2 rounded font-medium hover:bg-brand-dark">Get Quote</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 flex-grow">
+        <h1 class="text-4xl font-heading font-bold text-industrial-900 mb-8 text-center">Frequently Asked Questions</h1>
         <div class="space-y-6">
-            <div class="bg-white p-6 rounded-lg shadow-sm">
-                <h3 class="font-bold text-lg mb-2">Do you export machines outside India?</h3>
-                <p class="text-gray-600">Yes, we regularly export containerized machinery to Africa, the Middle East, and Southeast Asia through Mundra and Kandla ports.</p>
+            <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
+                <h2 class="font-bold text-industrial-900 text-lg mb-2">1. Do you export machines outside India?</h2>
+                <p class="text-gray-600">Yes, we are a global exporter. We handle international export crating and support ocean container shipping via Mundra and Kandla ports to Africa, the Middle East, Southeast Asia, and the Americas.</p>
             </div>
-            <div class="bg-white p-6 rounded-lg shadow-sm">
-                <h3 class="font-bold text-lg mb-2">What is the warranty period?</h3>
-                <p class="text-gray-600">All machines include a 1-year standard warranty against manufacturing defects and lifetime spare parts support.</p>
+            <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
+                <h2 class="font-bold text-industrial-900 text-lg mb-2">2. What is the warranty period on your machines?</h2>
+                <p class="text-gray-600">All machinery manufactured by Binding Wire Machine carries a comprehensive 1-year warranty against manufacturing defects. We also provide lifetime availability for replacement tooling, dies, and mechanical components.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
+                <h2 class="font-bold text-industrial-900 text-lg mb-2">3. What electrical power supply is required?</h2>
+                <p class="text-gray-600">Our machines operate on standard 3-phase industrial power (415V, 50Hz for India; customizable to 380V/220V 60Hz for international export destinations).</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
+                <h2 class="font-bold text-industrial-900 text-lg mb-2">4. Do you provide onsite installation and training?</h2>
+                <p class="text-gray-600">Yes. Detailed operation manuals and video tutorials accompany every machine. For full plant setups, our engineers can be dispatched for onsite erection, commissioning, and operator training.</p>
             </div>
         </div>
     </main>
+
+    <footer class="bg-industrial-900 text-gray-400 py-10 text-center text-sm border-t border-industrial-800">
+        <p>&copy; 2026 Binding Wire Machine. Aji Industrial Area, Phase-2, Rajkot, Gujarat - 360003, India.</p>
+    </footer>
 </body>
 </html>
