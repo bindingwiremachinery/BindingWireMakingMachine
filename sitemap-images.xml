@@ -1,66 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-    <url>
-        <loc>https://www.bindingwiremachine.in/</loc>
-        <image:image>
-            <image:loc>https://www.bindingwiremachine.in/product/binding-wire-making-machine.webp</image:loc>
-            <image:title>Automatic Binding Wire Making Machinery Setup Rajkot</image:title>
-            <image:caption>Industrial continuous binding wire and annealing furnace setup manufactured in Rajkot, Gujarat, India.</image:caption>
-        </image:image>
-        <image:image>
-            <image:loc>https://www.bindingwiremachine.in/product/wire-nail-making-machine.webp</image:loc>
-            <image:title>Industrial Nail Making Machine Workshop Rajkot Facility</image:title>
-            <image:caption>Heavy-duty wire nail machine workshop located in Aji Industrial Area, Rajkot.</image:caption>
-        </image:image>
-    </url>
-    <url>
-        <loc>https://www.bindingwiremachine.in/nail-making-machine.html</loc>
-        <image:image>
-            <image:loc>https://www.bindingwiremachine.in/product/nail-making-machine.webp</image:loc>
-            <image:title>IN Series Automatic High-Speed Wire Nail Making Machine</image:title>
-            <image:caption>Automatic high-speed wire nail making machine for continuous mass production of 1 to 6 inch nails.</image:caption>
-        </image:image>
-        <image:image>
-            <image:loc>https://www.bindingwiremachine.in/product/IN1%2B-nail-making-machine.webp</image:loc>
-            <image:title>IN1+ Automatic Wire Nail Making Machine</image:title>
-            <image:caption>High-speed automatic nail machine model IN1+ for 0.5 to 1.0 inch nails at 550 pcs per minute.</image:caption>
-        </image:image>
-        <image:image>
-            <image:loc>https://www.bindingwiremachine.in/product/IN3-nail-making-machine.webp</image:loc>
-            <image:title>IN3 Automatic Wire Nail Making Machine</image:title>
-            <image:caption>Automatic wire nail machine model IN3 for 1.0 to 3.0 inch nails at 350 pcs per minute.</image:caption>
-        </image:image>
-        <image:image>
-            <image:loc>https://www.bindingwiremachine.in/product/IN4-nail-making-machine.webp</image:loc>
-            <image:title>IN4 Heavy Duty Automatic Wire Nail Machine</image:title>
-            <image:caption>Heavy-duty wire nail machine model IN4 for 2.0 to 4.0 inch construction nails.</image:caption>
-        </image:image>
-        <image:image>
-            <image:loc>https://www.bindingwiremachine.in/product/IN6-nail-making-machine.webp</image:loc>
-            <image:title>IN6 Heavy Duty Automatic Wire Nail Machine</image:title>
-            <image:caption>Heavy industrial wire nail machine model IN6 for 3.0 to 6.0 inch nails with 7.5 HP motor.</image:caption>
-        </image:image>
-    </url>
-    <url>
-        <loc>https://www.bindingwiremachine.in/wire-draw-machine.html</loc>
-        <image:image>
-            <image:loc>https://www.bindingwiremachine.in/product/wire-drawing-machine.webp</image:loc>
-            <image:title>Continuous Wire Drawing Machine Plant</image:title>
-            <image:caption>Heavy-duty continuous wire drawing line with water-cooled drums and tungsten carbide dies.</image:caption>
-        </image:image>
-        <image:image>
-            <image:loc>https://www.bindingwiremachine.in/product/Continuous-Wire-Drawing-Plant-Setup.webp</image:loc>
-            <image:title>Continuous Wire Drawing Plant Installation Setup</image:title>
-            <image:caption>Multi-pass continuous wire drawing plant with variable frequency inverter drive.</image:caption>
-        </image:image>
-    </url>
-    <url>
-        <loc>https://www.bindingwiremachine.in/binding-wire-making-machine.html</loc>
-        <image:image>
-            <image:loc>https://www.bindingwiremachine.in/product/binding-wire-making-machine.webp</image:loc>
-            <image:title>Precision Automatic Binding Wire Making Machine</image:title>
-            <image:caption>Complete setup for black annealed binding wire with electric pit annealing furnace and automatic spooling.</image:caption>
-        </image:image>
-    </url>
+  <url>
+    <loc>https://www.bindingwiremachine.in/nail-making-machine.html</loc>
+    <image:image>
+      <image:loc>https://www.bindingwiremachine.in/product/nail-making-machine.webp</image:loc>
+      <image:title>Automatic Wire Nail Making Machine</image:title>
+      <image:caption>Heavy Duty Wire Nail Making Machine manufactured in Rajkot Gujarat</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.bindingwiremachine.in/wire-drawing-machine.html</loc>
+    <image:image>
+      <image:loc>https://www.bindingwiremachine.in/product/wire-drawing-machine.webp</image:loc>
+      <image:title>Continuous Wire Drawing Machine Plant</image:title>
+      <image:caption>Multi-block continuous wire drawing line with water cooled drums</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.bindingwiremachine.in/binding-wire-making-machine.html</loc>
+    <image:image>
+      <image:loc>https://www.bindingwiremachine.in/product/binding-wire-making-machine.webp</image:loc>
+      <image:title>Automatic Binding Wire Making Machinery</image:title>
+      <image:caption>Complete annealing and wire spooling plant setup</image:caption>
+    </image:image>
+  </url>
 </urlset>
