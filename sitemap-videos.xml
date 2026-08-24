@@ -1,40 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-    <url>
-        <loc>https://www.bindingwiremachine.in/videos.html</loc>
-        <video:video>
-            <video:thumbnail_loc>https://www.bindingwiremachine.in/product/IN3-nail-making-machine.webp</video:thumbnail_loc>
-            <video:title>IN3 High Speed Automatic Wire Nail Making Machine Demo</video:title>
-            <video:description>Operational demonstration video of the IN3 automatic wire nail machine running at 350 pcs per minute in Rajkot, India.</video:description>
-            <video:player_loc>https://www.youtube.com/embed/dQw4w9WgXcQ</video:player_loc>
-            <video:duration>180</video:duration>
-            <video:publication_date>2026-01-15T08:00:00+05:30</video:publication_date>
-            <video:family_friendly>yes</video:family_friendly>
-            <video:uploader info="https://www.bindingwiremachine.in/">Binding Wire Machine</video:uploader>
-            <video:live>no</video:live>
-        </video:video>
-        <video:video>
-            <video:thumbnail_loc>https://www.bindingwiremachine.in/product/Continuous-Wire-Drawing-Plant-Setup.webp</video:thumbnail_loc>
-            <video:title>Continuous Wire Drawing Plant Multi-Block Setup</video:title>
-            <video:description>Continuous multi-pass wire drawing machine setup reducing wire gauge from 5.5mm to 1.2mm with water-cooled drums.</video:description>
-            <video:player_loc>https://www.youtube.com/embed/dQw4w9WgXcQ</video:player_loc>
-            <video:duration>240</video:duration>
-            <video:publication_date>2026-01-15T08:00:00+05:30</video:publication_date>
-            <video:family_friendly>yes</video:family_friendly>
-            <video:uploader info="https://www.bindingwiremachine.in/">Binding Wire Machine</video:uploader>
-            <video:live>no</video:live>
-        </video:video>
-        <video:video>
-            <video:thumbnail_loc>https://www.bindingwiremachine.in/product/binding-wire-making-machine.webp</video:thumbnail_loc>
-            <video:title>Binding Wire Packaging Automation and Annealing Process</video:title>
-            <video:description>Demonstration of automated binding wire coiling, weight control, and annealing furnace operations.</video:description>
-            <video:player_loc>https://www.youtube.com/embed/dQw4w9WgXcQ</video:player_loc>
-            <video:duration>210</video:duration>
-            <video:publication_date>2026-01-15T08:00:00+05:30</video:publication_date>
-            <video:family_friendly>yes</video:family_friendly>
-            <video:uploader info="https://www.bindingwiremachine.in/">Binding Wire Machine</video:uploader>
-            <video:live>no</video:live>
-        </video:video>
-    </url>
+  <url>
+    <loc>https://www.bindingwiremachine.in/videos.html</loc>
+    <video:video>
+      <video:thumbnail_loc>https://www.bindingwiremachine.in/product/IN3-nail-making-machine.webp</video:thumbnail_loc>
+      <video:title>IN3 High Speed Wire Nail Machine Operation</video:title>
+      <video:description>High-speed demo of IN3 automatic nail making machine running at 350 nails/min.</video:description>
+      <video:content_loc>https://www.bindingwiremachine.in/videos.html#in3-demo</video:content_loc>
+      <video:publication_date>2026-01-15T08:00:00+05:30</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+  </url>
 </urlset>
