@@ -1,15 +1,18 @@
 {
   "@context": "https://schema.org",
   "@type": "ManufacturingBusiness",
-  "@id": "https://www.bindingwiremachine.in/#organization",
+  "@id": "https://www.bindingwiremachine.in/#localbusiness",
   "name": "Binding Wire Machine",
   "legalName": "Binding Wire Machine",
+  "alternateName": ["Indian Nail Machine", "Binding Wire Machinery Rajkot"],
   "url": "https://www.bindingwiremachine.in",
   "logo": "https://www.bindingwiremachine.in/logo.png",
   "image": "https://www.bindingwiremachine.in/product/binding-wire-making-machine.webp",
   "telephone": "+91 99788 22099",
-  "email": "bindingwiremachinery@gmail.com",
+  "email": "info@bindingwiremachine.com",
   "priceRange": "INR",
+  "currenciesAccepted": "INR, USD, EUR, AED",
+  "paymentAccepted": "Cash, Credit Card, Bank Wire Transfer, L/C",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "Aji Industrial Area, Phase-2, Shed No. 123",
@@ -23,15 +26,22 @@
     "latitude": 22.2858,
     "longitude": 70.7997
   },
-  "openingHoursSpecification": {
-    "@type": "OpeningHoursSpecification",
-    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-    "opens": "09:00",
-    "closes": "19:00"
-  },
-  "sameAs": [
-    "https://facebook.com",
-    "https://youtube.com",
-    "https://linkedin.com"
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+      "opens": "09:00",
+      "closes": "19:00"
+    }
+  ],
+  "areaServed": [
+    {
+      "@type": "Country",
+      "name": "India"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Worldwide Export"
+    }
   ]
 }
