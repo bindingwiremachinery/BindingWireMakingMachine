@@ -3,37 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page Not Found | Redirecting...</title>
-    <script>
-        // Single Page App clean URL router fallback for GitHub Pages
-        (function() {
-            var path = window.location.pathname;
-            var search = window.location.search;
-            var hash = window.location.hash;
-
-            // Strip trailing .html if requested directly
-            if (path.endsWith('.html')) {
-                var cleanPath = path.replace(/\.html$/, '');
-                window.location.replace(cleanPath + (cleanPath.endsWith('/') ? '' : '/') + search + hash);
-                return;
-            }
-
-            // Normalizes directory routing
-            var segments = path.split('/').filter(Boolean);
-            if (segments.length > 0) {
-                var target = '/' + segments.join('/') + '/';
-                window.location.replace(target + search + hash);
-            } else {
-                window.location.replace('/' + search + hash);
-            }
-        })();
+    <title>Redirecting... | Binding Wire Machine</title>
+    <script type="text/javascript">
+        // Single Page Apps SPA redirect script for GitHub Pages
+        var pathSegmentsToKeep = 0;
+        var l = window.location;
+        l.replace(
+            l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+            l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') + '/?/' +
+            l.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
+            (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+            l.hash
+        );
     </script>
 </head>
-<body style="font-family: system-ui, -apple-system, sans-serif; background: #0f172a; color: #fff; display: flex; align-items: center; justify-content: center; height: 100vh; margin: 0; text-align: center;">
-    <div>
-        <h1 style="font-size: 2.5rem; margin-bottom: 1rem; color: #e11d48;">404 - Page Not Found</h1>
-        <p style="color: #94a3b8; margin-bottom: 2rem;">Redirecting you to the requested industrial catalog section...</p>
-        <a href="/" style="background: #e11d48; color: white; padding: 12px 24px; border-radius: 6px; text-decoration: none; font-weight: bold;">Return to Home</a>
-    </div>
+<body style="font-family: sans-serif; background: #0f172a; color: #ffffff; text-align: center; padding-top: 20vh;">
+    <h2>Redirecting to requested page...</h2>
+    <p>If you are not redirected automatically, <a href="/" style="color: #e11d48;">click here to return home</a>.</p>
 </body>
 </html>
