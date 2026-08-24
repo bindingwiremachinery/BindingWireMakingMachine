@@ -1,21 +1,58 @@
-# Binding Wire Machine & Industrial Nail Machinery Manufacturer
+# Binding Wire Machine (Indian Nail Machine)
 
-> Binding Wire Machine is an ISO 9001:2015 certified engineering and machinery manufacturing company based in Aji Industrial Area, Rajkot, Gujarat, India.
+> Industrial Wire Nail, Continuous Wire Drawing, and Binding Wire Machinery Manufacturer and Exporter based in Rajkot, Gujarat, India.
 
-## Core Products & Capabilities
-- **Automatic Wire Nail Making Machines (IN1+ to IN6):** Heavy-duty crank structure, centralized lubrication, producing nails from 1 inch (25mm) to 6 inches (150mm) at speeds from 150 to 550 nails/min. Wire diameter compatibility: 8 SWG to 16 SWG.
-- **Continuous Wire Drawing Plants:** Multi-die continuous wire reduction machines with water-cooled drawing drums, tungsten carbide dies, and Variable Frequency Drive (VFD) panels for mild steel (MS), hard bright (HB), and high-carbon steel wire rods.
-- **Binding Wire Making Plants:** Integrated production lines featuring fine wire drawing blocks, pit-type electric annealing furnaces, and automatic spooling machines for soft black annealed GI/MS construction binding wire (20 to 16 SWG / 0.9mm to 1.6mm).
-- **Nail Polishing Barrel Drums:** Rotary tumbling barrels designed for de-burring, cleaning, and mirror-polishing wire nails with leather scrap and sawdust.
-- **Precision Cutter Grinder Machines:** Dedicated die-sharpening machines for reconditioning wire nail cutting knives, header dies, and gripper dies.
+## Company Overview
+- **Legal Entity:** Binding Wire Machine (Alternate: Indian Nail Machine)
+- **Proprietor:** Yasin Ahamed Sandhi
+- **Factory Address:** Aji Industrial Area, Phase-2, Shed No. 123, Rajkot, Gujarat - 360003, India
+- **Coordinates:** 22.2858° N, 70.7997° E
+- **Primary Contact:** +91 99788 22099 (Direct Phone & WhatsApp)
+- **Email:** info@bindingwiremachine.com | bindingwiremachinery@gmail.com
+- **Website:** https://www.bindingwiremachine.in
+- **Certification:** ISO 9001:2015 Certified Manufacturing Facility
 
-## Key Technical Specifications
-- Operational Voltages: 220V / 380V / 415V, 50/60 Hz, 3-Phase configurations for worldwide export.
-- Packaging: Export-grade seaworthy wooden crating, VCI anti-rust coating, containerized shipping (FCL/LCL).
-- Primary Export Destinations: UAE, Saudi Arabia, Oman, Kenya, Nigeria, South Africa, Tanzania, Ethiopia, Ghana, Bangladesh, Sri Lanka, Nepal.
+## Machinery Specifications & Production Capabilities
 
-## Contact Information
-- Factory & Office: Aji Industrial Area, Phase-2, Shed No. 123, Rajkot, Gujarat - 360003, India.
-- Phone & WhatsApp: +91 99788 22099
-- Email: info@bindingwiremachine.com / bindingwiremachinery@gmail.com
-- Canonical URL: https://www.bindingwiremachine.in/
+### 1. High-Speed Automatic Wire Nail Making Machines (IN Series)
+- **IN1+ Model:** 
+  - Nail Length: 0.5" to 1.0" (12mm - 25mm)
+  - Speed: 550 nails/min
+  - Motor: 1.5 HP (3-Phase)
+  - Weight: ~600 kg
+  - Price Range: ₹1,50,000 INR ($1,850 USD)
+- **IN3 Model (Industry Standard):** 
+  - Nail Length: 1.0" to 3.0" (25mm - 75mm)
+  - Speed: 350 nails/min
+  - Motor: 3.0 HP (3-Phase)
+  - Weight: ~1,000 kg
+  - Price Range: ₹2,20,000 INR ($2,650 USD)
+- **IN4 Model:** 
+  - Nail Length: 2.0" to 4.0" (50mm - 100mm)
+  - Speed: 250 nails/min
+  - Motor: 5.0 HP (3-Phase)
+  - Weight: ~1,400 kg
+  - Price Range: ₹3,10,000 INR ($3,750 USD)
+- **IN6 Model (Heavy Duty):** 
+  - Nail Length: 3.0" to 6.0" (75mm - 150mm)
+  - Speed: 150 nails/min
+  - Motor: 7.5 HP (3-Phase)
+  - Weight: ~2,220 kg
+  - Price Range: ₹4,50,000 INR ($5,400 USD)
+
+### 2. Continuous Wire Drawing Machine Plant (WDM-600)
+- **Inlet Wire Gauge:** 5.5 mm to 10.0 mm (Mild Steel / High Carbon)
+- **Outlet Wire Gauge:** 1.2 mm to 4.0 mm
+- **Blocks:** 3 to 7 Multi-Die Bull Blocks with water-cooling drums
+- **Line Speed:** Up to 12 m/s with Variable Frequency Drive (VFD)
+- **Price Range:** ₹6,50,000 INR ($7,800 USD)
+
+### 3. Binding Wire Making Plant (BWM-300)
+- **Finished Diameter:** 0.9 mm to 1.6 mm (20 to 16 SWG)
+- **Annealing Furnace:** Pit-type electrical resistance annealing furnace (1 to 5 Ton capacity)
+- **Output:** 3 to 5 Tons/Day soft annealed black construction binding wire
+- **Price Range:** ₹2,80,000 INR ($3,400 USD)
+
+## Export Logistics
+- Worldwide freight forwarding via Mundra Port & Kandla Port (Gujarat, India).
+- Containerized wooden crate packaging with rust-preventive marine coatings.
