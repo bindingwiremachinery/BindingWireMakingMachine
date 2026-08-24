@@ -3,7 +3,7 @@
   "@graph": [
     {
       "@type": "Product",
-      "@id": "https://www.bindingwiremachine.in/nail-making-machine/#in1",
+      "@id": "https://www.bindingwiremachine.in/product/in1#product",
       "name": "IN1+ Automatic Wire Nail Making Machine",
       "sku": "IN1-PLUS",
       "mpn": "IN1PLUS-2026",
@@ -22,12 +22,12 @@
     },
     {
       "@type": "Product",
-      "@id": "https://www.bindingwiremachine.in/nail-making-machine/#in3",
+      "@id": "https://www.bindingwiremachine.in/product/in3#product",
       "name": "IN3 Automatic Wire Nail Making Machine",
       "sku": "IN3",
       "mpn": "IN3-2026",
       "image": "https://www.bindingwiremachine.in/product/IN3-nail-making-machine.webp",
-      "description": "Industry-standard high-speed wire nail making machine for 1 to 3 inch nail manufacturing.",
+      "description": "The industry-standard machine for versatile nail production up to 3 inches with 350 pcs/min output.",
       "brand": { "@type": "Brand", "name": "Binding Wire Machine" },
       "offers": {
         "@type": "Offer",
@@ -41,12 +41,12 @@
     },
     {
       "@type": "Product",
-      "@id": "https://www.bindingwiremachine.in/nail-making-machine/#in4",
+      "@id": "https://www.bindingwiremachine.in/product/in4#product",
       "name": "IN4 Automatic Wire Nail Making Machine",
       "sku": "IN4",
       "mpn": "IN4-2026",
       "image": "https://www.bindingwiremachine.in/product/IN4-nail-making-machine.webp",
-      "description": "Heavy-duty wire nail machine for standard 4-inch construction nails.",
+      "description": "Heavy-duty automatic wire nail making machine for continuous medium and large size nail manufacturing up to 4 inches.",
       "brand": { "@type": "Brand", "name": "Binding Wire Machine" },
       "offers": {
         "@type": "Offer",
@@ -60,18 +60,56 @@
     },
     {
       "@type": "Product",
-      "@id": "https://www.bindingwiremachine.in/nail-making-machine/#in6",
+      "@id": "https://www.bindingwiremachine.in/product/in6#product",
       "name": "IN6 Heavy Duty Automatic Wire Nail Machine",
       "sku": "IN6",
       "mpn": "IN6-2026",
       "image": "https://www.bindingwiremachine.in/product/IN6-nail-making-machine.webp",
-      "description": "Industrial monster capable of high output large wire nails up to 6 inches.",
+      "description": "Heavy-duty high-speed automatic wire nail making machine engineered for large nail production up to 6 inches.",
       "brand": { "@type": "Brand", "name": "Binding Wire Machine" },
       "offers": {
         "@type": "Offer",
         "url": "https://www.bindingwiremachine.in/nail-making-machine/",
         "priceCurrency": "INR",
         "price": "450000.00",
+        "priceValidUntil": "2027-12-31",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/NewCondition"
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://www.bindingwiremachine.in/product/wire-drawing#product",
+      "name": "600mm Continuous Wire Drawing Plant",
+      "sku": "WDM-600",
+      "mpn": "WD600-2026",
+      "image": "https://www.bindingwiremachine.in/product/wire-drawing-machine.webp",
+      "description": "Continuous wire drawing machine plant engineered for efficient metal wire gauge reduction and processing.",
+      "brand": { "@type": "Brand", "name": "Binding Wire Machine" },
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.bindingwiremachine.in/wire-drawing-machine/",
+        "priceCurrency": "INR",
+        "price": "650000.00",
+        "priceValidUntil": "2027-12-31",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/NewCondition"
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://www.bindingwiremachine.in/product/binding-wire#product",
+      "name": "300mm Precision Binding Wire Making Machine",
+      "sku": "BWM-300",
+      "mpn": "BW300-2026",
+      "image": "https://www.bindingwiremachine.in/product/binding-wire-making-machine.webp",
+      "description": "Precision binding wire making machine designed for high-efficiency spooling and wire coil production.",
+      "brand": { "@type": "Brand", "name": "Binding Wire Machine" },
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.bindingwiremachine.in/binding-wire-making-machine/",
+        "priceCurrency": "INR",
+        "price": "280000.00",
         "priceValidUntil": "2027-12-31",
         "availability": "https://schema.org/InStock",
         "itemCondition": "https://schema.org/NewCondition"
