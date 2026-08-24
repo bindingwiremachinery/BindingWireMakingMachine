@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binding Wire Making Machine &amp; Plant | Heavy Duty Setup</title>
+    <meta name="description" content="Complete industrial binding wire making machines and plants. High tensile output, uniform wire annealing, and maximum operational efficiency.">
+    <link rel="canonical" href="https://www.bindingwiremachine.in/binding-wire-making-machine/">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body class="bg-gray-50">
+    <header class="bg-white shadow-md sticky top-0 z-40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-20">
+            <a href="/" class="font-heading font-bold text-xl text-industrial-900">BINDING WIRE MACHINERY</a>
+            <nav class="flex space-x-6 items-center">
+                <a href="/" class="hover:text-brand">Home</a>
+                <a href="/contact/" class="bg-brand text-white px-6 py-2 rounded">Get Quote</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h1 class="text-4xl font-heading font-bold text-industrial-900 mb-6">Industrial Binding Wire Making Machines &amp; Complete Plants</h1>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <img src="/product/binding-wire-making-machine.webp" alt="Binding Wire Making Plant" class="rounded-lg shadow-lg w-full" loading="lazy">
+                </div>
+                <div>
+                    <p class="text-gray-600 mb-6 text-lg">Integrated plant for producing soft annealed black binding wire for construction rebar binding. Includes drawing blocks, pit-type annealing furnace, and automatic coiling units.</p>
+                    <a href="/contact/" class="bg-brand text-white px-8 py-4 rounded font-bold shadow-md hover:bg-brand-dark">Get Full Plant Proposal</a>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
