@@ -1,26 +1,48 @@
 {
-  "name": "Binding Wire Machine - Rajkot",
-  "short_name": "BindingWire",
-  "description": "Industrial Wire Nail Making & Binding Wire Machinery Manufacturer in Rajkot, Gujarat.",
+  "name": "Binding Wire Machine",
+  "short_name": "BW Machine",
+  "description": "High-Speed Wire Nail Making & Binding Wire Machinery Manufacturer in Rajkot, India",
   "start_url": "/",
+  "scope": "/",
   "display": "standalone",
+  "orientation": "portrait-primary",
   "background_color": "#0f172a",
   "theme_color": "#e11d48",
   "icons": [
     {
       "src": "/favicon-16x16.png",
       "sizes": "16x16",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any maskable"
     },
     {
       "src": "/favicon-32x32.png",
       "sizes": "32x32",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any maskable"
     },
     {
       "src": "/apple-touch-icon.png",
       "sizes": "180x180",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Nail Machines",
+      "url": "/nail-making-machine/",
+      "description": "View IN Series Wire Nail Making Machines"
+    },
+    {
+      "name": "Price List",
+      "url": "/nail-making-machine-price/",
+      "description": "Factory Machine Pricing & Specs"
+    },
+    {
+      "name": "Contact Factory",
+      "url": "/contact/",
+      "description": "Direct WhatsApp & Phone Support"
     }
   ]
 }
