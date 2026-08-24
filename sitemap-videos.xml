@@ -1,22 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-  <url>
-    <loc>https://www.bindingwiremachine.in/videos/</loc>
-    <video:video>
-      <video:thumbnail_loc>https://www.bindingwiremachine.in/product/IN3-nail-making-machine.webp</video:thumbnail_loc>
-      <video:title>IN3 Automatic Nail Making Machine High Speed Demo</video:title>
-      <video:description>Operational demonstration of high-speed 350 nails/min IN3 nail making machine running at our Rajkot factory.</video:description>
-      <video:player_loc>https://www.youtube.com</video:player_loc>
-      <video:publication_date>2026-01-15T08:00:00+05:30</video:publication_date>
-      <video:family_friendly>yes</video:family_friendly>
-    </video:video>
-    <video:video>
-      <video:thumbnail_loc>https://www.bindingwiremachine.in/product/Continuous-Wire-Drawing-Plant-Setup.jpeg</video:thumbnail_loc>
-      <video:title>Continuous Wire Drawing Plant Setup &amp; Calibration</video:title>
-      <video:description>Complete plant overview and setup guide for multi-die continuous wire drawing machines.</video:description>
-      <video:player_loc>https://www.youtube.com</video:player_loc>
-      <video:publication_date>2026-02-10T10:00:00+05:30</video:publication_date>
-      <video:family_friendly>yes</video:family_friendly>
-    </video:video>
-  </url>
+    <url>
+        <loc>https://www.bindingwiremachine.in/videos/</loc>
+        <video:video>
+            <video:thumbnail_loc>https://www.bindingwiremachine.in/product/IN3-nail-making-machine.webp</video:thumbnail_loc>
+            <video:title>IN3 Nail Making Machine High Speed Demo</video:title>
+            <video:description>Watch the IN3 high-speed automatic wire nail making machine in continuous mass production.</video:description>
+            <video:player_loc>https://www.bindingwiremachine.in/videos/</video:player_loc>
+        </video:video>
+    </url>
 </urlset>
