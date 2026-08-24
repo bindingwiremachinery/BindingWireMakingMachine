@@ -1,28 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>https://www.bindingwiremachine.in/nail-making-machine.html</loc>
-    <image:image>
-      <image:loc>https://www.bindingwiremachine.in/product/nail-making-machine.webp</image:loc>
-      <image:title>Automatic Wire Nail Making Machine</image:title>
-      <image:caption>Heavy Duty Wire Nail Making Machine manufactured in Rajkot Gujarat</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://www.bindingwiremachine.in/wire-drawing-machine.html</loc>
-    <image:image>
-      <image:loc>https://www.bindingwiremachine.in/product/wire-drawing-machine.webp</image:loc>
-      <image:title>Continuous Wire Drawing Machine Plant</image:title>
-      <image:caption>Multi-block continuous wire drawing line with water cooled drums</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://www.bindingwiremachine.in/binding-wire-making-machine.html</loc>
+    <loc>https://www.bindingwiremachine.in/</loc>
     <image:image>
       <image:loc>https://www.bindingwiremachine.in/product/binding-wire-making-machine.webp</image:loc>
       <image:title>Automatic Binding Wire Making Machinery</image:title>
-      <image:caption>Complete annealing and wire spooling plant setup</image:caption>
+      <image:caption>Industrial binding wire making machine plant manufactured in Rajkot, Gujarat</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.bindingwiremachine.in/product/nail-making-machine.webp</image:loc>
+      <image:title>IN Series Automatic Wire Nail Making Machine</image:title>
+      <image:caption>High speed wire nail making machine model IN1 to IN6</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.bindingwiremachine.in/product/wire-drawing-machine.webp</image:loc>
+      <image:title>Continuous Wire Drawing Machine Plant</image:title>
+      <image:caption>Multi-block heavy duty continuous wire drawing line</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.bindingwiremachine.in/product/wire-nail-making-machine.webp</image:loc>
+      <image:title>Factory Workshop in Rajkot Gujarat</image:title>
+      <image:caption>Industrial machinery manufacturing workshop in Aji Industrial Area</image:caption>
     </image:image>
   </url>
 </urlset>
