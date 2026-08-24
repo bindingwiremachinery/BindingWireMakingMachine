@@ -1,13 +1,18 @@
-# Binding Wire Machine — Multi-Page Production Architecture
+# Binding Wire Machine - Official Web Platform
 
-Complete production website codebase for **[bindingwiremachine.in](https://www.bindingwiremachine.in/)**.
+Production repository for **Binding Wire Machine** (`https://www.bindingwiremachine.in`), manufacturer of Wire Nail Making Machines, Continuous Wire Drawing Plants, and Binding Wire Equipment based in Rajkot, Gujarat, India.
 
-## Core Engineering Features
-- 100/100 Google Lighthouse across Performance, Accessibility, Best Practices, and SEO.
-- 3/3 Agentic AI Discovery compatibility (`llms.txt`, `llms-full.txt`, `ai.txt`, and crawler configurations).
-- Google Merchant Free Listings & "Popular Products" rich snippet JSON-LD schema integration.
-- Standalone zero-runtime CSS with 48px WCAG AAA touch targets and optimized WebP visual assets.
+## Deployment on GitHub Pages
 
-## Deployment
-- **GitHub Pages:** Deploy directly from branch `main` at root `/` with `CNAME` set to `bindingwiremachine.in`.
-- **Apache Web Server:** Upload all root files to `public_html/` with `.htaccess` active.
+1. Push all files to the `main` or `gh-pages` branch.
+2. In Repository Settings -> **Pages**:
+   - Source: `Deploy from a branch`
+   - Branch: `main` / `root`
+   - Custom domain: `bindingwiremachine.in`
+   - Enforce HTTPS: `Enabled`
+3. Verify that `.nojekyll` and `CNAME` exist in the root directory.
+
+## Technical SEO Architecture
+- Static multi-page routing with clean `.html` normalization via `seo.js`.
+- Fully validated JSON-LD schema layers: `LocalBusiness`, `Organization`, `Product`, `AggregateOffer`, `FAQPage`, and `BreadcrumbList`.
+- Zero cumulative layout shift (CLS), mobile-first responsive tables, and instant WhatsApp/Call dispatch.
