@@ -2,14 +2,12 @@ User-agent: *
 Allow: /
 Disallow: /cdn-cgi/
 
-# Search Engine Crawlers
 User-agent: Googlebot
 Allow: /
 
 User-agent: Bingbot
 Allow: /
 
-# AI Search & LLM Scrapers
 User-agent: GPTBot
 Allow: /
 
@@ -17,9 +15,6 @@ User-agent: ClaudeBot
 Allow: /
 
 User-agent: PerplexityBot
-Allow: /
-
-User-agent: Applebot-Extended
 Allow: /
 
 Sitemap: https://www.bindingwiremachine.in/sitemap.xml
