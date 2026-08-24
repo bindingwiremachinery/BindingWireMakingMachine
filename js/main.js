@@ -1,12 +1,13 @@
 /**
- * BINDING WIRE MACHINE - Client Engine & Clean Router
- * Handles client-side instantaneous route rendering, history navigation,
- * dynamic product rendering, and responsive UI interactions.
+ * BINDING WIRE MACHINE - PRODUCTION SPA APPLICATION ENGINE
+ * Pure Native JS Router & Dynamic Catalog Renderer
  */
 
+// Global Product Catalog Store (Preserved)
 const productsData = [
     {
         id: 'nail-making-machine',
+        slug: 'nail-making-machine',
         title: 'IN Series Automatic Nail Making Machines',
         category: 'Nail Machinery',
         image: '/product/nail-making-machine.webp',
@@ -30,6 +31,7 @@ const productsData = [
     },
     {
         id: 'wire-drawing',
+        slug: 'wire-drawing-machine',
         title: 'Continuous Wire Drawing Machine Plant',
         category: 'Wire Drawing',
         image: '/product/wire-drawing-machine.webp',
@@ -53,6 +55,7 @@ const productsData = [
     },
     {
         id: 'binding-wire',
+        slug: 'binding-wire-making-machine',
         title: 'Automatic Binding Wire Making Machinery',
         category: 'Wire Processing',
         image: '/product/binding-wire-making-machine.webp',
@@ -76,7 +79,7 @@ const productsData = [
     }
 ];
 
-// Clean Route Navigation
+// Clean Navigation Router
 function handleNavClick(event, pageId, productId = null) {
     if (event) {
         event.preventDefault();
@@ -94,7 +97,7 @@ function handleNavClick(event, pageId, productId = null) {
         renderProductDetail(productId);
         const pdSection = document.getElementById('product-detail');
         if (pdSection) pdSection.classList.add('active');
-        window.history.pushState({ page: 'product', id: productId }, '', `/${productId}/`);
+        window.history.pushState({ page: 'product', id: productId }, '', `/product/${productId}/`);
     } else {
         const targetPage = document.getElementById(pageId) || document.getElementById('home');
         if (targetPage) targetPage.classList.add('active');
@@ -110,6 +113,7 @@ function handleNavClick(event, pageId, productId = null) {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
+// Catalog Grid Renderer
 function renderProductsGrid() {
     const grid = document.getElementById('product-grid');
     if (!grid) return;
@@ -119,15 +123,15 @@ function renderProductsGrid() {
             <div>
                 <div class="h-64 overflow-hidden relative bg-gray-100">
                     <img src="${prod.image}" alt="${prod.title}" class="w-full h-full object-cover transition-transform duration-700 hover:scale-110" loading="lazy" decoding="async">
-                    <span class="absolute top-4 left-4 bg-industrial-900 text-white text-xs px-3 py-1 rounded-full font-semibold uppercase tracking-wider">${prod.category}</span>
+                    <span class="absolute top-4 left-4 bg-slate-900 text-white text-xs px-3 py-1 rounded-full font-semibold uppercase tracking-wider">${prod.category}</span>
                 </div>
                 <div class="p-6">
-                    <h3 class="text-xl font-heading font-bold text-industrial-900 mb-3">${prod.title}</h3>
+                    <h3 class="text-xl font-heading font-bold text-slate-900 mb-3">${prod.title}</h3>
                     <p class="text-gray-600 text-sm mb-6 leading-relaxed">${prod.shortDesc}</p>
                 </div>
             </div>
             <div class="p-6 pt-0">
-                <button onclick="handleNavClick(event, 'product', '${prod.id}')" class="w-full bg-industrial-900 text-white text-center py-3 rounded font-semibold hover:bg-brand transition-colors flex items-center justify-center">
+                <button onclick="handleNavClick(event, 'product', '${prod.id}')" class="w-full bg-slate-900 text-white text-center py-3 rounded font-semibold hover:bg-rose-600 transition-colors flex items-center justify-center">
                     View Machine Specs <i class="ph ph-arrow-right ml-2" aria-hidden="true"></i>
                 </button>
             </div>
@@ -135,21 +139,22 @@ function renderProductsGrid() {
     `).join('');
 }
 
+// Product Detail Renderer
 function renderProductDetail(productId) {
-    const product = productsData.find(p => p.id === productId) || productsData[0];
+    const product = productsData.find(p => p.id === productId || p.slug === productId) || productsData[0];
 
-    const header = document.getElementById('pd-header');
-    if (header) {
-        header.innerHTML = `
+    const pdHeader = document.getElementById('pd-header');
+    if (pdHeader) {
+        pdHeader.innerHTML = `
             <div class="max-w-3xl mx-auto px-4">
-                <span class="inline-block py-1 px-3 rounded-full bg-brand/20 border border-brand/50 text-brand font-semibold text-xs mb-3 uppercase tracking-wider">${product.category}</span>
+                <span class="inline-block py-1 px-3 rounded-full bg-rose-500/20 border border-rose-500/50 text-rose-500 font-semibold text-xs mb-3 uppercase tracking-wider">${product.category}</span>
                 <h1 class="text-3xl sm:text-4xl font-heading font-bold text-white">${product.title}</h1>
             </div>
         `;
     }
 
-    const breadcrumb = document.getElementById('pd-breadcrumb-title');
-    if (breadcrumb) breadcrumb.textContent = product.title;
+    const breadcrumbTitle = document.getElementById('pd-breadcrumb-title');
+    if (breadcrumbTitle) breadcrumbTitle.textContent = product.title;
 
     const pdImage = document.getElementById('pd-image');
     if (pdImage) {
@@ -167,7 +172,7 @@ function renderProductDetail(productId) {
     if (featuresContainer) {
         featuresContainer.innerHTML = product.features.map(f => `
             <li class="flex items-start">
-                <i class="ph-fill ph-check-circle text-brand text-lg mr-2 mt-0.5 flex-shrink-0" aria-hidden="true"></i>
+                <i class="ph-fill ph-check-circle text-rose-600 text-lg mr-2 mt-0.5 flex-shrink-0" aria-hidden="true"></i>
                 <span class="text-sm text-gray-700">${f}</span>
             </li>
         `).join('');
@@ -177,17 +182,18 @@ function renderProductDetail(productId) {
     if (specsContainer) {
         specsContainer.innerHTML = product.specs.map((s, idx) => `
             <tr class="${idx % 2 === 0 ? 'bg-white' : 'bg-gray-50'}">
-                <td class="py-3 px-4 font-bold text-industrial-900 border-r border-gray-200">${s.label}</td>
+                <td class="py-3 px-4 font-bold text-slate-900 border-r border-gray-200">${s.label}</td>
                 <td class="py-3 px-4 text-gray-600">${s.value}</td>
             </tr>
         `).join('');
     }
 }
 
+// Global Initialization
 document.addEventListener('DOMContentLoaded', () => {
     renderProductsGrid();
 
-    // FAQ Accordion
+    // Accordion Logic
     const faqButtons = document.querySelectorAll('.faq-btn');
     faqButtons.forEach(btn => {
         btn.addEventListener('click', () => {
@@ -207,7 +213,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Mobile Navigation
+    // Mobile Menu Toggle
     const menuBtn = document.getElementById('mobile-menu-btn');
     const mobileMenu = document.getElementById('mobile-menu');
     if (menuBtn && mobileMenu) {
@@ -216,7 +222,16 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // History States
+    // Path Hydration on Page Load
+    const path = window.location.pathname.replace(/^\/|\/$/g, '');
+    if (path.startsWith('product/')) {
+        const prodId = path.split('/')[1];
+        handleNavClick(null, 'product', prodId);
+    } else if (path && document.getElementById(path)) {
+        handleNavClick(null, path);
+    }
+
+    // Browser History PopState Handling
     window.addEventListener('popstate', (e) => {
         if (e.state && e.state.page) {
             if (e.state.page === 'product' && e.state.id) {
