@@ -1,38 +1,152 @@
+# ==============================================================================
+# BINDING WIRE MACHINE (.htaccess)
+# Domain: https://www.bindingwiremachine.in
+# Production Configuration: Clean URLs, SEO 301s, Gzip, Caching & Security
+# ==============================================================================
+
 # ------------------------------------------------------------------------------
-# Apache Configuration for bindingwiremachine.in
+# 1. SERVER CONFIGURATION & ERROR HANDLING
 # ------------------------------------------------------------------------------
+ServerSignature Off
+Options -Indexes +FollowSymLinks
+DirectoryIndex index.html
 
-<IfModule mod_rewrite.c>
-    RewriteEngine On
-    RewriteBase /
-
-    # Force HTTPS
-    RewriteCond %{HTTPS} off
-    RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
-
-    # Force WWW
-    RewriteCond %{HTTP_HOST} ^bindingwiremachine\.in [NC]
-    RewriteRule ^(.*)$ https://www.bindingwiremachine.in/$1 [L,R=301]
-
-    # Clean URL rewrites
-    RewriteCond %{REQUEST_FILENAME} !-d
-    RewriteCond %{REQUEST_FILENAME}\.html -f
-    RewriteRule ^([^\.]+)$ $1.html [NC,L]
-</IfModule>
-
-<IfModule mod_deflate.c>
-    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/json image/svg+xml
-</IfModule>
-
-<IfModule mod_expires.c>
-    ExpiresActive On
-    ExpiresByType image/webp "access plus 1 year"
-    ExpiresByType image/jpeg "access plus 1 year"
-    ExpiresByType image/png "access plus 1 year"
-    ExpiresByType image/svg+xml "access plus 1 year"
-    ExpiresByType text/css "access plus 1 month"
-    ExpiresByType application/javascript "access plus 1 month"
-    ExpiresByType font/woff2 "access plus 1 year"
-</IfModule>
-
+# Custom 404 Error Document
 ErrorDocument 404 /404.html
+
+# ------------------------------------------------------------------------------
+# 2. MIME TYPES DEFINITIONS
+# ------------------------------------------------------------------------------
+<IfModule mod_mime.c>
+  AddType image/webp                         .webp
+  AddType image/svg+xml                      .svg .svgz
+  AddType font/woff2                         .woff2
+  AddType font/woff                          .woff
+  AddType application/manifest+json          .webmanifest .json
+  AddType text/markdown                      .txt
+  AddDefaultCharset UTF-8
+</IfModule>
+
+# ------------------------------------------------------------------------------
+# 3. REWRITE ENGINE & CANONICAL REDIRECTS
+# ------------------------------------------------------------------------------
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # A. Force HTTPS and Force WWW (Canonical: https://www.bindingwiremachine.in/)
+  RewriteCond %{HTTPS} off [OR]
+  RewriteCond %{HTTP_HOST} ^bindingwiremachine\.in$ [NC]
+  RewriteRule ^(.*)$ https://www.bindingwiremachine.in/$1 [L,R=301]
+
+  # B. 301 Redirect direct .html requests to clean URLs (e.g., /about.html -> /about)
+  RewriteCond %{THE_REQUEST} /([^.]+)\.html[\s?] [NC]
+  RewriteCond %{REQUEST_URI} !^/404\.html$ [NC]
+  RewriteRule ^ %1 [R=301,L]
+
+  # C. Internal Rewrite: Route clean URLs to .html files if they exist
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME}.html -f
+  RewriteRule ^([^\.]+)$ $1.html [NC,L]
+
+  # D. Directory Trailing Slash Normalization for Nested Route Folders
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^(.*[^/])$ https://www.bindingwiremachine.in/$1/ [R=301,L]
+</IfModule>
+
+# ------------------------------------------------------------------------------
+# 4. GZIP / DEFLATE COMPRESSION (CORE WEB VITALS OPTIMIZATION)
+# ------------------------------------------------------------------------------
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html
+  AddOutputFilterByType DEFLATE text/plain
+  AddOutputFilterByType DEFLATE text/xml
+  AddOutputFilterByType DEFLATE text/css
+  AddOutputFilterByType DEFLATE text/javascript
+  AddOutputFilterByType DEFLATE application/javascript
+  AddOutputFilterByType DEFLATE application/x-javascript
+  AddOutputFilterByType DEFLATE application/json
+  AddOutputFilterByType DEFLATE application/xml
+  AddOutputFilterByType DEFLATE application/xhtml+xml
+  AddOutputFilterByType DEFLATE application/rss+xml
+  AddOutputFilterByType DEFLATE application/atom_xml
+  AddOutputFilterByType DEFLATE image/svg+xml
+  AddOutputFilterByType DEFLATE font/truetype
+  AddOutputFilterByType DEFLATE font/opentype
+  AddOutputFilterByType DEFLATE font/woff2
+</IfModule>
+
+# ------------------------------------------------------------------------------
+# 5. BROWSER CACHING (EXPIRES HEADERS)
+# ------------------------------------------------------------------------------
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresDefault "access plus 1 month"
+
+  # HTML & Manifests (Short cache to ensure immediate updates)
+  ExpiresByType text/html                  "access plus 0 seconds"
+  ExpiresByType application/json           "access plus 0 seconds"
+  ExpiresByType application/manifest+json  "access plus 1 week"
+
+  # CSS & JavaScript
+  ExpiresByType text/css                   "access plus 1 year"
+  ExpiresByType application/javascript     "access plus 1 year"
+  ExpiresByType text/javascript            "access plus 1 year"
+
+  # Images & Media
+  ExpiresByType image/webp                 "access plus 1 year"
+  ExpiresByType image/jpeg                 "access plus 1 year"
+  ExpiresByType image/png                  "access plus 1 year"
+  ExpiresByType image/svg+xml              "access plus 1 year"
+  ExpiresByType image/x-icon               "access plus 1 year"
+
+  # Web Fonts
+  ExpiresByType font/woff2                 "access plus 1 year"
+  ExpiresByType font/woff                  "access plus 1 year"
+  ExpiresByType font/ttf                   "access plus 1 year"
+</IfModule>
+
+# ------------------------------------------------------------------------------
+# 6. HTTP SECURITY HEADERS
+# ------------------------------------------------------------------------------
+<IfModule mod_headers.c>
+  # HTTP Strict Transport Security (HSTS)
+  Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+
+  # Prevent Clickjacking
+  Header always set X-Frame-Options "SAMEORIGIN"
+
+  # Prevent MIME-Type Sniffing
+  Header always set X-Content-Type-Options "nosniff"
+
+  # Referrer Policy
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+
+  # Restrict Permissions & Features
+  Header always set Permissions-Policy "geolocation=(), microphone=(), camera=()"
+
+  # Cross-Site Scripting Protection
+  Header always set X-XSS-Protection "1; mode=block"
+
+  # Cache-Control overrides for dynamic vs static content
+  <FilesMatch "\.(html|json|xml|txt)$">
+    Header set Cache-Control "max-age=0, no-cache, no-store, must-revalidate"
+  </FilesMatch>
+  
+  <FilesMatch "\.(webp|png|jpe?g|svg|ico|css|js|woff2)$">
+    Header set Cache-Control "max-age=31536000, public, immutable"
+  </FilesMatch>
+</IfModule>
+
+# ------------------------------------------------------------------------------
+# 7. SECURITY & ACCESS RESTRICTIONS
+# ------------------------------------------------------------------------------
+# Block access to hidden files and version control directories (.git, .env, etc.)
+<FilesMatch "^\.">
+  Require all denied
+</FilesMatch>
+
+# Block access to backup and configuration files
+<FilesMatch "\.(bak|config|sql|fla|psd|ini|log|sh|inc|swp|dist)$">
+  Require all denied
+</FilesMatch>
