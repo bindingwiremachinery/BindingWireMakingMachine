@@ -1,44 +1,25 @@
 User-agent: *
 Allow: /
+Disallow: /admin/
+Disallow: /private/
 
-# Agentic AI & LLM Search Engine Crawlers
+# Explicit Bot Directives
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
 User-agent: GPTBot
-Allow: /
-
-User-agent: ChatGPT-User
-Allow: /
-
-User-agent: OAI-SearchBot
 Allow: /
 
 User-agent: ClaudeBot
 Allow: /
 
-User-agent: anthropic-ai
-Allow: /
-
 User-agent: PerplexityBot
 Allow: /
 
-User-agent: Perplexity-Search
-Allow: /
-
-User-agent: Google-Extended
-Allow: /
-
-User-agent: Applebot-Extended
-Allow: /
-
-User-agent: Meta-ExternalAgent
-Allow: /
-
-User-agent: Amazonbot
-Allow: /
-
-User-agent: cohere-ai
-Allow: /
-
-# Official XML Sitemaps
+# Sitemap Index Pointer
 Sitemap: https://www.bindingwiremachine.in/sitemap.xml
 Sitemap: https://www.bindingwiremachine.in/sitemap-products.xml
 Sitemap: https://www.bindingwiremachine.in/sitemap-images.xml
