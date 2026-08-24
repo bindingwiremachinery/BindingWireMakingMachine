@@ -1,9 +1,10 @@
 /* TEAM */
-Proprietor & Engineering Lead: Yasin Ahamed Sandhi
-Contact: info@bindingwiremachine.com
-Location: Rajkot, Gujarat, India
+Proprietor & Principal Engineer: Yasin Ahamed Sandhi
+Contact: info@bindingwiremachine.com | bindingwiremachinery@gmail.com
+Phone / WhatsApp: +91 99788 22099
+Manufacturing Location: Aji Industrial Area, Phase-2, Shed No. 123, Rajkot, Gujarat - 360003, India
 
 /* SITE */
-Standards: HTML5, CSS3, ES6+ JavaScript, JSON-LD Schema.org
-Hosting: GitHub Pages Static Distribution with Custom Domain DNS
-Typography: Inter & Montserrat (Google Fonts)
+Standards: HTML5, Compiled Standalone CSS3, Vanilla ES6+ JavaScript, Schema.org JSON-LD
+Hosting: GitHub Pages Custom Domain Distribution / Nginx Reverse Proxy
+Typography: Montserrat (Headings) & Inter (Body)
