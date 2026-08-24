@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Factory | Binding Wire Machine Rajkot</title>
+    <meta name="description" content="Direct factory contact for machine quotations, exports, and technical specifications. Call or WhatsApp +91 99788 22099.">
+    <link rel="canonical" href="https://www.bindingwiremachine.in/contact/">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body class="bg-gray-50">
+    <header class="bg-white shadow-md sticky top-0 z-40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-20">
+            <a href="/" class="font-heading font-bold text-xl text-industrial-900">BINDING WIRE MACHINERY</a>
+            <nav class="flex space-x-6 items-center">
+                <a href="/" class="hover:text-brand">Home</a>
+                <a href="/contact/" class="bg-brand text-white px-6 py-2 rounded">Get Quote</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h1 class="text-4xl font-heading font-bold text-industrial-900 mb-8">Contact Our Engineering Plant</h1>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div>
+                    <h2 class="text-2xl font-bold mb-4">Direct Contact Details</h2>
+                    <p class="mb-4"><strong>Factory Address:</strong> Aji Industrial Area, Phase-2, Shed No. 123, Rajkot, Gujarat - 360003, India</p>
+                    <p class="mb-4"><strong>Phone &amp; WhatsApp:</strong> <a href="tel:+919978822099" class="text-brand font-bold">+91 99788 22099</a></p>
+                    <p class="mb-4"><strong>Email:</strong> <a href="mailto:info@bindingwiremachine.com" class="text-brand">info@bindingwiremachine.com</a></p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-sm">
+                    <h3 class="text-xl font-bold mb-4">Send an Inquiry</h3>
+                    <form onsubmit="event.preventDefault(); alert('Inquiry submitted successfully.');" class="space-y-4">
+                        <input type="text" placeholder="Your Name" required class="w-full border p-3 rounded">
+                        <input type="email" placeholder="Your Email" required class="w-full border p-3 rounded">
+                        <input type="tel" placeholder="Phone Number" required class="w-full border p-3 rounded">
+                        <textarea placeholder="Your Requirement Details" rows="4" required class="w-full border p-3 rounded"></textarea>
+                        <button type="submit" class="w-full bg-brand text-white py-3 rounded font-bold hover:bg-brand-dark">Submit Inquiry</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
