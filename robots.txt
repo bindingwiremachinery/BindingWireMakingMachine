@@ -1,15 +1,15 @@
 User-agent: *
 Allow: /
-Disallow: /admin/
-Disallow: /private/
+Disallow: /cdn-cgi/
 
-# Explicit Bot Directives
+# Search Engine Crawlers
 User-agent: Googlebot
 Allow: /
 
 User-agent: Bingbot
 Allow: /
 
+# AI Search & LLM Scrapers
 User-agent: GPTBot
 Allow: /
 
@@ -19,7 +19,9 @@ Allow: /
 User-agent: PerplexityBot
 Allow: /
 
-# Sitemap Index Pointer
+User-agent: Applebot-Extended
+Allow: /
+
 Sitemap: https://www.bindingwiremachine.in/sitemap.xml
 Sitemap: https://www.bindingwiremachine.in/sitemap-products.xml
 Sitemap: https://www.bindingwiremachine.in/sitemap-images.xml
