@@ -1,28 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page Not Found | 404 - Binding Wire Machine</title>
-    <link rel="stylesheet" href="/styles.css">
-    <script type="text/javascript">
-      var pathSegmentsToKeep = 0;
-      var l = window.location;
-      l.replace(
-        l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
-        l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') + '/?/' +
-        l.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
-        (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
-        l.hash
-      );
-    </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Not Found | Redirecting...</title>
+  <script type="text/javascript">
+    // SPA 404 Redirect Script for GitHub Pages
+    var pathSegmentsToKeep = 0;
+    var l = window.location;
+    l.replace(
+      l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+      l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') + '/?/' +
+      l.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
+      (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+      l.hash
+    );
+  </script>
 </head>
-<body style="background:var(--ind-900); color:var(--white); text-align:center; justify-content:center; align-items:center; padding:2rem;">
-    <div style="max-width:500px; margin:auto;">
-        <h1 style="font-size:5rem; color:var(--brand); margin-bottom:1rem;">404</h1>
-        <h2 style="font-size:1.75rem; color:var(--white); margin-bottom:1rem;">Machinery Specification Page Not Found</h2>
-        <p style="color:#cbd5e1; margin-bottom:2rem; font-size:1.05rem;">The machinery catalog or specification page you requested has been relocated or updated.</p>
-        <a href="/" class="btn btn-brand">Return to Homepage</a>
-    </div>
+<body style="font-family: sans-serif; text-align: center; padding: 50px;">
+  <h2>Page Not Found</h2>
+  <p>Redirecting to the requested page...</p>
+  <p>If you are not redirected automatically, <a href="/">click here to visit the homepage</a>.</p>
 </body>
 </html>
