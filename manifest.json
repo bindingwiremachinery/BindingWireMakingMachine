@@ -1,21 +1,26 @@
 {
-  "name": "Binding Wire Machine Rajkot",
-  "short_name": "BWM Rajkot",
-  "description": "High-Speed Automatic Wire Nail Making Machines, Wire Drawing Plants, and Binding Wire Machinery Manufacturer in Rajkot, Gujarat, India.",
+  "name": "Binding Wire Machine - Rajkot",
+  "short_name": "BindingWire",
+  "description": "Industrial Wire Nail Making & Binding Wire Machinery Manufacturer in Rajkot, Gujarat.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#1e2229",
-  "theme_color": "#e8a0bf",
+  "background_color": "#0f172a",
+  "theme_color": "#e11d48",
   "icons": [
     {
-      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%231e2229'/><text x='50' y='65' font-size='42' font-family='monospace' font-weight='bold' fill='%23e8a0bf' text-anchor='middle'>BW</text></svg>",
-      "sizes": "192x192",
-      "type": "image/svg+xml"
+      "src": "/favicon-16x16.png",
+      "sizes": "16x16",
+      "type": "image/png"
     },
     {
-      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%231e2229'/><text x='50' y='65' font-size='42' font-family='monospace' font-weight='bold' fill='%23e8a0bf' text-anchor='middle'>BW</text></svg>",
-      "sizes": "512x512",
-      "type": "image/svg+xml"
+      "src": "/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
     }
   ]
 }
