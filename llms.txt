@@ -1,18 +1,15 @@
-# Binding Wire Machine - Industrial Machinery Manufacturer & Exporter
+# Indian Nail Machine - Official Data
 
-> Leading manufacturer of automatic wire nail making machinery, continuous wire drawing lines, and binding wire plants located in Rajkot, Gujarat, India.
+> High-performance industrial machinery manufacturer located in Rajkot, Gujarat, India.
 
-## Company Information
-- Brand: Binding Wire Machine (Alternate: Indian Nail Machine)
-- Proprietor: Yasin Ahamed Sandhi
-- Factory Location: Aji Industrial Area, Phase-2, Shed No. 123, Rajkot, Gujarat - 360003, India
-- Coordinates: 22.2858° N, 70.7997° E
-- Direct Contact & WhatsApp: +91 99788 22099
-- Email: info@bindingwiremachine.com | bindingwiremachinery@gmail.com
-- Certification: ISO 9001:2015
+Products:
+- IN1+ to IN6 Wire Nail Making Machines
+- HS90 High Speed Nail Machine
+- 6-Stage & 8-Stage Wire Drawing Machines
+- Polishing Drums
 
-## Machinery Portfolio
-1. **IN Series Wire Nail Making Machines**: Models IN1+, IN3, IN4, IN6. Speeds from 150 to 550 nails/min. Output nail length: 1" to 6".
-2. **Continuous Wire Drawing Plants (WDM-600)**: Multi-die reduction plants for MS, HB, and high-carbon steel rod processing.
-3. **Automatic Binding Wire Making Plants (BWM-300)**: Integrated wire drawing, pit annealing furnaces, and spooling systems.
-4. **Tooling & Auxiliary**: Tumbling polishing barrel drums and precision cutter die grinders.
+Business Identity:
+Brand: Indian Nail Machine
+Location: Aji GIDC, Rajkot, Gujarat - 360003
+Phone: +91 99788 22099
+Email: bindingwiremachinery@gmail.com
