@@ -1,4 +1,3 @@
-Contact: mailto:info@bindingwiremachine.com
-Expires: 2027-12-31T23:59:59.000Z
-Preferred-Languages: en, hi, gu
-Canonical: https://www.bindingwiremachine.in/.well-known/security.txt
+Contact: mailto:bindingwiremachinery@gmail.com
+Preferred-Languages: en
+Canonical: https://www.bindingwiremachine.in/security.txt
