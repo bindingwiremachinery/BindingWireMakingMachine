@@ -1,15 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    <sitemap>
-        <loc>https://www.bindingwiremachine.in/sitemap-products.xml</loc>
-        <lastmod>2026-08-24</lastmod>
-    </sitemap>
-    <sitemap>
-        <loc>https://www.bindingwiremachine.in/sitemap-images.xml</loc>
-        <lastmod>2026-08-24</lastmod>
-    </sitemap>
-    <sitemap>
-        <loc>https://www.bindingwiremachine.in/sitemap-videos.xml</loc>
-        <lastmod>2026-08-24</lastmod>
-    </sitemap>
-</sitemapindex>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://www.bindingwiremachine.in/</loc></url>
+  <url><loc>https://www.bindingwiremachine.in/product/</loc></url>
+  <url><loc>https://www.bindingwiremachine.in/about-us/</loc></url>
+  <url><loc>https://www.bindingwiremachine.in/video/</loc></url>
+  <url><loc>https://www.bindingwiremachine.in/faq/</loc></url>
+  <url><loc>https://www.bindingwiremachine.in/contact-us/</loc></url>
+</urlset>
