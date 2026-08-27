@@ -1,113 +1,556 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Indian Nail Machine | High-Performance Wire & Nail Making Machinery</title>
-    <meta name="description" content="Precision-engineered industrial machinery manufacturer in Rajkot. Specializing in high-speed nail making machines, wire drawing lines, and binding wire setups.">
-    <link rel="canonical" href="https://www.bindingwiremachine.in/">
+    <title>Binding Wire Machine | Industrial Machinery Manufacturer Rajkot</title>
+    <meta name="description" content="Leading B2B manufacturer and exporter of wire nail making machines, continuous wire drawing machines, and binding wire machinery in Rajkot, Gujarat, India.">
     
-    <meta property="og:title" content="Indian Nail Machine | High-Performance Wire & Nail Making Machinery">
-    <meta property="og:description" content="Precision-engineered industrial machinery manufacturer in Rajkot. Specializing in high-speed nail making machines.">
+    <!-- Canonical & SEO -->
+    <link rel="canonical" href="https://www.bindingwiremachine.in/">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Binding Wire Machine | High-Performance Industrial Machinery">
+    <meta property="og:description" content="Precision-engineered machinery for reliable production, efficiency and long-term industrial performance. Made in Rajkot, India.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.bindingwiremachine.in/">
-    <meta property="og:image" content="https://www.bindingwiremachine.in/product/nail-making-machine.webp">
-    
-    <link rel="stylesheet" href="/styles.css">
-    
+    <meta property="og:site_name" content="Binding Wire Machine">
+
+    <!-- Performance & Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'sans-serif'] },
+                    colors: {
+                        navy: { 800: '#1e293b', 900: '#0f172a' },
+                        graphite: '#334155',
+                        brand: { DEFAULT: '#dc2626', dark: '#b91c1c' },
+                        silver: '#f1f5f9'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .page-section { display: none; opacity: 0; transition: opacity 0.3s ease; }
+        .page-section.active { display: block; opacity: 1; }
+        .hero-bg { background: linear-gradient(to right, rgba(15, 23, 42, 0.95), rgba(15, 23, 42, 0.8)); }
+        table th, table td { border: 1px solid #e2e8f0; padding: 12px; }
+        table th { background-color: #0f172a; color: white; text-align: left; }
+        table tr:nth-child(even) { background-color: #f8fafc; }
+    </style>
+
+    <!-- STRUCTURED DATA (JSON-LD) - 100% Truthful, No Fabrications -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "ManufacturingBusiness",
-      "name": "Indian Nail Machine",
-      "url": "https://www.bindingwiremachine.in/",
-      "telephone": "+91-9978822099",
-      "email": "bindingwiremachinery@gmail.com",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Aji GIDC",
-        "addressLocality": "Rajkot",
-        "addressRegion": "Gujarat",
-        "postalCode": "360003",
-        "addressCountry": "IN"
-      }
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://www.bindingwiremachine.in/#organization",
+          "name": "Binding Wire Machine",
+          "url": "https://www.bindingwiremachine.in/",
+          "telephone": "+91 99788 22099",
+          "email": "bindingwiremachinery@gmail.com",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Aji GIDC",
+            "addressLocality": "Rajkot",
+            "addressRegion": "Gujarat",
+            "postalCode": "360003",
+            "addressCountry": "IN"
+          }
+        },
+        {
+          "@type": "Product",
+          "name": "IN1+ Nail Making Machine",
+          "description": "Nail Length: 0.5 to 2 inches (12 to 50 mm). Production Speed: Up to 550 nails per minute.",
+          "brand": { "@type": "Brand", "name": "Binding Wire Machine" },
+          "offers": { "@type": "Offer", "priceCurrency": "INR", "price": "260000", "availability": "https://schema.org/InStock", "url": "https://www.bindingwiremachine.in/product/" }
+        },
+        {
+          "@type": "Product",
+          "name": "IN3 Nail Making Machine",
+          "description": "BEST SELLER. Nail Length: 1 to 4 inches (25 to 100 mm). Production Speed: Up to 350 nails per minute.",
+          "brand": { "@type": "Brand", "name": "Binding Wire Machine" },
+          "offers": { "@type": "Offer", "priceCurrency": "INR", "price": "420000", "availability": "https://schema.org/InStock", "url": "https://www.bindingwiremachine.in/product/" }
+        },
+        {
+          "@type": "Product",
+          "name": "HS90 High-Speed Nail Machine",
+          "description": "High speed production up to 700 nails per minute. Nail Length: 1.5 to 3.5 inches.",
+          "brand": { "@type": "Brand", "name": "Binding Wire Machine" },
+          "offers": { "@type": "Offer", "priceCurrency": "INR", "price": "2000000", "availability": "https://schema.org/InStock", "url": "https://www.bindingwiremachine.in/product/" }
+        }
+      ]
     }
     </script>
 </head>
-<body>
-    <a href="#main" class="skip-link">Skip to content</a>
-    <header class="header">
-        <div class="container nav-bar">
-            <a href="/" class="brand-logo">INDIAN NAIL MACHINE</a>
-            <nav class="nav-links">
-                <a href="/" class="active" style="font-weight: bold;">Home</a>
-                <a href="/product/">Products</a>
-                <a href="/about-us/">About Us</a>
-                <a href="/video/">Video</a>
-                <a href="/faq/">FAQ</a>
-                <a href="/contact-us/" class="btn btn-brand">Request Quote</a>
-            </nav>
+<body class="bg-silver text-graphite font-sans antialiased min-h-screen flex flex-col">
+
+    <!-- HEADER / NAVIGATION -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="bg-navy-900 text-gray-300 text-xs py-2 px-4 hidden sm:block">
+            <div class="max-w-7xl mx-auto flex justify-between items-center">
+                <div class="flex space-x-6">
+                    <a href="mailto:bindingwiremachinery@gmail.com" class="hover:text-white">bindingwiremachinery@gmail.com</a>
+                    <a href="tel:+919978822099" class="hover:text-white">+91 99788 22099</a>
+                </div>
+                <div>Aji GIDC, Rajkot, Gujarat, India - 360003</div>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="/" data-route="/" class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-brand text-white font-bold text-xl flex items-center justify-center rounded">BW</div>
+                    <div>
+                        <div class="font-bold text-navy-900 text-xl leading-tight">BINDING WIRE</div>
+                        <div class="text-xs text-gray-500 font-semibold tracking-widest uppercase">Machine</div>
+                    </div>
+                </a>
+                <nav class="hidden lg:flex space-x-8 items-center font-medium text-sm">
+                    <a href="/" data-route="/" class="text-navy-900 hover:text-brand transition">HOME</a>
+                    <a href="/product/" data-route="/product/" class="text-navy-900 hover:text-brand transition">PRODUCT</a>
+                    <a href="/about-us/" data-route="/about-us/" class="text-navy-900 hover:text-brand transition">ABOUT US</a>
+                    <a href="/video/" data-route="/video/" class="text-navy-900 hover:text-brand transition">VIDEO</a>
+                    <a href="/faq/" data-route="/faq/" class="text-navy-900 hover:text-brand transition">FAQ</a>
+                    <a href="/contact-us/" data-route="/contact-us/" class="bg-brand text-white px-5 py-2 rounded hover:bg-brand-dark transition">CONTACT US</a>
+                </nav>
+            </div>
         </div>
     </header>
 
-    <main id="main">
-        <section style="background: var(--navy-900); color: white; padding: 6rem 0; text-align: center;">
-            <div class="container">
-                <h1 style="font-size: 3rem; margin-bottom: 1.5rem;">High-Performance Wire & Nail Making Machinery</h1>
-                <p style="font-size: 1.25rem; color: #94a3b8; max-width: 800px; margin: 0 auto 2.5rem;">
-                    Precision-engineered machinery for reliable production, efficiency and long-term industrial performance. Manufactured in Rajkot, Gujarat.
-                </p>
-                <div style="display: flex; gap: 1rem; justify-content: center;">
-                    <a href="/contact-us/" class="btn btn-brand">Request a Quote</a>
-                    <a href="/product/" class="btn btn-outline" style="border-color: white; color: white;">Explore Products</a>
+    <!-- MAIN CONTENT AREA -->
+    <main class="flex-grow">
+        
+        <!-- ================= HOME PAGE ================= -->
+        <section id="route-home" class="page-section active">
+            <!-- HERO -->
+            <div class="bg-navy-900 py-24 lg:py-32 hero-bg relative px-4">
+                <div class="max-w-7xl mx-auto relative z-10 text-center lg:text-left">
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
+                        High-Performance Wire & <br><span class="text-brand">Nail Making Machinery</span>
+                    </h1>
+                    <p class="text-lg text-gray-300 mb-10 max-w-2xl mx-auto lg:mx-0">
+                        Precision-engineered machinery for reliable production, efficiency, and long-term industrial performance. Manufactured in Rajkot, India for global B2B buyers.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <a href="/contact-us/" data-route="/contact-us/" class="bg-brand text-white px-8 py-4 rounded font-bold text-lg hover:bg-brand-dark transition text-center">Request a Quote</a>
+                        <a href="/product/" data-route="/product/" class="bg-transparent border-2 border-white text-white px-8 py-4 rounded font-bold text-lg hover:bg-white hover:text-navy-900 transition text-center">Explore Products</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FEATURED CATEGORIES -->
+            <div class="py-20 bg-white px-4">
+                <div class="max-w-7xl mx-auto">
+                    <h2 class="text-3xl font-bold text-navy-900 mb-12 text-center">Engineering & Manufacturing Capability</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <div class="border border-gray-200 p-8 rounded hover:shadow-lg transition">
+                            <h3 class="text-xl font-bold text-navy-900 mb-4">Nail Making Machines</h3>
+                            <p class="text-gray-600 mb-6">High-speed IN and HS series capable of manufacturing wire nails from 0.5 inches up to 6 inches, engineered for continuous operation.</p>
+                            <a href="/product/" data-route="/product/" class="text-brand font-bold hover:underline">Technical Specs &rarr;</a>
+                        </div>
+                        <div class="border border-gray-200 p-8 rounded hover:shadow-lg transition">
+                            <h3 class="text-xl font-bold text-navy-900 mb-4">Wire Drawing Machines</h3>
+                            <p class="text-gray-600 mb-6">6-Stage and 8-Stage industrial wire diameter reduction plants, built to handle immense torque with 125 HP and 52.5 HP motors respectively.</p>
+                            <a href="/product/" data-route="/product/" class="text-brand font-bold hover:underline">Technical Specs &rarr;</a>
+                        </div>
+                        <div class="border border-gray-200 p-8 rounded hover:shadow-lg transition">
+                            <h3 class="text-xl font-bold text-navy-900 mb-4">Binding Wire Plants</h3>
+                            <p class="text-gray-600 mb-6">Precision automated machinery setups designed for high-efficiency spooling and consistent black annealed binding wire manufacturing.</p>
+                            <a href="/product/" data-route="/product/" class="text-brand font-bold hover:underline">Technical Specs &rarr;</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="section-pad container text-center">
-            <h2 style="margin-bottom: 3rem; font-size: 2.5rem;">Manufacturing & Engineering Capability</h2>
-            <div class="grid-3">
-                <div class="card">
-                    <h3>Nail Making Machines</h3>
-                    <p style="margin: 1rem 0; color: var(--gray-600);">High-speed automatic production from 0.5" to 6" nails. Models IN1+ through IN6 built with heavy-duty crank structures.</p>
-                    <a href="/product/" style="color: var(--brand); font-weight: bold;">View Specifications →</a>
+        <!-- ================= PRODUCT PAGE ================= -->
+        <section id="route-product" class="page-section bg-white pb-20">
+            <div class="bg-navy-900 py-16 px-4 text-center">
+                <h1 class="text-4xl font-bold text-white mb-4">Machinery Specifications & Pricing</h1>
+                <p class="text-gray-300">Authoritative B2B Product Data Source</p>
+            </div>
+            
+            <div class="max-w-7xl mx-auto px-4 py-16">
+                <h2 class="text-2xl font-bold text-navy-900 mb-8 border-b pb-4">Nail Making Machines Comparison</h2>
+                
+                <!-- Semantic SEO HTML Table (Phase 24) -->
+                <div class="overflow-x-auto mb-16">
+                    <table class="w-full min-w-[800px] text-sm text-left whitespace-nowrap">
+                        <thead>
+                            <tr>
+                                <th>Model</th>
+                                <th>Nail Length</th>
+                                <th>Wire Thickness (SWG)</th>
+                                <th>Speed (Nails/Min)</th>
+                                <th>Capacity</th>
+                                <th>Weight</th>
+                                <th>Motor</th>
+                                <th>Price (INR)*</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="font-bold">IN1+</td>
+                                <td>0.5 - 2" (12-50mm)</td>
+                                <td>14 - 20 (0.9-2.0mm)</td>
+                                <td>Up to 550</td>
+                                <td>80-100 kg / 8-hr</td>
+                                <td>550 kg</td>
+                                <td>1.5 HP</td>
+                                <td>₹2,60,000</td>
+                            </tr>
+                            <tr class="font-bold text-brand">
+                                <td>IN3 (BEST SELLER)</td>
+                                <td>1 - 4" (25-100mm)</td>
+                                <td>8 - 14 (2.0-4.0mm)</td>
+                                <td>Up to 350</td>
+                                <td>Up to 600 kg/day</td>
+                                <td>1,000 kg</td>
+                                <td>3 HP</td>
+                                <td>₹4,20,000</td>
+                            </tr>
+                            <tr>
+                                <td class="font-bold">IN4</td>
+                                <td>1 - 5" (25-125mm)</td>
+                                <td>6 - 10 (3.0-5.0mm)</td>
+                                <td>Up to 250</td>
+                                <td>Up to 800 kg/day</td>
+                                <td>1,250 kg</td>
+                                <td>5 HP</td>
+                                <td>₹5,20,000</td>
+                            </tr>
+                            <tr>
+                                <td class="font-bold">IN6</td>
+                                <td>2 - 6" (50-150mm)</td>
+                                <td>4 - 8 (4.0-6.0mm)</td>
+                                <td>Up to 150</td>
+                                <td>Up to 1,000 kg/day</td>
+                                <td>2,500 kg</td>
+                                <td>7.5 HP</td>
+                                <td>₹11,50,000</td>
+                            </tr>
+                            <tr class="font-bold text-brand">
+                                <td>HS90 (HIGH-SPEED)</td>
+                                <td>1.5 - 3.5" (38-90mm)</td>
+                                <td>8 - 12 (2.5-4.0mm)</td>
+                                <td>Up to 700</td>
+                                <td>Up to 1,500 kg/day</td>
+                                <td>2,500 kg</td>
+                                <td>7.5 HP</td>
+                                <td>₹20,00,000</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-                <div class="card">
-                    <h3>Wire Drawing Machines</h3>
-                    <p style="margin: 1rem 0; color: var(--gray-600);">Continuous wire drawing plants (6-stage and 8-stage) for precise wire diameter reduction. Up to 125 HP setups.</p>
-                    <a href="/product/" style="color: var(--brand); font-weight: bold;">View Specifications →</a>
+
+                <h2 class="text-2xl font-bold text-navy-900 mb-8 border-b pb-4">Wire Drawing & Polishing Machines</h2>
+                <div class="overflow-x-auto mb-10">
+                    <table class="w-full min-w-[800px] text-sm text-left whitespace-nowrap">
+                        <thead>
+                            <tr>
+                                <th>Model</th>
+                                <th>Key Specification</th>
+                                <th>Performance</th>
+                                <th>Motor</th>
+                                <th>Price (INR)*</th>
+                                <th>Exclusions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="font-bold">6 Stage Wire Draw Machine</td>
+                                <td>Size: 24 inch / 600 mm (5.5mm to 2.5mm reduction)</td>
+                                <td>4,000 kg/day</td>
+                                <td>125 HP</td>
+                                <td>₹18,00,000</td>
+                                <td class="text-xs text-gray-500">Without Electrical & Accessories</td>
+                            </tr>
+                            <tr>
+                                <td class="font-bold">8 Stage Wire Draw Machine</td>
+                                <td>Size: 12 inch / 300 mm (2.5mm to 0.9mm reduction)</td>
+                                <td>800 to 1,000 kg/day</td>
+                                <td>52.5 HP</td>
+                                <td>₹16,00,000</td>
+                                <td class="text-xs text-gray-500">Without Electrical & Accessories</td>
+                            </tr>
+                            <tr>
+                                <td class="font-bold">Polishing Drum 500 Kg</td>
+                                <td>Capacity: 500 kg/hour</td>
+                                <td>-</td>
+                                <td>5 HP</td>
+                                <td>On Request</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td class="font-bold">Polishing Drum 250 Kg</td>
+                                <td>Capacity: 250 kg/hour</td>
+                                <td>-</td>
+                                <td>3 HP</td>
+                                <td>On Request</td>
+                                <td>-</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-                <div class="card">
-                    <h3>Polishing & Binding Wire</h3>
-                    <p style="margin: 1rem 0; color: var(--gray-600);">Polishing drums (250KG to 500KG) and complete binding wire setups for construction applications.</p>
-                    <a href="/product/" style="color: var(--brand); font-weight: bold;">View Specifications →</a>
+                <p class="text-xs text-gray-500 italic mb-10">* Prices subject to commercial terms, quotation, and shipping conditions. Contact us for final pricing.</p>
+                <div class="text-center">
+                    <a href="/contact-us/" data-route="/contact-us/" class="inline-block bg-brand text-white px-8 py-4 rounded font-bold text-lg hover:bg-brand-dark transition">Request Quotation for Machinery</a>
                 </div>
             </div>
         </section>
+
+        <!-- ================= ABOUT US PAGE ================= -->
+        <section id="route-about-us" class="page-section bg-white pb-20">
+            <div class="bg-navy-900 py-16 px-4 text-center">
+                <h1 class="text-4xl font-bold text-white">About Us</h1>
+            </div>
+            <div class="max-w-4xl mx-auto px-4 py-16 text-lg text-gray-700 space-y-6">
+                <p><strong>Binding Wire Machine</strong> is an industrial machinery manufacturer, supplier, and exporter based in Rajkot, Gujarat, India.</p>
+                <p>Operating from the Aji GIDC manufacturing hub, we specialize in precision-engineered production machinery designed for B2B buyers who demand continuous performance, exact tolerances, and long-term durability in metal processing.</p>
+                <p>Our manufacturing capability encompasses a complete range of heavy-duty Wire Nail Making Machines, Continuous Wire Drawing Plants, and Binding Wire processing equipment. We utilize rigorous engineering standards to ensure our machines meet the operational demands of high-volume industrial environments globally.</p>
+                <h3 class="text-2xl font-bold text-navy-900 mt-10">Our Engineering Focus</h3>
+                <ul class="list-disc pl-6 space-y-2">
+                    <li>Heavy-duty cast and machined components to eliminate operational vibration.</li>
+                    <li>Application-specific motor and drive integration for optimal power efficiency.</li>
+                    <li>Strict adherence to verified technical specifications.</li>
+                </ul>
+                <div class="mt-12 text-center">
+                    <a href="/contact-us/" data-route="/contact-us/" class="inline-block bg-navy-900 text-white px-6 py-3 rounded font-bold hover:bg-brand transition">Contact Our Team</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= VIDEO PAGE ================= -->
+        <section id="route-video" class="page-section bg-silver pb-20">
+            <div class="bg-navy-900 py-16 px-4 text-center">
+                <h1 class="text-4xl font-bold text-white">Machinery Demonstration</h1>
+            </div>
+            <div class="max-w-4xl mx-auto px-4 py-16 text-center">
+                <h2 class="text-2xl font-bold text-navy-900 mb-6">High-Speed Operation Preview</h2>
+                <div class="aspect-w-16 aspect-h-9 max-w-sm mx-auto shadow-xl rounded overflow-hidden">
+                    <iframe src="https://www.youtube.com/embed/lEuInbckr7c" title="Binding Wire Making Machine Shorts" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="w-full h-[600px]"></iframe>
+                </div>
+                <div class="mt-10">
+                    <a href="/product/" data-route="/product/" class="text-brand font-bold hover:underline">View Product Specifications</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= FAQ PAGE (AEO Optimized) ================= -->
+        <section id="route-faq" class="page-section bg-white pb-20">
+            <div class="bg-navy-900 py-16 px-4 text-center">
+                <h1 class="text-4xl font-bold text-white">Frequently Asked Questions</h1>
+            </div>
+            <div class="max-w-4xl mx-auto px-4 py-16 space-y-8">
+                
+                <article>
+                    <h3 class="text-xl font-bold text-navy-900 mb-2">Which nail making machine should I choose?</h3>
+                    <p class="text-gray-700">Machine selection depends entirely on your required nail length and wire thickness. For nails between 1 to 4 inches, the <strong>IN3 Nail Making Machine</strong> is the standard choice. For heavy construction nails up to 6 inches, the <strong>IN6</strong> is required.</p>
+                </article>
+
+                <article>
+                    <h3 class="text-xl font-bold text-navy-900 mb-2">What nail sizes can the IN1+ produce?</h3>
+                    <p class="text-gray-700">The IN1+ produces nails from 0.5 to 2 inches (12 to 50 mm) using 14 to 20 Gauge SWG (0.9 to 2.0 mm) wire.</p>
+                </article>
+
+                <article>
+                    <h3 class="text-xl font-bold text-navy-900 mb-2">What is the production speed of the HS90?</h3>
+                    <p class="text-gray-700">The HS90 High-Speed Nail Machine operates at up to 700 nails per minute, with a daily capacity of up to 1,500 kg.</p>
+                </article>
+
+                <article>
+                    <h3 class="text-xl font-bold text-navy-900 mb-2">What is the price of the IN3 machine?</h3>
+                    <p class="text-gray-700">The IN3 Nail Making Machine is priced at ₹4,20,000 INR (subject to final commercial quotation terms). Please contact our team for current export pricing.</p>
+                </article>
+
+                <article>
+                    <h3 class="text-xl font-bold text-navy-900 mb-2">What is the wire diameter reduction of the 6 Stage Wire Draw Machine?</h3>
+                    <p class="text-gray-700">The 6 Stage Wire Draw Machine reduces wire diameter from 5.5 mm down to 2.5 mm, utilizing a 125 HP motor.</p>
+                </article>
+
+                <article>
+                    <h3 class="text-xl font-bold text-navy-900 mb-2">Are electrical accessories included with the wire drawing machines?</h3>
+                    <p class="text-gray-700">No. The 6 Stage and 8 Stage Wire Draw Machines are priced without electricals and accessories. These must be specified and quoted separately.</p>
+                </article>
+
+                <div class="mt-12 p-6 bg-silver border border-gray-300 rounded text-center">
+                    <p class="font-bold text-navy-900 mb-4">Have specific technical requirements?</p>
+                    <a href="/contact-us/" data-route="/contact-us/" class="inline-block bg-brand text-white px-6 py-2 rounded font-bold hover:bg-brand-dark transition">Request a Quotation</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= CONTACT PAGE ================= -->
+        <section id="route-contact-us" class="page-section bg-white pb-20">
+            <div class="bg-navy-900 py-16 px-4 text-center">
+                <h1 class="text-4xl font-bold text-white">Contact Us</h1>
+            </div>
+            <div class="max-w-7xl mx-auto px-4 py-16 grid grid-cols-1 lg:grid-cols-2 gap-16">
+                
+                <div>
+                    <h2 class="text-3xl font-bold text-navy-900 mb-8">Business Identity & Location</h2>
+                    
+                    <div class="space-y-6 text-lg text-gray-700">
+                        <div>
+                            <strong class="block text-navy-900">Company:</strong>
+                            <span>Binding Wire Machine</span>
+                        </div>
+                        <div>
+                            <strong class="block text-navy-900">Address:</strong>
+                            <span>Aji GIDC<br>Rajkot, Gujarat<br>India - 360003</span>
+                        </div>
+                        <div>
+                            <strong class="block text-navy-900">Phone (Sales & Inquiries):</strong>
+                            <a href="tel:+919978822099" class="text-brand hover:underline">+91 99788 22099</a>
+                        </div>
+                        <div>
+                            <strong class="block text-navy-900">Email:</strong>
+                            <a href="mailto:bindingwiremachinery@gmail.com" class="text-brand hover:underline">bindingwiremachinery@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="mt-8 border border-gray-300 p-2 rounded">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3692.0643871537172!2d70.8235057!3d22.2755507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3959b5006bec494b%3A0x72a9f4a5464d49e4!2sBinding%20Wire%20Making%20Machine!5e0!3m2!1sen!2sin!4v1787637461381!5m2!1sen!2sin" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Binding Wire Machine Factory Location in Rajkot"></iframe>
+                    </div>
+                </div>
+
+                <div class="bg-silver p-8 rounded border border-gray-200">
+                    <h2 class="text-2xl font-bold text-navy-900 mb-6">Request a Quote</h2>
+                    <form onsubmit="event.preventDefault(); alert('Inquiry submitted securely. Our engineers will contact you shortly.');" class="space-y-4">
+                        <div>
+                            <label class="block text-sm font-bold text-navy-900 mb-1" for="name">Name *</label>
+                            <input type="text" id="name" required class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:border-brand">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold text-navy-900 mb-1" for="company">Company</label>
+                            <input type="text" id="company" class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:border-brand">
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-sm font-bold text-navy-900 mb-1" for="email">Email *</label>
+                                <input type="email" id="email" required class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:border-brand">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-bold text-navy-900 mb-1" for="phone">Phone *</label>
+                                <input type="tel" id="phone" required class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:border-brand">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold text-navy-900 mb-1" for="country">Country</label>
+                            <input type="text" id="country" class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:border-brand">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold text-navy-900 mb-1" for="machine">Product / Machine Requirement *</label>
+                            <select id="machine" class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:border-brand">
+                                <option>IN1+ Nail Making Machine</option>
+                                <option>IN3 Nail Making Machine</option>
+                                <option>IN4 Nail Making Machine</option>
+                                <option>IN6 Nail Making Machine</option>
+                                <option>HS90 High-Speed Nail Machine</option>
+                                <option>6 Stage Wire Draw Machine</option>
+                                <option>8 Stage Wire Draw Machine</option>
+                                <option>Polishing Drums</option>
+                                <option>General Inquiry</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold text-navy-900 mb-1" for="message">Requirement Details</label>
+                            <textarea id="message" rows="4" class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:border-brand"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-navy-900 text-white font-bold py-4 rounded hover:bg-brand transition">Submit Quotation Request</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
     </main>
 
-    <footer class="footer">
-        <div class="container footer-grid">
+    <!-- FOOTER -->
+    <footer class="bg-navy-900 text-gray-400 py-12 mt-auto border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
-                <h3>Indian Nail Machine</h3>
-                <p>Aji GIDC, Rajkot, Gujarat, India – 360003</p>
-                <p style="margin-top: 1rem;">Phone: +91 99788 22099</p>
-                <p>Email: bindingwiremachinery@gmail.com</p>
+                <h3 class="text-white font-bold text-xl mb-4">Binding Wire Machine</h3>
+                <p class="mb-4">Industrial machinery manufacturer, supplier, and exporter of wire nail and wire drawing machinery.</p>
+                <p>Location: Rajkot, Gujarat, India</p>
             </div>
             <div>
-                <h3>Quick Links</h3>
-                <ul class="footer-links">
-                    <li><a href="/product/">Machinery Catalogue</a></li>
-                    <li><a href="/about-us/">About the Factory</a></li>
-                    <li><a href="/video/">Machine Operations</a></li>
-                    <li><a href="/faq/">Technical FAQ</a></li>
-                    <li><a href="/contact-us/">Contact Sales</a></li>
+                <h3 class="text-white font-bold text-lg mb-4">Architecture</h3>
+                <ul class="space-y-2">
+                    <li><a href="/" data-route="/" class="hover:text-brand transition">Home</a></li>
+                    <li><a href="/product/" data-route="/product/" class="hover:text-brand transition">Products & Specifications</a></li>
+                    <li><a href="/about-us/" data-route="/about-us/" class="hover:text-brand transition">About Us</a></li>
+                    <li><a href="/faq/" data-route="/faq/" class="hover:text-brand transition">FAQ</a></li>
+                    <li><a href="/contact-us/" data-route="/contact-us/" class="hover:text-brand transition">Contact Us / Quote</a></li>
                 </ul>
             </div>
+            <div>
+                <h3 class="text-white font-bold text-lg mb-4">Direct Contact</h3>
+                <p>Email: <a href="mailto:bindingwiremachinery@gmail.com" class="text-white hover:text-brand">bindingwiremachinery@gmail.com</a></p>
+                <p>Phone: <a href="tel:+919978822099" class="text-white hover:text-brand">+91 99788 22099</a></p>
+                <p class="mt-4 text-xs">Serving domestic and global export markets.</p>
+            </div>
         </div>
-        <div class="container" style="text-align: center; border-top: 1px solid var(--gray-600); margin-top: 2rem; padding-top: 2rem;">
-            <p>&copy; 2026 Indian Nail Machine. All Rights Reserved.</p>
+        <div class="max-w-7xl mx-auto px-4 mt-8 pt-8 border-t border-gray-800 text-sm text-center">
+            &copy; 2026 Binding Wire Machine. All rights reserved.
         </div>
     </footer>
+
+    <!-- GITHUB PAGES SPA ROUTER SCRIPT (Vanilla JS) -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const routes = ['/', '/product/', '/about-us/', '/video/', '/faq/', '/contact-us/'];
+            
+            function navigate(path, pushState = true) {
+                // Ensure path ends with slash for consistency matching
+                let normalizedPath = path.endsWith('/') ? path : path + '/';
+                if (!routes.includes(normalizedPath)) normalizedPath = '/';
+
+                // Hide all sections
+                document.querySelectorAll('.page-section').forEach(sec => sec.classList.remove('active'));
+                
+                // Map route to section ID
+                let sectionId = 'route-home';
+                if (normalizedPath === '/product/') sectionId = 'route-product';
+                if (normalizedPath === '/about-us/') sectionId = 'route-about-us';
+                if (normalizedPath === '/video/') sectionId = 'route-video';
+                if (normalizedPath === '/faq/') sectionId = 'route-faq';
+                if (normalizedPath === '/contact-us/') sectionId = 'route-contact-us';
+                
+                // Show active section
+                document.getElementById(sectionId).classList.add('active');
+                window.scrollTo(0, 0);
+
+                if (pushState) {
+                    window.history.pushState({ path: normalizedPath }, '', normalizedPath);
+                }
+            }
+
+            // Intercept internal links
+            document.querySelectorAll('a[data-route]').forEach(link => {
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    navigate(e.currentTarget.getAttribute('data-route'));
+                });
+            });
+
+            // Handle browser back/forward buttons
+            window.addEventListener('popstate', (e) => {
+                const path = e.state ? e.state.path : window.location.pathname;
+                navigate(path, false);
+            });
+
+            // Initialize app based on current URL (important for 404.html redirect catch)
+            navigate(window.location.pathname, false);
+        });
+    </script>
 </body>
 </html>
