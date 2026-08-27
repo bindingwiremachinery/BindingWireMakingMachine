@@ -2,3 +2,5 @@ User-agent: *
 Allow: /
 
 Sitemap: https://www.bindingwiremachine.in/sitemap.xml
+Sitemap: https://www.bindingwiremachine.in/sitemap-products.xml
+Sitemap: https://www.bindingwiremachine.in/sitemap-videos.xml
