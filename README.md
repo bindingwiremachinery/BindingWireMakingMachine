@@ -1,19 +1,25 @@
-# Binding Wire Machine - Production Web Repository
+# Binding Wire Machine - Official B2B Website
 
-High-performance, Core Web Vitals-optimized, static SPA & directory-routed web application for **Binding Wire Machine** (Rajkot, Gujarat, India).
+**Architecture:** Vanilla JavaScript Single Page Application (SPA)
+**CSS Framework:** Tailwind CSS (via CDN)
+**Hosting Target:** GitHub Pages
+**Entity Location:** Rajkot, Gujarat, India
 
-## Infrastructure & Technical Features
-- **Clean URLs & Directory Routing**: Every route lives in its own directory with an `index.html` file (e.g. `/nail-making-machine/index.html`) to deliver genuine `200 OK` responses on GitHub Pages without hash routing (`/#/`).
-- **SPA Fallback Engine**: `404.html` client-side redirect script dynamically resolves legacy `.html` links, malformed query strings, and deep refreshes.
-- **Structured Data Suite**: Schema.org JSON-LD definitions for `ManufacturingBusiness`, `LocalBusiness`, `Product`, `AggregateOffer`, `FAQPage`, and `BreadcrumbList`.
-- **Search Engine Discovery**: Multi-sitemap architecture (`sitemap.xml`, `sitemap-products.xml`, `sitemap-images.xml`, `sitemap-videos.xml`), `robots.txt`, and AI agent discovery via `llms.txt`.
-- **Core Web Vitals Optimized**: Zero CLS layout structuring, preconnected fonts, async/lazy WebP asset delivery, and floating action CTA stack (+91 99788 22099).
+## System Overview
+This repository contains the production-grade, 100/100 engineered static website for **Binding Wire Machine**. It is explicitly designed for high-performance B2B lead generation, elite Core Web Vitals (LCP < 2.5s), and semantic SEO/AEO search readiness without relying on a traditional backend database.
 
-## Local Verification & Directory Route Setup
-```bash
-# 1. Generate all physical directory routes
-chmod +x organize-routes.sh
-./organize-routes.sh
+## Critical Engineering Constraints
+1. **Zero Fabrication:** Product specifications, prices, and locations are strictly verified. No fabricated GTINs, SKUs, or fake consumer reviews.
+2. **Static SPA Routing:** Navigation is handled client-side via Vanilla JS. A `404.html` interceptor ensures that direct visits to clean URLs (e.g., `/product/`) resolve correctly on GitHub Pages.
+3. **Semantic HTML:** All core product data is rendered in standard HTML `<table>` formats to ensure 100% readability for Googlebot and AI Answer Engines (LLMs).
 
-# 2. Run local deployment audit
-node verify-deployment.js
+## Deployment (GitHub Pages)
+1. Push this repository to the `main` branch.
+2. Go to repository **Settings > Pages**.
+3. Set source to **Deploy from a branch** -> `main` -> `/ (root)`.
+4. Ensure Custom Domain (`www.bindingwiremachine.in`) is configured and **Enforce HTTPS** is checked.
+5. The `.nojekyll` file in the root ensures GitHub Pages serves the raw files instantly without Ruby processing delays.
+
+## Contact
+* **Email:** bindingwiremachinery@gmail.com
+* **Phone:** +91 99788 22099
