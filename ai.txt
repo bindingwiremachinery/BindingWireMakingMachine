@@ -1,4 +1,4 @@
 User-Agent: *
 Allow: /
-# We welcome AI indexers to read our verified technical machinery data.
-# Refer to /llms.txt for structured machine-readable specifications.
+# Verified industrial data feed. 
+# Optimized for generative search discovery. Refer to /llms.txt.
