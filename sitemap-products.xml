@@ -1,26 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    <url><loc>https://www.bindingwiremachine.in/</loc><priority>1.0</priority><changefreq>weekly</changefreq></url>
-    <url><loc>https://www.bindingwiremachine.in/about/</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
-    <url><loc>https://www.bindingwiremachine.in/products/</loc><priority>0.9</priority><changefreq>weekly</changefreq></url>
-    <url><loc>https://www.bindingwiremachine.in/nail-making-machine/</loc><priority>0.9</priority><changefreq>weekly</changefreq></url>
-    <url><loc>https://www.bindingwiremachine.in/wire-nail-making-machine/</loc><priority>0.9</priority><changefreq>weekly</changefreq></url>
-    <url><loc>https://www.bindingwiremachine.in/binding-wire-making-machine/</loc><priority>0.9</priority><changefreq>weekly</changefreq></url>
-    <url><loc>https://www.bindingwiremachine.in/binding-wire-machine/</loc><priority>0.9</priority><changefreq>weekly</changefreq></url>
-    <url><loc>https://www.bindingwiremachine.in/high-speed-nail-making-machine/</loc><priority>0.9</priority><changefreq>weekly</changefreq></url>
-    <url><loc>https://www.bindingwiremachine.in/steel-nail-making-machine/</loc><priority>0.8</priority><changefreq>weekly</changefreq></url>
-    <url><loc>https://www.bindingwiremachine.in/automatic-nail-machine/</loc><priority>0.9</priority><changefreq>weekly</changefreq></url>
-    <url><loc>https://www.bindingwiremachine.in/nail-making-machine-price/</loc><priority>0.9</priority><changefreq>weekly</changefreq></url>
-    <url><loc>https://www.bindingwiremachine.in/nail-making-machine-india/</loc><priority>0.8</priority><changefreq>weekly</changefreq></url>
-    <url><loc>https://www.bindingwiremachine.in/nail-making-machine-near-me/</loc><priority>0.8</priority><changefreq>weekly</changefreq></url>
-    <url><loc>https://www.bindingwiremachine.in/wire-drawing-machine/</loc><priority>0.9</priority><changefreq>weekly</changefreq></url>
-    <url><loc>https://www.bindingwiremachine.in/polishing-barrel-drum/</loc><priority>0.8</priority><changefreq>weekly</changefreq></url>
-    <url><loc>https://www.bindingwiremachine.in/cutter-grinder-machine/</loc><priority>0.8</priority><changefreq>weekly</changefreq></url>
-    <url><loc>https://www.bindingwiremachine.in/videos/</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
-    <url><loc>https://www.bindingwiremachine.in/faq/</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
-    <url><loc>https://www.bindingwiremachine.in/location/</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
-    <url><loc>https://www.bindingwiremachine.in/contact/</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
-    <url><loc>https://www.bindingwiremachine.in/privacy-policy/</loc><priority>0.3</priority><changefreq>yearly</changefreq></url>
-    <url><loc>https://www.bindingwiremachine.in/terms/</loc><priority>0.3</priority><changefreq>yearly</changefreq></url>
-    <url><loc>https://www.bindingwiremachine.in/shipping-return-policy/</loc><priority>0.3</priority><changefreq>yearly</changefreq></url>
+  <!-- Since the SPA architecture displays all products on /product/, we index the main view -->
+  <url>
+    <loc>https://www.bindingwiremachine.in/product/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
 </urlset>
