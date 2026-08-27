@@ -1,8 +1,9 @@
 /* TEAM */
-Proprietor & Principal: Yasin Ahamed Sandhi
-Engineering Hub: Rajkot, Gujarat, India
-Website: https://www.bindingwiremachine.in
+Engineer: Binding Wire Machine Autonomous Development System
+Location: Rajkot, Gujarat, India
+Contact: bindingwiremachinery@gmail.com
 
 /* SITE */
-Standards: HTML5, CSS3, ES6+
-Hosting: GitHub Pages Static Delivery with Custom Domain Nginx routing
+Standards: HTML5, CSS3, JSON-LD, WCAG-conscious
+Components: Vanilla JS, Tailwind CSS
+Software: Engineered for GitHub Pages static hosting.
