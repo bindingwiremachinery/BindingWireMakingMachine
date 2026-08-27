@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-    <url>
-        <loc>https://www.bindingwiremachine.in/videos/</loc>
-        <video:video>
-            <video:thumbnail_loc>https://www.bindingwiremachine.in/product/IN3-nail-making-machine.webp</video:thumbnail_loc>
-            <video:title>IN3 Nail Making Machine High Speed Demo</video:title>
-            <video:description>Watch the IN3 high-speed automatic wire nail making machine in continuous mass production.</video:description>
-            <video:player_loc>https://www.bindingwiremachine.in/videos/</video:player_loc>
-        </video:video>
-    </url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+   <url>
+     <loc>https://www.bindingwiremachine.in/video/</loc>
+     <video:video>
+       <video:thumbnail_loc>https://img.youtube.com/vi/lEuInbckr7c/maxresdefault.jpg</video:thumbnail_loc>
+       <video:title>Binding Wire Making Machine - High Speed Demonstration</video:title>
+       <video:description>Industrial demonstration of high speed wire processing and nail manufacturing machinery in Rajkot.</video:description>
+       <video:content_loc>https://www.youtube.com/watch?v=lEuInbckr7c</video:content_loc>
+       <video:publication_date>2024-01-01T00:00:00+00:00</video:publication_date>
+     </video:video>
+   </url>
 </urlset>
