@@ -341,11 +341,21 @@
             <div class="bg-navy-900 py-16 px-4 text-center">
                 <h1 class="text-4xl font-bold text-white">Machinery Demonstration</h1>
             </div>
-            <div class="max-w-4xl mx-auto px-4 py-16 text-center">
+            <div class="max-w-5xl mx-auto px-4 py-16 text-center">
                 <h2 class="text-2xl font-bold text-navy-900 mb-6">High-Speed Operation Preview</h2>
-                <div class="aspect-w-16 aspect-h-9 max-w-4xl mx-auto shadow-2xl rounded overflow-hidden bg-navy-900">
-                    <iframe src="https://www.youtube.com/embed/lEuInbckr7c" title="Binding Wire Making Machine Shorts" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="w-full h-[500px] border-0" loading="lazy"></iframe>
+                
+                <!-- Responsive Widescreen Container -->
+                <div class="relative w-full overflow-hidden rounded-2xl shadow-2xl bg-navy-900" style="padding-top: 56.25%;">
+                    <iframe src="https://www.youtube.com/embed/lEuInbckr7c" 
+                            title="Binding Wire Making Machine Demonstration" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            allowfullscreen 
+                            class="absolute top-0 left-0 w-full h-full border-0" 
+                            loading="lazy">
+                    </iframe>
                 </div>
+
                 <div class="mt-10">
                     <a href="/product/" data-route="/product/" class="text-brand font-bold text-lg hover:underline transition">View Product Specifications &rarr;</a>
                 </div>
@@ -479,20 +489,22 @@
     <!-- ================= FLOATING CONVERSION STACK ================= -->
     <div class="fixed bottom-6 right-6 z-[100] flex flex-col gap-4 items-end pointer-events-none">
         
-        <!-- Call Button (Styled in Brand Red) -->
+        <!-- Call Button (Brand Red) -->
         <a href="tel:+919978822099" 
-           class="bg-brand hover:bg-red-700 text-white p-4 rounded-full shadow-2xl transition-all duration-300 hover:scale-110 pointer-events-auto flex items-center justify-center border-2 border-white/20" 
+           class="bg-brand text-white p-4 rounded-full shadow-2xl transition-all duration-300 hover:scale-110 pointer-events-auto flex items-center justify-center border-2 border-white/20" 
+           style="background-color: #dc2626 !important;"
            aria-label="Call Us">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
             </svg>
         </a>
 
-        <!-- WhatsApp Button (Styled in Official Green) -->
+        <!-- WhatsApp Button (Forced Solid Green) -->
         <a href="https://wa.me/919978822099?text=Hello%2C%20I%20am%20interested%20in%20your%20wire%20and%20nail%20machinery." 
            target="_blank" 
            rel="noopener noreferrer" 
-           class="bg-[#25D366] hover:bg-[#1ebe57] text-white p-4 rounded-full shadow-2xl transition-all duration-300 hover:scale-110 pointer-events-auto flex items-center justify-center border-2 border-white/20" 
+           class="text-white p-4 rounded-full shadow-2xl transition-all duration-300 hover:scale-110 pointer-events-auto flex items-center justify-center border-2 border-white/20" 
+           style="background-color: #25D366 !important;"
            aria-label="WhatsApp">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M12.031 0C5.385 0 .002 5.388.002 12.035c0 2.128.555 4.204 1.606 6.035L.03 24l6.105-1.597c1.768.956 3.754 1.46 5.896 1.46 6.646 0 12.029-5.388 12.029-12.035C24.06 5.388 18.677 0 12.031 0zm.002 21.84c-1.803 0-3.52-.484-5.043-1.385l-.36-.215-3.743.98 1.002-3.649-.236-.376A9.972 9.972 0 012.028 12.035c0-5.534 4.502-10.038 10.005-10.038 5.501 0 10.002 4.504 10.002 10.038 0 5.534-4.501 10.005-10.002 10.005zm5.492-7.513c-.301-.151-1.782-.877-2.059-.978-.277-.101-.479-.151-.68.151-.202.302-.78 .978-.956 1.179-.176.202-.352.227-.654.076-1.564-.783-2.684-1.423-3.692-3.153-.201-.345.201-.321.782-1.479.076-.151.038-.277-.038-.428-.076-.151-.68-1.639-.932-2.244-.245-.589-.494-.509-.68-.518-.176-.008-.378-.008-.58-.008-.202 0-.528.076-.805.378-.277.302-1.057 1.032-1.057 2.518 0 1.486 1.082 2.922 1.233 3.123.151.202 2.132 3.256 5.163 4.561 2.391 1.029 3.242.928 3.847.852.68-.086 2.059-.877 2.361-1.733.301-.856.301-1.586.201-1.733-.101-.148-.352-.224-.654-.375z"/>
