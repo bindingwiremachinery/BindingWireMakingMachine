@@ -1,103 +1,106 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:g="http://base.google.com/ns/1.0">
+<rss xmlns:g="http://base.google.com/ns/1.0" version="2.0">
   <channel>
-    <title>Binding Wire Machine Product Catalog</title>
-    <link>https://www.bindingwiremachine.in</link>
-    <description>Industrial Wire Nail Making Machines, Wire Drawing Plants, and Binding Wire Equipment</description>
+    <title>Binding Wire Machine - Product Catalog</title>
+    <link>https://www.bindingwiremachine.in/</link>
+    <description>Industrial machinery manufacturer and exporter from Rajkot, India.</description>
     
-    <!-- IN1+ Nail Making Machine -->
     <item>
       <g:id>IN1-PLUS</g:id>
-      <g:title>IN1+ Automatic Wire Nail Making Machine</g:title>
-      <g:description>High-speed automatic nail making machine designed for producing small precision nails up to 1 inch. Speed 550 pcs/min, 1.5 HP motor.</g:description>
-      <g:link>https://www.bindingwiremachine.in/nail-making-machine/</g:link>
-      <g:image_link>https://www.bindingwiremachine.in/product/IN1%2B-nail-making-machine.webp</g:image_link>
+      <g:title>IN1+ Automatic Nail Making Machine</g:title>
+      <g:description>High-speed automatic nail making machine. Length: 0.5 to 2 inches (12 to 50 mm). Output: 550 nails/min.</g:description>
+      <g:link>https://www.bindingwiremachine.in/product/</g:link>
+      <g:image_link>https://www.bindingwiremachine.in/product/nail-making-machine.webp</g:image_link>
+      <g:brand>Binding Wire Machine</g:brand>
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
-      <g:price>150000.00 INR</g:price>
-      <g:brand>Binding Wire Machine</g:brand>
-      <g:mpn>IN1PLUS-2026</g:mpn>
+      <g:price>260000.00 INR</g:price>
       <g:identifier_exists>no</g:identifier_exists>
-      <g:shipping>
-        <g:country>IN</g:country>
-        <g:service>Freight</g:service>
-        <g:price>0.00 INR</g:price>
-      </g:shipping>
+      <g:product_type>Business &amp; Industrial &gt; Manufacturing &amp; Metalworking Machinery</g:product_type>
+    </item>
+    
+    <item>
+      <g:id>IN3</g:id>
+      <g:title>IN3 Automatic Nail Making Machine</g:title>
+      <g:description>Best seller industrial nail making machine. Length: 1 to 4 inches (25 to 100 mm). Output: 350 nails/min.</g:description>
+      <g:link>https://www.bindingwiremachine.in/product/</g:link>
+      <g:image_link>https://www.bindingwiremachine.in/product/nail-making-machine.webp</g:image_link>
+      <g:brand>Binding Wire Machine</g:brand>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>420000.00 INR</g:price>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Business &amp; Industrial &gt; Manufacturing &amp; Metalworking Machinery</g:product_type>
     </item>
 
-    <!-- IN3 Nail Making Machine -->
     <item>
-      <g:id>IN3-STD</g:id>
-      <g:title>IN3 Automatic Wire Nail Making Machine</g:title>
-      <g:description>Industry standard automatic wire nail making machine for 1 to 3 inch nails. 350 pcs/min, 3.0 HP motor, heavy duty casting.</g:description>
-      <g:link>https://www.bindingwiremachine.in/nail-making-machine/</g:link>
-      <g:image_link>https://www.bindingwiremachine.in/product/IN3-nail-making-machine.webp</g:image_link>
+      <g:id>IN4</g:id>
+      <g:title>IN4 Automatic Nail Making Machine</g:title>
+      <g:description>Heavy-duty wire nail making machine. Length: 1 to 5 inches (25 to 125 mm). Output: 250 nails/min.</g:description>
+      <g:link>https://www.bindingwiremachine.in/product/</g:link>
+      <g:image_link>https://www.bindingwiremachine.in/product/nail-making-machine.webp</g:image_link>
+      <g:brand>Binding Wire Machine</g:brand>
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
-      <g:price>220000.00 INR</g:price>
-      <g:brand>Binding Wire Machine</g:brand>
-      <g:mpn>IN3-2026</g:mpn>
+      <g:price>520000.00 INR</g:price>
       <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Business &amp; Industrial &gt; Manufacturing &amp; Metalworking Machinery</g:product_type>
     </item>
 
-    <!-- IN4 Nail Making Machine -->
     <item>
-      <g:id>IN4-HD</g:id>
-      <g:title>IN4 Heavy Duty Wire Nail Making Machine</g:title>
-      <g:description>Heavy duty automatic wire nail machine for 2 to 4 inch construction nails. 250 pcs/min, 5.0 HP motor, weight 1400 kg.</g:description>
-      <g:link>https://www.bindingwiremachine.in/nail-making-machine/</g:link>
-      <g:image_link>https://www.bindingwiremachine.in/product/IN4-nail-making-machine.webp</g:image_link>
+      <g:id>IN6</g:id>
+      <g:title>IN6 Heavy Duty Nail Making Machine</g:title>
+      <g:description>Industrial nail machine for large nails. Length: 2 to 6 inches (50 to 150 mm). Output: 150 nails/min.</g:description>
+      <g:link>https://www.bindingwiremachine.in/product/</g:link>
+      <g:image_link>https://www.bindingwiremachine.in/product/nail-making-machine.webp</g:image_link>
+      <g:brand>Binding Wire Machine</g:brand>
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
-      <g:price>310000.00 INR</g:price>
-      <g:brand>Binding Wire Machine</g:brand>
-      <g:mpn>IN4-2026</g:mpn>
+      <g:price>1150000.00 INR</g:price>
       <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Business &amp; Industrial &gt; Manufacturing &amp; Metalworking Machinery</g:product_type>
     </item>
 
-    <!-- IN6 Nail Making Machine -->
     <item>
-      <g:id>IN6-MAX</g:id>
-      <g:title>IN6 Heavy Duty Automatic Wire Nail Machine</g:title>
-      <g:description>Industrial grade large wire nail making machine for 3 to 6 inch nails. 150 pcs/min, 7.5 HP motor, weight 2220 kg.</g:description>
-      <g:link>https://www.bindingwiremachine.in/nail-making-machine/</g:link>
-      <g:image_link>https://www.bindingwiremachine.in/product/IN6-nail-making-machine.webp</g:image_link>
+      <g:id>HS90</g:id>
+      <g:title>HS90 High-Speed Nail Machine</g:title>
+      <g:description>High speed mass production unit. Length: 1.5 to 3.5 inches (38 to 90 mm). Output: 700 nails/min.</g:description>
+      <g:link>https://www.bindingwiremachine.in/product/</g:link>
+      <g:image_link>https://www.bindingwiremachine.in/product/nail-making-machine.webp</g:image_link>
+      <g:brand>Binding Wire Machine</g:brand>
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
-      <g:price>450000.00 INR</g:price>
-      <g:brand>Binding Wire Machine</g:brand>
-      <g:mpn>IN6-2026</g:mpn>
+      <g:price>2000000.00 INR</g:price>
       <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Business &amp; Industrial &gt; Manufacturing &amp; Metalworking Machinery</g:product_type>
     </item>
 
-    <!-- Continuous Wire Drawing Plant -->
     <item>
-      <g:id>WDM-600</g:id>
-      <g:title>600mm Continuous Wire Drawing Machine Plant</g:title>
-      <g:description>Continuous multi-die wire drawing machine plant with water cooling drums and variable frequency drive panel.</g:description>
-      <g:link>https://www.bindingwiremachine.in/wire-drawing-machine/</g:link>
-      <g:image_link>https://www.bindingwiremachine.in/product/Wire-Drawing-machine.webp</g:image_link>
+      <g:id>WDM-6STAGE</g:id>
+      <g:title>6 Stage Wire Draw Machine (24 inch)</g:title>
+      <g:description>Continuous wire drawing plant. 5.5mm to 2.5mm reduction. 125 HP. Base machine only.</g:description>
+      <g:link>https://www.bindingwiremachine.in/product/</g:link>
+      <g:image_link>https://www.bindingwiremachine.in/product/wire-drawing-machine.webp</g:image_link>
+      <g:brand>Binding Wire Machine</g:brand>
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
-      <g:price>650000.00 INR</g:price>
-      <g:brand>Binding Wire Machine</g:brand>
-      <g:mpn>WD600-2026</g:mpn>
+      <g:price>1800000.00 INR</g:price>
       <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Business &amp; Industrial &gt; Manufacturing &amp; Metalworking Machinery</g:product_type>
     </item>
 
-    <!-- Binding Wire Making Plant -->
     <item>
-      <g:id>BWM-300</g:id>
-      <g:title>Automatic Binding Wire Making Plant Setup</g:title>
-      <g:description>Complete plant setup for manufacturing soft black annealed binding wire and galvanized construction wire.</g:description>
-      <g:link>https://www.bindingwiremachine.in/binding-wire-making-machine/</g:link>
-      <g:image_link>https://www.bindingwiremachine.in/product/binding-wire-making-machine.webp</g:image_link>
+      <g:id>WDM-8STAGE</g:id>
+      <g:title>8 Stage Wire Draw Machine (12 inch)</g:title>
+      <g:description>Continuous fine wire drawing plant. 2.5mm to 0.9mm reduction. 52.5 HP. Base machine only.</g:description>
+      <g:link>https://www.bindingwiremachine.in/product/</g:link>
+      <g:image_link>https://www.bindingwiremachine.in/product/wire-drawing-machine.webp</g:image_link>
+      <g:brand>Binding Wire Machine</g:brand>
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
-      <g:price>280000.00 INR</g:price>
-      <g:brand>Binding Wire Machine</g:brand>
-      <g:mpn>BW300-2026</g:mpn>
+      <g:price>1600000.00 INR</g:price>
       <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>Business &amp; Industrial &gt; Manufacturing &amp; Metalworking Machinery</g:product_type>
     </item>
   </channel>
 </rss>
